@@ -3,7 +3,7 @@
  * Static site generator for Evidence Hound.
  *
  * Reads the JSON evidence files, writes dist/. No dependencies, no build
- * pipeline, no lock file to audit — `node src/build.mjs` is the whole thing.
+ * pipeline, no lock file to audit. `node src/build.mjs` is the whole thing.
  */
 
 import { mkdir, writeFile, readFile, rm, copyFile } from "node:fs/promises";

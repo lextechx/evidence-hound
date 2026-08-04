@@ -13,7 +13,7 @@
   },
   "plain_summary": "A targeted pain drug that blocks one specific inflammatory receptor rather than shutting down prostaglandin production broadly. Often chosen for older dogs where the broader gastrointestinal and kidney effects of a classic NSAID are the main worry.",
   "what_trials_show": "In the pivotal 16-site randomized masked placebo-controlled study, 285 client-owned dogs with osteoarthritis were enrolled and 262 were evaluable, split evenly between grapiprant at 2 mg/kg daily and placebo. Owners scored their dogs on the Canine Brief Pain Inventory at days 0, 7, 14, 21, and 28. Both pain interference and pain severity improved significantly relative to placebo. The trial was properly masked, which matters a great deal in a field where owner-reported placebo response routinely runs above 15%.",
-  "harms": "Generally well tolerated, with vomiting and soft stool the most common effects. Because it spares the prostaglandin pathways involved in gastric protection and kidney perfusion more than traditional NSAIDs do, it is often preferred where those risks dominate — but that is a mechanistic argument, and head-to-head long-term safety data in geriatric dogs with kidney disease remains limited. Do not combine with an NSAID or corticosteroid.",
+  "harms": "Generally well tolerated, with vomiting and soft stool the most common effects. Because it spares the prostaglandin pathways involved in gastric protection and kidney perfusion more than traditional NSAIDs do, it is often preferred where those risks dominate. But that is a mechanistic argument, and head-to-head long-term safety data in geriatric dogs with kidney disease remains limited. Do not combine with an NSAID or corticosteroid.",
   "practical": {
     "route": "Oral tablet",
     "typical_course": "2 mg/kg once daily, on an empty stomach",
@@ -39,7 +39,7 @@
       "primary_outcome": "Owner-completed Canine Brief Pain Inventory success at day 28",
       "result": "Statistically significant improvement in both pain interference and pain severity versus placebo.",
       "funding": "Aratana Therapeutics (manufacturer)",
-      "summary": "The pivotal registration study and still the strongest single piece of evidence for this drug. Large, masked, placebo-controlled, and multisite — a genuinely good trial, with the standard caveat that the sponsor ran it.",
+      "summary": "The pivotal registration study and still the strongest single piece of evidence for this drug. Large, masked, placebo-controlled, and multisite. A genuinely good trial, with the standard caveat that the sponsor ran it.",
       "url": "https://onlinelibrary.wiley.com/doi/10.1111/jvim.13948"
     },
     {

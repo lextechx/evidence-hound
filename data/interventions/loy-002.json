@@ -6,13 +6,13 @@
   "category": "investigational",
   "conditions": ["healthspan"],
   "tier": "U",
-  "tier_rationale": "No peer-reviewed efficacy trial has been published. What exists is a regulatory milestone: the FDA accepted a Reasonable Expectation of Effectiveness in early 2025 and the Target Animal Safety section in January 2026, leaving manufacturing as the remaining section before possible conditional approval. Conditional approval is a specific regulatory pathway that permits marketing while full effectiveness data is still being gathered — which is exactly why this cannot be graded above U yet.",
+  "tier_rationale": "No peer-reviewed efficacy trial has been published. What exists is a regulatory milestone: the FDA accepted a Reasonable Expectation of Effectiveness in early 2025 and the Target Animal Safety section in January 2026, leaving manufacturing as the remaining section before possible conditional approval. Conditional approval is a specific regulatory pathway that permits marketing while full effectiveness data is still being gathered, which is exactly why this cannot be graded above U yet.",
   "regulatory": {
     "us": "Not approved. Two of three technical sections accepted by FDA CVM toward conditional approval. Conditional approval possible as early as late 2026 or 2027 if the manufacturing section proceeds without setbacks.",
     "notes": "Understand what conditional approval means before treating it as a green light: it allows marketing while the sponsor continues to gather the full effectiveness data. It is a bet the regulator permits, not a conclusion the regulator has reached."
   },
   "plain_summary": "A daily pill in development that aims to extend healthy lifespan in senior dogs, targeting about one additional year. It is closer to market than anything comparable, but no published trial has yet shown it does this, and the approval pathway it is on does not require that proof up front.",
-  "what_trials_show": "There is no published peer-reviewed efficacy trial to summarize. The developer's stated target is roughly one additional year of healthy life. In February 2025 the FDA accepted the Reasonable Expectation of Effectiveness technical section, and in January 2026 accepted the Target Animal Safety section, leaving the manufacturing section outstanding. If approved, it would be the first drug approved for lifespan extension itself in any species. Everything currently public about its effectiveness comes from company communications and regulatory milestone announcements rather than from independent published trial data — a distinction worth holding onto given how this is likely to be marketed.",
+  "what_trials_show": "There is no published peer-reviewed efficacy trial to summarize. The developer's stated target is roughly one additional year of healthy life. In February 2025 the FDA accepted the Reasonable Expectation of Effectiveness technical section, and in January 2026 accepted the Target Animal Safety section, leaving the manufacturing section outstanding. If approved, it would be the first drug approved for lifespan extension itself in any species. Everything currently public about its effectiveness comes from company communications and regulatory milestone announcements rather than from independent published trial data. That is a distinction worth holding onto given how this is likely to be marketed.",
   "harms": "The FDA's acceptance of the Target Animal Safety section indicates the agency found the safety package adequate for this stage, which is meaningful. Independent long-term safety data in the general senior dog population does not yet exist, and by the nature of conditional approval will accumulate after marketing begins rather than before.",
   "practical": {
     "route": "Daily oral tablet (prescription, if approved)",
@@ -43,7 +43,7 @@
       "year": 2025,
       "design": "Regulatory milestone announcement",
       "blinding": "not-applicable",
-      "result": "FDA accepted the Reasonable Expectation of Effectiveness section — the standard for conditional approval, which is lower than the substantial-evidence standard for full approval.",
+      "result": "FDA accepted the Reasonable Expectation of Effectiveness section, the standard for conditional approval, which is lower than the substantial-evidence standard for full approval.",
       "summary": "The precise wording matters: a reasonable expectation of effectiveness is not a demonstration of effectiveness.",
       "url": "https://markets.financialcontent.com/stocks/article/bizwire-2025-2-26-loyal-receives-fda-acceptance-of-reasonable-expectation-of-effectiveness-for-senior-dog-lifespan-extension"
     },

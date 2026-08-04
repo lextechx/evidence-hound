@@ -6,16 +6,16 @@
   "category": "lifestyle",
   "conditions": ["osteoarthritis", "mobility"],
   "tier": "B",
-  "tier_rationale": "Prospective controlled trials consistently show that weight loss alone reduces lameness, with a dose-response relationship — improvement appearing from about 6% body weight reduction and confirmed on objective gait analysis from about 8.85%. It is held at B rather than A because the landmark studies are small (9 and 14 dogs) and open-label by necessity, since you cannot blind an owner to their dog getting thinner. The consistency and the objective kinetic confirmation are what keep it well above the supplement tier.",
+  "tier_rationale": "Prospective controlled trials consistently show that weight loss alone reduces lameness, with a dose-response relationship: improvement appears from about 6% body weight reduction and confirmed on objective gait analysis from about 8.85%. It is held at B rather than A because the landmark studies are small (9 and 14 dogs) and open-label by necessity, since you cannot blind an owner to their dog getting thinner. The consistency and the objective kinetic confirmation are what keep it well above the supplement tier.",
   "regulatory": {
     "notes": "Not a regulated product. This is the intervention with the best benefit-to-risk ratio on this entire site and it costs nothing."
   },
-  "plain_summary": "The single most underused treatment for arthritis in older dogs. Losing roughly 6–9% of body weight measurably reduces lameness on its own, before any drug is added — and unlike every drug here, the side effects are all good ones.",
-  "what_trials_show": "In a prospective clinical trial of 14 obese client-owned dogs with clinical and radiographic osteoarthritis, a restricted-calorie diet over 16 weeks with six follow-up visits produced a significant decrease in lameness from a body weight reduction of 6.10% onward, measured on numeric rating and visual analogue scales. Objective kinetic gait analysis confirmed the improvement from a body weight reduction of 8.85% onward — the important detail, because kinetic gait analysis cannot be influenced by an owner's hope that the diet is working. An earlier study of 9 dogs with radiographic hip osteoarthritis weighing 11–12% above ideal found significant improvement in lameness after 19 weeks, with dogs losing 11–18% of body weight. The dose-response pattern across both studies is what makes this credible: more weight off, less lameness.",
-  "harms": "Essentially none when done properly. The real risks are procedural: crash dieting risks muscle loss in a geriatric dog that needs its remaining muscle, and unexplained weight loss in an old dog must be distinguished from disease before it is celebrated. Weight loss should be deliberate, measured, and roughly 1–2% of body weight per week.",
+  "plain_summary": "The single most underused treatment for arthritis in older dogs. Losing roughly 6-9% of body weight measurably reduces lameness on its own, before any drug is added. And unlike every drug here, the side effects are all good ones.",
+  "what_trials_show": "In a prospective clinical trial of 14 obese client-owned dogs with clinical and radiographic osteoarthritis, a restricted-calorie diet over 16 weeks with six follow-up visits produced a significant decrease in lameness from a body weight reduction of 6.10% onward, measured on numeric rating and visual analogue scales. Objective kinetic gait analysis confirmed the improvement from a body weight reduction of 8.85% onward. That is the important detail, because kinetic gait analysis cannot be influenced by an owner's hope that the diet is working. An earlier study of 9 dogs with radiographic hip osteoarthritis weighing 11-12% above ideal found significant improvement in lameness after 19 weeks, with dogs losing 11-18% of body weight. The dose-response pattern across both studies is what makes this credible: more weight off, less lameness.",
+  "harms": "Essentially none when done properly. The real risks are procedural: crash dieting risks muscle loss in a geriatric dog that needs its remaining muscle, and unexplained weight loss in an old dog must be distinguished from disease before it is celebrated. Weight loss should be deliberate, measured, and roughly 1-2% of body weight per week.",
   "practical": {
     "route": "Measured calorie restriction, ideally with a therapeutic weight-loss diet so protein and micronutrients stay adequate",
-    "typical_course": "16–19 weeks in the published trials; benefit begins well before target weight is reached",
+    "typical_course": "16-19 weeks in the published trials; benefit begins well before target weight is reached",
     "monitoring": "Weigh on the same scale every 2 weeks, track body condition score and muscle condition score separately, and reassess lameness formally rather than by impression",
     "cost_signal": "low"
   },
@@ -51,9 +51,9 @@
       "blinding": "open-label",
       "control": "Within-subject baseline",
       "duration": "19 weeks",
-      "population": "Client-owned dogs with radiographic hip osteoarthritis, 11–12% above ideal body weight",
+      "population": "Client-owned dogs with radiographic hip osteoarthritis, 11-12% above ideal body weight",
       "primary_outcome": "Subjective lameness score",
-      "result": "Significant improvement in lameness after 19 weeks; dogs lost 11–18% of body weight.",
+      "result": "Significant improvement in lameness after 19 weeks; dogs lost 11-18% of body weight.",
       "funding": "See publication",
       "summary": "Very small and subjective, but directionally consistent with the later objective work.",
       "url": "https://www.researchgate.net/publication/12561078_Effect_of_weight_reduction_on_clinical_signs_of_lameness_in_dogs_with_hip_osteoarthritis"

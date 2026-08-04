@@ -1,13 +1,13 @@
 {
   "osteoarthritis": {
     "name": "Osteoarthritis and chronic joint pain",
-    "short": "Degenerative joint disease — the most common source of chronic pain in older dogs.",
+    "short": "Degenerative joint disease, the most common source of chronic pain in older dogs.",
     "description": "Osteoarthritis affects a large share of dogs over eight, and often shows up as reluctance on stairs, slowness to rise, or shortened walks rather than obvious limping. It is the best-studied condition in canine geriatric medicine, which means owners here have real randomized evidence to work from.",
     "measured_by": "Owner-reported instruments (Canine Brief Pain Inventory, Liverpool Osteoarthritis in Dogs, Canine Orthopaedic Index) and objective force-plate gait analysis (peak vertical force)."
   },
   "cognitive-dysfunction": {
     "name": "Canine cognitive dysfunction syndrome",
-    "short": "Age-related cognitive decline — the dog analogue of dementia.",
+    "short": "Age-related cognitive decline, the dog analogue of dementia.",
     "description": "Cognitive dysfunction syndrome presents as disorientation, altered social interaction, disrupted sleep, house-soiling in a previously trained dog, and reduced activity. It is under-diagnosed because owners often read the early signs as ordinary aging.",
     "measured_by": "Validated owner questionnaires (CADES, CCDR, DISHAA) and, in research settings, laboratory cognitive testing."
   },

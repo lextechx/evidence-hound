@@ -42,12 +42,12 @@ if (!reviews.length) {
 const latest = reviews.at(-1);
 const previous = reviews.at(-2);
 
-const fmt = (value) => (value === undefined || value === null || value === "" ? "—" : String(value));
+const fmt = (value) => (value === undefined || value === null || value === "" ? "not recorded" : String(value));
 
 /**
  * Direction of travel between the last two reviews, when both are numeric.
  * Whether a rising number is good or bad depends on the instrument, so each
- * domain declares it — activity minutes going up is progress, pain scores
+ * domain declares it. Activity minutes going up is progress, pain scores
  * going up is not.
  */
 function trend(domainId) {
@@ -60,10 +60,10 @@ function trend(domainId) {
   if (delta === 0) return { delta, worse: false, label: "unchanged" };
 
   const direction = domains.find((d) => d.id === domainId)?.direction ?? "neutral";
-  if (direction === "neutral") return { delta, worse: false, label: `${signed} — changed` };
+  if (direction === "neutral") return { delta, worse: false, label: `${signed}, changed` };
 
   const worse = direction === "higher_is_worse" ? delta > 0 : delta < 0;
-  return { delta, worse, label: `${signed} — ${worse ? "worse" : "better"}` };
+  return { delta, worse, label: `${signed}, ${worse ? "worse" : "better"}` };
 }
 
 const answered = domains.filter((d) => latest.domains?.[d.id]);
@@ -82,7 +82,7 @@ const moved = answered
 const dog = profile.dog ?? {};
 const lines = [];
 
-lines.push(`# Longevity monitoring report — ${fmt(dog.name)}`);
+lines.push(`# Longevity monitoring report for ${fmt(dog.name)}`);
 lines.push("");
 lines.push(
   `**Review date:** ${fmt(latest.date)}  `,
@@ -104,7 +104,7 @@ lines.push(`- **${answered.length} of ${domains.length}** domains assessed at th
 lines.push(`- **${flagged.length}** red flag${flagged.length === 1 ? "" : "s"} recorded`);
 lines.push(`- **${moved.length}** domain${moved.length === 1 ? "" : "s"} changed since the previous review`);
 if (missingCore.length) {
-  lines.push(`- **${missingCore.length}** core domain${missingCore.length === 1 ? "" : "s"} not assessed — see gaps below`);
+  lines.push(`- **${missingCore.length}** core domain${missingCore.length === 1 ? "" : "s"} not assessed, see gaps below`);
 }
 lines.push("");
 
@@ -114,7 +114,7 @@ if (flagged.length) {
   lines.push("These are the items the framework marks as warranting attention. Listed first because appointment time is short.");
   lines.push("");
   for (const { domain, flag } of flagged) {
-    lines.push(`- **${domain.name}** — ${flag}`);
+    lines.push(`- **${domain.name}.** ${flag}`);
   }
   lines.push("");
 }
@@ -165,7 +165,7 @@ if (missing.length) {
   lines.push("Domains with no entry. Listed explicitly so an unmeasured domain is never mistaken for a normal one.");
   lines.push("");
   for (const domain of missing) {
-    lines.push(`- **${domain.name}**${domain.priority === "core" ? " *(core)*" : ""} — ${domain.cadence}`);
+    lines.push(`- **${domain.name}**${domain.priority === "core" ? " *(core)*" : ""}. ${domain.cadence}`);
   }
   lines.push("");
 }
@@ -191,7 +191,7 @@ lines.push("");
 lines.push("## Questions for this appointment");
 lines.push("");
 const questions = [
-  ...flagged.map(({ domain, flag }) => `Regarding ${domain.name.toLowerCase()} — ${flag}. What should we do about this?`),
+  ...flagged.map(({ domain, flag }) => `On ${domain.name.toLowerCase()}: ${flag}. What should we do about this?`),
   ...moved
     .filter((row) => row.trend.worse)
     .map(({ domain }) => `${domain.name} has moved in the wrong direction since ${previous.date}. Is that expected?`),

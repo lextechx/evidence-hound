@@ -9,8 +9,8 @@ Full text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
 You may copy, redistribute, translate, and build on this material for any purpose, including commercially, provided that:
 
-- **Attribution** — you credit Evidence Hound and link back to the source repository
-- **ShareAlike** — if you remix or build on it, you distribute your version under the same license
+- **Attribution.** You credit Evidence Hound and link back to the source repository
+- **ShareAlike.** If you remix or build on it, you distribute your version under the same license
 
 ## Why ShareAlike
 
@@ -24,5 +24,5 @@ ShareAlike obligation.
 ## Citations and sources
 
 The cited studies themselves belong to their authors and publishers. This repository contains bibliographic references,
-summaries, and links — not reproductions of copyrighted articles. Summaries are our own descriptions of published
+summaries, and links, not reproductions of copyrighted articles. Summaries are our own descriptions of published
 findings.

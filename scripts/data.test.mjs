@@ -37,7 +37,7 @@ test("grade U interventions do not claim completed randomized evidence", () => {
   for (const item of data.interventions.filter((i) => i.tier === "U")) {
     assert.ok(
       !item.evidence.some((entry) => entry.type === "rct"),
-      `${item.id} is graded U (untested) but cites a completed RCT — regrade it`,
+      `${item.id} is graded U (untested) but cites a completed RCT, so regrade it`,
     );
   }
 });

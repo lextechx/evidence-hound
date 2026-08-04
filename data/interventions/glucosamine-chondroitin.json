@@ -6,14 +6,14 @@
   "category": "supplement",
   "conditions": ["osteoarthritis"],
   "tier": "D",
-  "tier_rationale": "This is not an absence of evidence — it is evidence of absence. A 2022 systematic review and meta-analysis of nutraceuticals in canine and feline osteoarthritis reported a marked non-effect for chondroitin-glucosamine products and explicitly recommended they no longer be recommended for pain management. A randomized trial using objective gait analysis found no significant improvement over placebo while carprofen and meloxicam arms in the same study did improve. Tier D is reserved for interventions where adequately conducted trials found no clinically meaningful benefit.",
+  "tier_rationale": "This is not an absence of evidence. It is evidence of absence. A 2022 systematic review and meta-analysis of nutraceuticals in canine and feline osteoarthritis reported a marked non-effect for chondroitin-glucosamine products and explicitly recommended they no longer be recommended for pain management. A randomized trial using objective gait analysis found no significant improvement over placebo while carprofen and meloxicam arms in the same study did improve. Tier D is reserved for interventions where adequately conducted trials found no clinically meaningful benefit.",
   "regulatory": {
     "us": "Sold as a supplement, not a drug. Not subject to pre-market efficacy review, and label content frequently fails to match actual content.",
     "notes": "Because these are supplements, no regulator has ever required them to demonstrate that they work."
   },
   "plain_summary": "The most commonly recommended joint supplement for dogs, and the one with the clearest evidence that it does not meaningfully reduce arthritis pain. Money spent here is better spent on weight loss, omega-3s, or proven pain control.",
-  "what_trials_show": "In a randomized controlled trial using objective kinetic gait analysis, measured variables improved significantly with carprofen and meloxicam but not with a glucosamine-chondroitin product and not with placebo — the supplement performed like placebo in the same study where real drugs separated from it. The 2022 systematic review and meta-analysis of enriched therapeutic diets and nutraceuticals found a weak effect for collagen and what the authors described as a very marked non-effect for chondroitin-glucosamine, concluding these products should no longer be recommended for pain management in canine and feline osteoarthritis. Earlier reviews had already characterized the evidence as limited and conflicting despite widespread veterinary recommendation.",
-  "harms": "Very safe — that is genuinely the strongest thing that can be said for it. Occasional gastrointestinal upset. The meaningful harm is opportunity cost and false reassurance: an owner who believes the arthritis is being treated may delay effective pain control, and a dog in untreated chronic pain is the actual cost of this supplement.",
+  "what_trials_show": "In a randomized controlled trial using objective kinetic gait analysis, measured variables improved significantly with carprofen and meloxicam but not with a glucosamine-chondroitin product and not with placebo. The supplement performed like placebo in the same study where real drugs separated from it. The 2022 systematic review and meta-analysis of enriched therapeutic diets and nutraceuticals found a weak effect for collagen and what the authors described as a very marked non-effect for chondroitin-glucosamine, concluding these products should no longer be recommended for pain management in canine and feline osteoarthritis. Earlier reviews had already characterized the evidence as limited and conflicting despite widespread veterinary recommendation.",
+  "harms": "Very safe, which is genuinely the strongest thing that can be said for it. Occasional gastrointestinal upset. The meaningful harm is opportunity cost and false reassurance: an owner who believes the arthritis is being treated may delay effective pain control, and a dog in untreated chronic pain is the actual cost of this supplement.",
   "practical": {
     "route": "Oral",
     "typical_course": "Commonly given indefinitely, often begun before any diagnosis is confirmed",
@@ -49,7 +49,7 @@
       "primary_outcome": "Objective kinetic gait variables",
       "result": "No significant improvement with the glucosamine-chondroitin product or placebo, while carprofen and meloxicam both improved significantly.",
       "funding": "See publication",
-      "summary": "A within-study demonstration that the trial was capable of detecting a real effect — it found one in the NSAID arms and not in this one.",
+      "summary": "A within-study demonstration that the trial was capable of detecting a real effect. It found one in the NSAID arms and not in this one.",
       "url": "https://avmajournals.avma.org/view/journals/javma/237/12/javma.237.12.1382.xml"
     },
     {

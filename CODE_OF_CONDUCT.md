@@ -18,8 +18,8 @@ literature, and owners who are frightened about a dog they love. Both belong her
 - **Assume good faith about motives.** Contributors who work in industry are welcome; disclosure is required, suspicion
   is not.
 
-Harassment, personal attacks, and demeaning comments about anyone — including about a person's dog, their finances, or
-the choices they made before they knew better — are not acceptable.
+Harassment, personal attacks, and demeaning comments are not acceptable. That includes remarks about a person's dog,
+their finances, or the choices they made before they knew better.
 
 ## Enforcement
 

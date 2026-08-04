@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you — this is the most valuable kind of contribution to this project. Be as blunt as you like.
+        Thank you. This is the most valuable kind of contribution to this project. Be as blunt as you like.
 
   - type: input
     id: intervention
@@ -44,7 +44,7 @@ body:
     attributes:
       label: Supporting citation
       description: |
-        The reference that establishes the correction — DOI, PubMed ID, or URL. This applies to negative claims too:
+        The reference that establishes the correction: DOI, PubMed ID, or URL. This applies to negative claims too:
         "there's no evidence for X" needs a systematic review saying so.
     validations:
       required: true

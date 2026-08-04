@@ -6,7 +6,7 @@
 
 <!--
 Citations supporting the change. Required for any factual claim, including negative ones.
-Note funding source for each trial — industry funding is disclosed, not disqualifying.
+Note the funding source for each trial. Industry funding is disclosed, not disqualifying.
 -->
 
 ## Checklist

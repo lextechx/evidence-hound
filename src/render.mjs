@@ -1,4 +1,4 @@
-/** HTML templates. Plain template literals — no framework, no runtime. */
+/** HTML templates. Plain template literals, no framework, no runtime. */
 
 export const TIERS = {
   A: {
@@ -76,7 +76,7 @@ ${page}
   <div class="wrap">
     <p class="disclaimer"><strong>This is not veterinary advice.</strong> Evidence Hound summarizes published research about
     dogs in general. It cannot know your dog. Every decision here belongs to you and your veterinarian, who can
-    examine the animal in front of them — something no website can do.</p>
+    examine the animal in front of them. No website can do that.</p>
     <p>Code is MIT licensed. Content and data are CC BY-SA 4.0. Corrections are welcome and expected:
     <a href="https://github.com/lextechx/evidence-hound/issues">open an issue</a> or send a pull request.</p>
   </div>
@@ -148,7 +148,7 @@ export function homePage(ctx) {
   return `<section class="hero">
   <h1>What actually works for aging dogs</h1>
   <p class="lede">Your dog is getting older and the internet is full of confident advice. This site ranks the
-  treatments by the quality of the randomized trial evidence behind them — including the popular ones that trials
+  treatments by the quality of the randomized trial evidence behind them, including the popular ones that trials
   show do not work.</p>
   <p><a class="button" href="${url(ctx, "/methods/")}">How the grading works</a>
   <a class="button button-secondary" href="${url(ctx, "/monitoring/")}">Track your own dog</a></p>
@@ -311,7 +311,7 @@ ${paragraphs(condition.description)}
 export function methodsPage(ctx) {
   return `<header class="hero">
   <h1>How we grade evidence</h1>
-  <p class="lede">The grade describes how confident we can be that an intervention works — not how new it is, how
+  <p class="lede">The grade describes how confident we can be that an intervention works. Not how new it is, how
   expensive it is, or how enthusiastically it is marketed.</p>
 </header>
 
@@ -346,7 +346,7 @@ export function methodsPage(ctx) {
 
 <section>
   <h2>Why grade D exists</h2>
-  <p>Most evidence resources quietly omit interventions that failed. That is a mistake — an owner spending money on a
+  <p>Most evidence resources quietly omit interventions that failed. That is a mistake. An owner spending money on a
   supplement every month deserves to know that the pooled analysis found no effect, and needs to hear it in the same
   place they research everything else. Grade D means trials were done and came back negative. It is a real finding and
   it is arguably the most useful information on this site.</p>
@@ -358,14 +358,14 @@ export function methodsPage(ctx) {
   wrong comorbidities, and a grade-C intervention may be exactly right when better options are contraindicated. The
   grade tells you how strong the general evidence is. Your veterinarian applies it to a specific animal.</p>
   <p>Regulatory approval and evidence grade are also different things. Approval reflects what a regulator accepted at a
-  point in time under a particular standard — and standards differ across decades and across approval pathways. Some
+  point in time under a particular standard, and standards differ across decades and across approval pathways. Some
   approved products here sit at grade C. That is not an error.</p>
 </section>
 
 <section>
   <h2>Review cadence</h2>
   <p>Every intervention carries a <code>last_reviewed</code> date. Entries older than twelve months are flagged for
-  re-review, because a page that was accurate in 2024 may not be now — the anti-NGF safety discussion is a live example.</p>
+  re-review, because a page that was accurate in 2024 may not be now. The anti-NGF safety discussion is a live example.</p>
 </section>`;
 }
 
@@ -389,7 +389,7 @@ export function aboutPage(ctx) {
   <h2>How it is built</h2>
   <p>Every claim lives in a JSON file under <code>data/interventions/</code> with its citations attached. A validator
   enforces the schema, and the site is generated from those files by a dependency-free Node script. There is no CMS, no
-  database, and no editorial back room — the content and the code are the same repository, and the published
+  database, and no editorial back room. The content and the code are the same repository, and the published
   <a href="${url(ctx, "/data.json")}">dataset</a> is a single file anyone can download and reuse under CC BY-SA 4.0.</p>
   <p>That structure is deliberate. It means a veterinarian who disagrees with a grade can open a pull request changing
   one field and stating why, and the disagreement becomes part of the public record instead of an argument in a comment
@@ -409,14 +409,14 @@ export function aboutPage(ctx) {
 
 <section>
   <h2>Contributing</h2>
-  <p>Corrections, new interventions, and challenges to existing grades are all welcome — particularly from veterinarians
+  <p>Corrections, new interventions, and challenges to existing grades are all welcome, particularly from veterinarians
   and researchers. See <a href="https://github.com/lextechx/evidence-hound/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.
   If you are citing a trial we have misread, that is the most valuable contribution you can make.</p>
 </section>`;
 }
 
 /**
- * Deliberately tiny markdown subset — headings, paragraphs, bold, italic,
+ * Deliberately tiny markdown subset: headings, paragraphs, bold, italic,
  * links. Enough for the story page, and not a reason to take a dependency.
  */
 function miniMarkdown(source) {
@@ -496,13 +496,13 @@ export function monitoringPage(ctx, monitoring) {
 
 <section>
   <h2>Generate a report for your vet</h2>
-  <p>Record each review in a JSON profile and the repository will produce a dated report — red flags first, then what
+  <p>Record each review in a JSON profile and the repository will produce a dated report. Red flags first, then what
   changed since last time, then the domains you did not assess, listed explicitly so an unmeasured domain is never
   mistaken for a normal one.</p>
   <pre class="code-block"><code>node scripts/report.mjs my-dog.json --out report.md</code></pre>
   <p>Start from
   <a href="https://github.com/lextechx/evidence-hound/blob/main/examples/dog-profile.example.json">the example profile</a>.
-  Your profile stays on your machine — nothing is uploaded anywhere.</p>
+  Your profile stays on your machine. Nothing is uploaded anywhere.</p>
 </section>
 
 <section>
@@ -525,7 +525,7 @@ export function monitoringPage(ctx, monitoring) {
   <h2>A note on what this framework is</h2>
   <p>It is a structured checklist assembled from established veterinary geriatric practice and the instruments used in
   the trials cited elsewhere on this site. Unlike the intervention pages, the framework as a whole has not itself been
-  tested in a randomized trial — no monitoring protocol for dogs has. The individual instruments it uses are validated;
+  tested in a randomized trial. No monitoring protocol for dogs has. The individual instruments it uses are validated;
   the specific combination and cadence are a reasonable synthesis, not a proven one. It is graded honestly here rather
   than dressed up as something stronger.</p>
 </section>`;

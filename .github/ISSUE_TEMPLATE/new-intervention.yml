@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Interventions you expect to grade badly are just as welcome as ones you expect to grade well — if owners are
+        Interventions you expect to grade badly are just as welcome as ones you expect to grade well. If owners are
         spending money on it, it belongs here with an honest grade.
 
   - type: input
@@ -38,7 +38,7 @@ body:
       label: The evidence you know of
       description: |
         List trials with citations. For each, note the design, how many dogs were analyzed, whether it was blinded,
-        what it was compared against, and who funded it. Incomplete lists are fine — say what you have.
+        what it was compared against, and who funded it. Incomplete lists are fine, so say what you have.
     validations:
       required: true
 
@@ -47,11 +47,11 @@ body:
     attributes:
       label: Grade you'd propose
       options:
-        - "A — strong evidence"
-        - "B — moderate evidence"
-        - "C — limited evidence"
-        - "U — untested in dogs"
-        - "D — evidence of little or no benefit"
+        - "A, strong evidence"
+        - "B, moderate evidence"
+        - "C, limited evidence"
+        - "U, untested in dogs"
+        - "D, evidence of little or no benefit"
         - Not sure
 
   - type: textarea

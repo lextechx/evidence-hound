@@ -6,18 +6,18 @@
   "category": "diet",
   "conditions": ["osteoarthritis", "mobility"],
   "tier": "B",
-  "tier_rationale": "Several independent randomized, double-blinded, controlled trials — including multicentre studies with over 100 dogs and one using objective force-plate weight-bearing as the endpoint — show consistent, modest benefit. It falls short of A because effect sizes are small relative to NSAIDs, several trials were manufacturer-funded, and the 2022 meta-analysis of nutraceuticals found the overall nutraceutical literature uneven even while treating omega-3s more favorably than most.",
+  "tier_rationale": "Several independent randomized, double-blinded, controlled trials, including multicentre studies with over 100 dogs and one using objective force-plate weight-bearing as the endpoint, show consistent, modest benefit. It falls short of A because effect sizes are small relative to NSAIDs, several trials were manufacturer-funded, and the 2022 meta-analysis of nutraceuticals found the overall nutraceutical literature uneven even while treating omega-3s more favorably than most.",
   "regulatory": {
     "us": "Sold as therapeutic diets and supplements; supplements are not held to drug-level manufacturing standards.",
     "notes": "Dose and EPA/DHA concentration vary enormously between products. A generic 'fish oil' capsule may deliver a fraction of the therapeutic-diet dose used in trials."
   },
-  "plain_summary": "One of the very few supplements with real randomized evidence behind it. Expect a modest improvement in mobility and, importantly, the possibility of getting the same pain control on a lower NSAID dose — not a replacement for pain medication.",
-  "what_trials_show": "In a randomized, double-blinded, controlled trial of 38 client-owned dogs, food containing 3.5% fish oil omega-3s improved mean peak vertical force — an objective force-plate measure of how much weight the dog is willing to put on the limb — by 5.6% between day 0 and day 90, versus 0.4% in the control group. A separate randomized, double-blinded, controlled trial across 18 veterinary clinics enrolled 127 client-owned dogs on a food with a 31-fold increase in total omega-3 content and a 34-fold reduction in the omega-6 to omega-3 ratio over six months. A third randomized, controlled, multisite trial at 33 veterinary hospitals with 131 client-owned dogs specifically examined whether omega-3 supplementation reduced the carprofen dose required — the most practically useful endpoint of the three, since NSAID dose reduction directly reduces long-term organ risk.",
+  "plain_summary": "One of the very few supplements with real randomized evidence behind it. Expect a modest improvement in mobility and, importantly, the possibility of getting the same pain control on a lower NSAID dose. It is not a replacement for pain medication.",
+  "what_trials_show": "In a randomized, double-blinded, controlled trial of 38 client-owned dogs, food containing 3.5% fish oil omega-3s improved mean peak vertical force by 5.6% between day 0 and day 90, versus 0.4% in the control group. Peak vertical force is an objective force-plate measure of how much weight the dog is willing to put on the limb. A separate randomized, double-blinded, controlled trial across 18 veterinary clinics enrolled 127 client-owned dogs on a food with a 31-fold increase in total omega-3 content and a 34-fold reduction in the omega-6 to omega-3 ratio over six months. A third randomized, controlled, multisite trial at 33 veterinary hospitals with 131 client-owned dogs specifically examined whether omega-3 supplementation reduced the carprofen dose required. That is the most practically useful endpoint of the three, since NSAID dose reduction directly reduces long-term organ risk.",
   "harms": "Well tolerated at typical doses. High doses can cause loose stool, fishy odor, and in theory altered platelet function, which matters if surgery is planned. Oil quality and rancidity are genuine concerns in unregulated supplements. Cod liver oil is a poor choice as a high-dose source because of vitamin A and D content.",
   "practical": {
     "route": "Therapeutic diet or oil/capsule supplement",
     "typical_course": "Ongoing; trials measured benefit at 90 days and beyond, so judge it at three months, not three weeks",
-    "monitoring": "Body condition score — these are calorie-dense; tell your surgeon before any procedure",
+    "monitoring": "Body condition score, since these are calorie-dense; tell your surgeon before any procedure",
     "cost_signal": "moderate"
   },
   "ask_your_vet": [
@@ -39,7 +39,7 @@
       "primary_outcome": "Peak vertical force on force-plate gait analysis",
       "result": "Mean peak vertical force improved 5.6% in the test-food group versus 0.4% in controls between days 0 and 90; significant for the test group only.",
       "funding": "Hill's Pet Nutrition",
-      "summary": "The most persuasive entry because the endpoint is objective. Manufacturer-funded, and the effect is modest — but it is measured, not reported by hopeful owners.",
+      "summary": "The most persuasive entry because the endpoint is objective. Manufacturer-funded, and the effect is modest. But it is measured, not reported by hopeful owners.",
       "url": "https://avmajournals.avma.org/view/journals/javma/236/1/javma.236.1.67.xml"
     },
     {
@@ -71,7 +71,7 @@
       "primary_outcome": "Owner- and veterinarian-assessed osteoarthritis signs",
       "result": "Test food with a 31-fold higher total omega-3 content and 34-fold lower omega-6:omega-3 ratio was assessed over six months.",
       "funding": "Industry-supported",
-      "summary": "Longer follow-up than most canine osteoarthritis trials, which typically stop at 28–90 days.",
+      "summary": "Longer follow-up than most canine osteoarthritis trials, which typically stop at 28-90 days.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/20043800/"
     },
     {

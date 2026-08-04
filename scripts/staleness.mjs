@@ -26,7 +26,7 @@ if (!stale.length) {
 
 console.warn(`\n${stale.length} entr${stale.length === 1 ? "y needs" : "ies need"} re-review:\n`);
 for (const item of stale) {
-  console.warn(`  ⚠ ${item.id} — last reviewed ${item.days} days ago`);
+  console.warn(`  ⚠ ${item.id}: last reviewed ${item.days} days ago`);
 }
 console.warn("\nRe-check the sources, then update last_reviewed.\n");
 process.exit(1);

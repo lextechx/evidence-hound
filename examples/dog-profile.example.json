@@ -1,5 +1,5 @@
 {
-  "$comment": "Example profile for scripts/report.mjs. Copy this, replace with your own dog, and keep it out of the repo if you'd rather not publish it. Scores are whatever your chosen instrument produces — keep the instrument consistent across reviews so the trend means something.",
+  "$comment": "Example profile for scripts/report.mjs. Copy this, replace with your own dog, and keep it out of the repo if you'd rather not publish it. Scores are whatever your chosen instrument produces. Keep the instrument consistent across reviews so the trend means something.",
   "dog": {
     "name": "Juno",
     "breed": "Labrador Retriever",
@@ -25,7 +25,7 @@
       "name": "Glucosamine/chondroitin chew",
       "dose": "1 chew daily",
       "started": "2022-06-01",
-      "reason": "Started before diagnosis — discuss whether to stop"
+      "reason": "Started before diagnosis, discuss whether to stop"
     }
   ],
   "questions": [
@@ -70,19 +70,19 @@
           "score": 4,
           "instrument": "CADES",
           "notes": "More night waking than February; twice found standing in the hallway at night.",
-          "flags": ["Increased night waking and reversed sleep pattern — rule out pain and sensory loss before attributing to cognition"]
+          "flags": ["Increased night waking and reversed sleep pattern. Rule out pain and sensory loss before attributing to cognition"]
         },
         "thirst-urination": {
           "value": "2600 ml/24h",
           "score": 87,
           "measured": "87.2 ml/kg/day",
           "notes": "Up substantially since February. Weather was warm during the measurement week.",
-          "flags": ["Water intake rising toward the 100 ml/kg/day threshold — repeat measurement and check urine specific gravity"]
+          "flags": ["Water intake rising toward the 100 ml/kg/day threshold. Repeat measurement and check urine specific gravity"]
         },
         "bloodwork": {
           "value": "Creatinine 1.4, SDMA 15, USG 1.019",
           "notes": "All still within reference range but all three have moved in the same direction since February, while on an NSAID.",
-          "flags": ["Creatinine and SDMA rising and USG falling on long-term carprofen — discuss recheck interval and dose"]
+          "flags": ["Creatinine and SDMA rising and USG falling on long-term carprofen. Discuss recheck interval and dose"]
         },
         "cardiorespiratory": { "score": 22, "instrument": "Sleeping respiratory rate", "notes": "Stable, no cough." },
         "oral-health": { "score": 1, "notes": "Dental performed in April; much improved." },

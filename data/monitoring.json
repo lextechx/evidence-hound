@@ -4,7 +4,7 @@
     "version": "0.1.0",
     "premise": "Most decline in aging dogs is caught late because nobody was measuring. A twice-yearly structured review across a fixed set of domains catches trends while they are still reversible, and turns a vague 'she's slowing down' into a dated number a veterinarian can act on.",
     "cadence_default": "Every 6 months from age 7 (or from age 5 for giant breeds), and every 3 months from age 11 or after any new diagnosis.",
-    "how_to_use": "Score every domain at each review, even the ones that seem fine — the value is in the trend, not the snapshot. A domain that moves two levels between reviews matters more than a domain that has been mildly abnormal for years."
+    "how_to_use": "Score every domain at each review, even the ones that seem fine. The value is in the trend, not the snapshot. A domain that moves two levels between reviews matters more than a domain that has been mildly abnormal for years."
   },
   "domains": [
     {
@@ -34,7 +34,7 @@
       "direction": "higher_is_worse",
       "why": "Osteoarthritis is the most common source of chronic pain in older dogs and the best-studied condition in canine geriatric medicine. Owners consistently under-report it because they read it as ordinary aging rather than pain.",
       "measure": "A validated owner questionnaire scored the same way each time, plus three concrete observations: time to rise from lying, willingness to use stairs, and longest comfortable walk.",
-      "instrument": "Canine Brief Pain Inventory (CBPI), LOAD, or Canine Orthopaedic Index — pick one and stay with it",
+      "instrument": "Canine Brief Pain Inventory (CBPI), LOAD, or Canine Orthopaedic Index. Pick one and stay with it",
       "cadence": "Every review; every 4 weeks when starting or changing a pain medication",
       "target": "Stable or improving score; any pain treatment should produce a measurable change or be reconsidered",
       "red_flags": [
@@ -77,7 +77,7 @@
       "name": "Thirst, urination, and appetite",
       "priority": "core",
       "direction": "higher_is_worse",
-      "why": "Increased drinking and urination is the earliest owner-detectable sign of kidney disease, diabetes, and Cushing's — three conditions where early detection changes the outcome substantially.",
+      "why": "Increased drinking and urination is the earliest owner-detectable sign of kidney disease, diabetes, and Cushing's, three conditions where early detection changes the outcome substantially.",
       "measure": "Measured water intake in ml over 24 hours (not estimated), overnight accidents, and appetite change.",
       "instrument": "Household measuring jug; normal intake is roughly under 100 ml/kg/day and most healthy dogs drink well below that",
       "cadence": "A measured 24-hour water intake before each review, and any time you suspect a change",
@@ -96,7 +96,7 @@
       "direction": "neutral",
       "why": "Every drug on this site that works long-term is limited by organ tolerance rather than by efficacy. NSAID use in particular requires a baseline and repeat monitoring, and kidney disease is usually well advanced before it is visible from the outside.",
       "measure": "Complete blood count, serum chemistry, urinalysis with urine specific gravity, and SDMA. Thyroid testing where signs suggest it.",
-      "instrument": "Veterinary laboratory panel — keep copies of every result so trends are visible across years",
+      "instrument": "Veterinary laboratory panel. Keep copies of every result so trends are visible across years",
       "cadence": "Annually as a baseline from age 7; every 6 months from age 11; within 2-4 weeks of starting an NSAID and every 3-6 months while on one",
       "target": "Values stable within reference range; a value drifting within the normal range still matters",
       "red_flags": [
@@ -115,13 +115,13 @@
       "priority": "core",
       "direction": "higher_is_worse",
       "why": "Resting respiratory rate is the single most useful number an owner can collect at home, and a rise above 30 breaths per minute while sleeping is an early, actionable sign of congestive heart failure.",
-      "measure": "Sleeping respiratory rate — count chest rises for 30 seconds while the dog is asleep and double it. Note any cough, exercise intolerance, or fainting.",
+      "measure": "Sleeping respiratory rate. Count chest rises for 30 seconds while the dog is asleep and double it. Note any cough, exercise intolerance, or fainting.",
       "instrument": "A phone timer, recorded weekly in a log",
       "cadence": "Weekly at home for any dog with a known murmur; monthly otherwise",
       "target": "Under 30 breaths per minute while sleeping",
       "red_flags": [
         "Sleeping respiratory rate consistently above 30",
-        "Any collapse or fainting episode — same-day veterinary attention",
+        "Any collapse or fainting episode, which needs same-day veterinary attention",
         "Cough that worsens at night, or reduced exercise tolerance"
       ],
       "links": []
@@ -163,13 +163,13 @@
       "name": "Vision and hearing",
       "priority": "supporting",
       "direction": "higher_is_worse",
-      "why": "Sensory loss mimics cognitive dysfunction almost exactly — a dog that ignores you may be deaf rather than demented, and the management is completely different. This must be excluded before a dementia diagnosis is accepted.",
+      "why": "Sensory loss mimics cognitive dysfunction almost exactly. A dog that ignores you may be deaf rather than demented, and the management is completely different. This must be excluded before a dementia diagnosis is accepted.",
       "measure": "Response to hand signals versus voice, navigation in dim light, startle response when approached from behind, bumping into furniture in unfamiliar places.",
       "instrument": "Structured observation; veterinary ophthalmic exam where change is suspected",
       "cadence": "Every review",
       "red_flags": [
         "Bumping into things, especially in low light",
-        "Cloudiness of the lens, or a visibly enlarged or reddened eye — the latter is urgent",
+        "Cloudiness of the lens, or a visibly enlarged or reddened eye, which is urgent",
         "Not responding to a name that used to work reliably"
       ],
       "links": [
@@ -182,7 +182,7 @@
       "name": "Medication and supplement review",
       "priority": "core",
       "direction": "neutral",
-      "why": "Geriatric dogs accumulate medications, and the interaction risks are real — selegiline with serotonergic drugs, NSAIDs with steroids or with a second NSAID. Reviews are also the moment to drop supplements that trials show do not work.",
+      "why": "Geriatric dogs accumulate medications, and the interaction risks are real: selegiline with serotonergic drugs, NSAIDs with steroids or with a second NSAID. Reviews are also the moment to drop supplements that trials show do not work.",
       "measure": "A complete list of everything given, including supplements, chews, and over-the-counter products, with dose and reason.",
       "instrument": "Written medication list brought to every visit",
       "cadence": "Every review, and any time something is added",
@@ -203,7 +203,7 @@
       "priority": "core",
       "direction": "higher_is_better",
       "why": "The hardest decisions get made in crisis, at night, without a reference point. Scoring quality of life while the dog is doing well creates a baseline and forces the conversation to happen before it is urgent.",
-      "measure": "Score hurt, hunger, hydration, hygiene, happiness, mobility, and whether good days outnumber bad — each 0 to 10.",
+      "measure": "Score hurt, hunger, hydration, hygiene, happiness, mobility, and whether good days outnumber bad, each scored 0 to 10.",
       "instrument": "HHHHHMM quality of life scale (Villalobos)",
       "cadence": "Every review; weekly in advanced disease or on hospice care",
       "target": "A total consistently above 35 of 70 is generally considered acceptable quality of life, but the trend and the owner's own read matter more than the threshold",

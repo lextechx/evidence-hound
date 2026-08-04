@@ -6,17 +6,17 @@
   "category": "neuro",
   "conditions": ["cognitive-dysfunction"],
   "tier": "C",
-  "tier_rationale": "Selegiline is the only FDA-approved drug for canine cognitive dysfunction and is the pharmaceutical most often reached for in practice, but the controlled trial base is older, smaller, and less rigorously reported than the modern MCT diet trial. Reported benefits — improved sleep, house-training, and activity — come from trials that predate current validated cognitive scoring instruments. C reflects limited rather than absent evidence, not a judgment that it fails.",
+  "tier_rationale": "Selegiline is the only FDA-approved drug for canine cognitive dysfunction and is the pharmaceutical most often reached for in practice, but the controlled trial base is older, smaller, and less rigorously reported than the modern MCT diet trial. The reported benefits of improved sleep, house-training, and activity come from trials that predate current validated cognitive scoring instruments. C reflects limited rather than absent evidence, not a judgment that it fails.",
   "regulatory": {
-    "us": "FDA-approved for canine cognitive dysfunction syndrome — the only drug with that indication.",
+    "us": "FDA-approved for canine cognitive dysfunction syndrome, the only drug with that indication.",
     "notes": "Regulatory approval here reflects an older evidentiary era. Approval status and evidence strength are not the same thing, in either direction."
   },
   "plain_summary": "The only approved drug for canine dementia. Worth trying, particularly for disrupted sleep and lost house-training, but set expectations modestly and pair it with a diet change and enrichment rather than relying on it alone.",
-  "what_trials_show": "Clinical trials supporting approval showed improvement in sleeping, house-training, and activity in treated dogs. A 2025 survey of US practice found that when clinicians manage cognitive dysfunction pharmacologically, selegiline is the drug most often recommended — reflecting its unique approval status as much as its measured effect size. The trials underpinning it are not directly comparable to the modern multi-site randomized dietary work, because they used earlier outcome measures and smaller samples; anyone claiming a clean head-to-head between selegiline and an MCT diet is overstating what exists.",
-  "harms": "Generally well tolerated. Vomiting, diarrhea, restlessness, and agitation occur. The important issue is drug interactions: as a monoamine oxidase inhibitor, selegiline must not be combined with other MAO inhibitors including amitraz, and combination with certain antidepressants, opioids such as tramadol, or serotonergic drugs risks serotonin syndrome. Review the entire medication list — geriatric dogs are frequently on several drugs at once.",
+  "what_trials_show": "Clinical trials supporting approval showed improvement in sleeping, house-training, and activity in treated dogs. A 2025 survey of US practice found that when clinicians manage cognitive dysfunction pharmacologically, selegiline is the drug most often recommended, reflecting its unique approval status as much as its measured effect size. The trials underpinning it are not directly comparable to the modern multi-site randomized dietary work, because they used earlier outcome measures and smaller samples; anyone claiming a clean head-to-head between selegiline and an MCT diet is overstating what exists.",
+  "harms": "Generally well tolerated. Vomiting, diarrhea, restlessness, and agitation occur. The important issue is drug interactions: as a monoamine oxidase inhibitor, selegiline must not be combined with other MAO inhibitors including amitraz, and combination with certain antidepressants, opioids such as tramadol, or serotonergic drugs risks serotonin syndrome. Review the entire medication list, because geriatric dogs are frequently on several drugs at once.",
   "practical": {
     "route": "Oral, once daily in the morning",
-    "typical_course": "A trial of 4–8 weeks is reasonable before judging response; some dogs need up to 2 months",
+    "typical_course": "A trial of 4-8 weeks is reasonable before judging response; some dogs need up to 2 months",
     "monitoring": "Score cognition with a validated instrument at baseline and at follow-up; review all concurrent medications for serotonergic interactions before starting",
     "cost_signal": "moderate"
   },

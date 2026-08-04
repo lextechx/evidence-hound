@@ -1,6 +1,6 @@
 # Evidence Hound 🐕
 
-**What actually works for aging dogs — graded by the strength of the randomized trial evidence behind it.**
+**What actually works for aging dogs, graded by the strength of the randomized trial evidence behind it.**
 
 Owners of aging dogs make real medical decisions under time pressure, usually by searching the internet between vet
 visits. What they find is dominated by supplement marketing and forum anecdote, where a manufacturer's press release and
@@ -11,7 +11,7 @@ This project puts that evidence in one place, states plainly how strong it is, a
 
 - Every claim lives in a JSON file with its citations attached
 - Every intervention gets a grade from **A** (strong) to **D** (evidence of little or no benefit)
-- Interventions that *failed* their trials stay visible — grade D exists on purpose
+- Interventions that *failed* their trials stay visible, because grade D exists on purpose
 - Industry funding is disclosed on every study, and sponsor-funded results without independent replication cap at B
 - Code is MIT, content is CC BY-SA 4.0, and the full dataset publishes as a single `data.json`
 
@@ -42,9 +42,9 @@ for dogs, and the 2022 systematic review and meta-analysis found a marked non-ef
 ## The monitoring framework
 
 The interventions answer "what works." The [monitoring framework](data/monitoring.json) answers "how do I track my own
-dog." It's twelve domains — body condition, mobility and pain, cognition, thirst and urination, bloodwork,
-cardiorespiratory, oral health, masses, senses, medication review, quality of life, and activity — each with what to
-measure, which validated instrument to use, how often, and what should trigger a call to the vet.
+dog." It's twelve domains: body condition, mobility and pain, cognition, thirst and urination, bloodwork,
+cardiorespiratory, oral health, masses, senses, medication review, quality of life, and activity. Each one carries what
+to measure, which validated instrument to use, how often, and what should trigger a call to the vet.
 
 Record reviews in a JSON profile and generate a dated report to hand to your veterinarian:
 
@@ -52,9 +52,9 @@ Record reviews in a JSON profile and generate a dated report to hand to your vet
 node scripts/report.mjs examples/dog-profile.example.json --out report.md
 ```
 
-The report leads with red flags, then what changed since the last review, then — importantly — the domains you *didn't*
-assess, listed explicitly so an unmeasured domain is never mistaken for a normal one. It closes with a generated list of
-questions for the appointment. Profiles stay on your machine; nothing is uploaded.
+The report leads with red flags, then what changed since the last review, then the domains you *didn't* assess. That
+last section matters: it is listed explicitly so an unmeasured domain is never mistaken for a normal one. The report
+closes with a generated list of questions for the appointment. Profiles stay on your machine; nothing is uploaded.
 
 Each domain declares whether a rising number is good or bad, so trends read correctly whether the instrument is a pain
 score (up is worse) or weekly walk minutes (up is better).
@@ -84,7 +84,7 @@ Then open http://localhost:4173.
 ```
 data/
   conditions.json              the four condition definitions
-  interventions/*.json         one file per intervention — this is the actual content
+  interventions/*.json         one file per intervention, the actual content
   schema/intervention.schema.json
 scripts/
   schema.mjs                   ~90-line JSON Schema validator, no dependencies
@@ -103,7 +103,7 @@ dependency-free Node script, and the content and the code are the same repositor
 That structure is deliberate: a veterinarian who disagrees with a grade can open a pull request changing one field and
 stating why, and the disagreement becomes part of the public record instead of an argument in a comment section.
 
-Some tests enforce editorial rules rather than code correctness — for example, a grade U ("untested") entry that cites a
+Some tests enforce editorial rules rather than code correctness. For example, a grade U ("untested") entry that cites a
 completed randomized trial fails the build, because it should have been regraded.
 
 ## Contributing
@@ -114,13 +114,13 @@ researchers. If we have misread a trial, that's the most valuable contribution y
 
 ## Licenses
 
-- **Code** — [MIT](LICENSE)
-- **Content and data** — [CC BY-SA 4.0](LICENSE-CONTENT.md), so it can be reused and translated as long as it stays open
+- **Code.** [MIT](LICENSE)
+- **Content and data.** [CC BY-SA 4.0](LICENSE-CONTENT.md), so it can be reused and translated as long as it stays open
 
 ## What this project will not do
 
 - Tell you what to give your dog
-- Take affiliate revenue or product sponsorship — a site that earns money per supplement click cannot be trusted to
-  grade supplements
+- Take affiliate revenue or product sponsorship, because a site that earns money per supplement click cannot be trusted
+  to grade supplements
 - Hide negative findings
 - Treat regulatory approval as proof of effectiveness, or its absence as proof of uselessness
