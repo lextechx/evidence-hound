@@ -6,7 +6,7 @@
  * pipeline, no lock file to audit. `node src/build.mjs` is the whole thing.
  */
 
-import { mkdir, writeFile, readFile, rm, copyFile } from "node:fs/promises";
+import { mkdir, writeFile, readFile, rm, copyFile, access } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { loadData, collectErrors } from "../scripts/validate.mjs";
@@ -89,13 +89,32 @@ async function build() {
       page: monitoringPage(ctx, data.monitoring),
     }),
   );
+  // Photos are optional. A missing or empty manifest simply renders no gallery.
+  const photos = await readFile(join(root, "content", "photos.json"), "utf8")
+    .then((raw) => JSON.parse(raw).photos ?? [])
+    .catch(() => []);
+
+  // Copy only what the manifest names, so notes and stray files in the source
+  // folder never get published.
+  if (photos.length) {
+    await mkdir(join(dist, "photos"), { recursive: true });
+    for (const photo of photos) {
+      const from = join(root, "assets", "photos", photo.file);
+      if (!(await access(from).then(() => true).catch(() => false))) {
+        console.error(`  \u2717 photos.json lists "${photo.file}" but assets/photos/${photo.file} is missing`);
+        process.exit(1);
+      }
+      await copyFile(from, join(dist, "photos", photo.file));
+    }
+  }
+
   const story = await readFile(join(root, "content", "story.md"), "utf8");
   await writePage(
     "story/index.html",
     layout(ctx, {
       title: "Why this exists",
       description: "The dog this project is named for, and the signals I did not know how to read.",
-      page: storyPage(ctx, story),
+      page: storyPage(ctx, story, photos),
     }),
   );
 

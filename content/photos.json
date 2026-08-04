@@ -1,0 +1,4 @@
+{
+  "$comment": "Photos for the story page. Drop image files into assets/photos/ and add an entry here. Alt text is required: it is what a blind reader gets, and what everyone gets when the image fails to load. Caption is optional and shown under the image.",
+  "photos": []
+}

@@ -465,9 +465,31 @@ function miniMarkdown(source) {
     .join("\n");
 }
 
-export function storyPage(ctx, source) {
+export function storyPage(ctx, source, photos = []) {
+  const gallery = photos.length
+    ? `<figure class="gallery">
+  <div class="gallery-grid">
+    ${photos
+      .map(
+        (photo) =>
+          `<img src="${url(ctx, `/photos/${esc(photo.file)}`)}" alt="${esc(photo.alt)}" loading="lazy" decoding="async">`,
+      )
+      .join("\n    ")}
+  </div>
+  ${
+    photos.some((p) => p.caption)
+      ? `<figcaption>${photos
+          .map((p) => esc(p.caption))
+          .filter(Boolean)
+          .join(" · ")}</figcaption>`
+      : ""
+  }
+</figure>`
+    : "";
+
   return `<article class="story">
 ${miniMarkdown(source)}
+${gallery}
 
 <p class="story-end"><a class="button" href="${url(ctx, "/monitoring/")}">The monitoring framework</a>
 <a class="button button-secondary" href="${url(ctx, "/")}">What the evidence says</a></p>
