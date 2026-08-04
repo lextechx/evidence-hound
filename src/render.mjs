@@ -27,6 +27,16 @@ export const TIERS = {
   },
 };
 
+const MARK = `<svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+  <path d="M9 5 L18 19 L9.5 21 Z" fill="var(--ink)"/>
+  <path d="M39 5 L30 19 L38.5 21 Z" fill="var(--ink)"/>
+  <path d="M24 9 C33 9 37.5 16.5 37.5 25 C37.5 35 31.5 42 24 42 C16.5 42 10.5 35 10.5 25 C10.5 16.5 15 9 24 9 Z" fill="var(--ink)"/>
+  <path d="M24 12 C26.6 19 26.6 31 24 41 C21.4 31 21.4 19 24 12 Z" fill="var(--paper)"/>
+  <circle cx="17.4" cy="24" r="2.6" fill="#4aa8dd"/>
+  <circle cx="30.6" cy="24" r="2.6" fill="#e0a63f"/>
+  <path d="M24 32.5 L27 35.6 L24 38.6 L21 35.6 Z" fill="var(--paper)"/>
+</svg>`;
+
 const esc = (value) =>
   String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -37,9 +47,9 @@ const esc = (value) =>
 const url = (ctx, path) => `${ctx.base}${path}`;
 
 const tierBadge = (tier) =>
-  `<span class="tier tier-${esc(tier)}" title="${esc(TIERS[tier].blurb)}"><b>${esc(tier)}</b> ${esc(
-    TIERS[tier].label,
-  )}</span>`;
+  `<span class="tier tier-${esc(tier)}" title="${esc(TIERS[tier].blurb)}"><b data-grade="${esc(
+    tier,
+  )}"></b>${esc(TIERS[tier].label)}</span>`;
 
 export function layout(ctx, { title, description, page }) {
   const fullTitle = title ? `${esc(title)} · Evidence Hound` : "Evidence Hound · What actually works for aging dogs";
@@ -59,7 +69,7 @@ export function layout(ctx, { title, description, page }) {
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="${url(ctx, "/")}"><span aria-hidden="true">🐺</span> Evidence&nbsp;Hound</a>
+    <a class="brand" href="${url(ctx, "/")}">${MARK} Evidence&nbsp;Hound</a>
     <nav aria-label="Main">
       <a href="${url(ctx, "/story/")}">Why this exists</a>
       <a href="${url(ctx, "/monitoring/")}">Monitoring</a>
@@ -137,7 +147,10 @@ export function homePage(ctx) {
       const items = ctx.interventions.filter((i) => i.conditions.includes(id));
       if (!items.length) return "";
       return `<section class="condition-block">
-  <h2><a href="${url(ctx, `/conditions/${id}/`)}">${esc(condition.name)}</a></h2>
+  <div class="section-head">
+    <h2><a href="${url(ctx, `/conditions/${id}/`)}">${esc(condition.name)}</a></h2>
+    <span class="section-count">${items.length} intervention${items.length === 1 ? "" : "s"}</span>
+  </div>
   <p class="lede">${esc(condition.short)}</p>
   <ul class="cards">
     ${items.map((item) => interventionCard(ctx, item)).join("\n    ")}
@@ -146,7 +159,12 @@ export function homePage(ctx) {
     })
     .join("\n");
 
+  const graded = ctx.interventions.length;
+  const trials = ctx.interventions.reduce((sum, i) => sum + i.evidence.length, 0);
+  const negative = ctx.interventions.filter((i) => i.tier === "D").length;
+
   return `<section class="hero">
+  <p class="eyebrow">Evidence-graded veterinary reference</p>
   <h1>What actually works for aging dogs</h1>
   <p class="lede">Your dog is getting older and the internet is full of confident advice. This site ranks the
   treatments by the quality of the randomized trial evidence behind them, including the popular ones that trials
@@ -154,6 +172,13 @@ export function homePage(ctx) {
   <p><a class="button" href="${url(ctx, "/methods/")}">How the grading works</a>
   <a class="button button-secondary" href="${url(ctx, "/monitoring/")}">Track your own dog</a></p>
 </section>
+
+<dl class="figures">
+  <div><dt>Interventions graded</dt><dd>${graded}<span class="figure-note">Across four conditions of aging</span></dd></div>
+  <div><dt>Studies cited</dt><dd>${trials}<span class="figure-note">Every one linked, with its funder named</span></dd></div>
+  <div><dt>Found not to work</dt><dd>${negative}<span class="figure-note">Kept visible rather than quietly dropped</span></dd></div>
+  <div><dt>Cost to read</dt><dd>Free<span class="figure-note">No ads, no affiliate links, no sponsorship</span></dd></div>
+</dl>
 
 <section class="legend">
   <h2>The grades</h2>
