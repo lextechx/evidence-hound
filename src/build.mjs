@@ -6,7 +6,7 @@
  * pipeline, no lock file to audit — `node src/build.mjs` is the whole thing.
  */
 
-import { mkdir, writeFile, rm, copyFile } from "node:fs/promises";
+import { mkdir, writeFile, readFile, rm, copyFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { loadData, collectErrors } from "../scripts/validate.mjs";
@@ -17,6 +17,7 @@ import {
   conditionPage,
   methodsPage,
   monitoringPage,
+  storyPage,
   aboutPage,
   notFoundPage,
 } from "./render.mjs";
@@ -86,6 +87,16 @@ async function build() {
       page: monitoringPage(ctx, data.monitoring),
     }),
   );
+  const story = await readFile(join(root, "content", "story.md"), "utf8");
+  await writePage(
+    "story/index.html",
+    layout(ctx, {
+      title: "Why this exists",
+      description: "The dog this project is named for, and the signals I did not know how to read.",
+      page: storyPage(ctx, story),
+    }),
+  );
+
   await writePage("about/index.html", layout(ctx, { title: "About", page: aboutPage(ctx) }));
   await writePage("404.html", layout(ctx, { title: "Not found", page: notFoundPage(ctx) }));
 

@@ -490,6 +490,30 @@ dd {
   margin-left: 0.5rem;
 }
 
+/* Story */
+
+.story {
+  max-width: var(--measure);
+}
+
+.story h2 {
+  margin-top: 2.4rem;
+}
+
+.story h2:first-child {
+  margin-top: 0;
+}
+
+.story p {
+  font-size: 1.05rem;
+}
+
+.story-end {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
 /* Monitoring framework */
 
 .domains {

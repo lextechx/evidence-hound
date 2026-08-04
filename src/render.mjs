@@ -61,6 +61,7 @@ export function layout(ctx, { title, description, page }) {
   <div class="wrap">
     <a class="brand" href="${url(ctx, "/")}"><span aria-hidden="true">🐕</span> Evidence&nbsp;Hound</a>
     <nav aria-label="Main">
+      <a href="${url(ctx, "/story/")}">Why this exists</a>
       <a href="${url(ctx, "/monitoring/")}">Monitoring</a>
       <a href="${url(ctx, "/methods/")}">How we grade</a>
       <a href="${url(ctx, "/about/")}">About</a>
@@ -412,6 +413,38 @@ export function aboutPage(ctx) {
   and researchers. See <a href="https://github.com/lextechx/evidence-hound/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.
   If you are citing a trial we have misread, that is the most valuable contribution you can make.</p>
 </section>`;
+}
+
+/**
+ * Deliberately tiny markdown subset — headings, paragraphs, bold, italic,
+ * links. Enough for the story page, and not a reason to take a dependency.
+ */
+function miniMarkdown(source) {
+  const inline = (text) =>
+    esc(text)
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+      .replace(/(^|[^*])\*([^*]+)\*/g, "$1<em>$2</em>");
+
+  return source
+    .trim()
+    .split(/\n{2,}/)
+    .map((block) => {
+      const trimmed = block.trim();
+      if (trimmed.startsWith("## ")) return `<h2>${inline(trimmed.slice(3))}</h2>`;
+      if (trimmed.startsWith("# ")) return `<h1>${inline(trimmed.slice(2))}</h1>`;
+      return `<p>${inline(trimmed)}</p>`;
+    })
+    .join("\n");
+}
+
+export function storyPage(ctx, source) {
+  return `<article class="story">
+${miniMarkdown(source)}
+
+<p class="story-end"><a class="button" href="${url(ctx, "/monitoring/")}">The monitoring framework</a>
+<a class="button button-secondary" href="${url(ctx, "/")}">What the evidence says</a></p>
+</article>`;
 }
 
 export function monitoringPage(ctx, monitoring) {
