@@ -1,10 +1,19 @@
 {
   "id": "glucosamine-chondroitin",
   "name": "Glucosamine and chondroitin sulfate",
-  "brand_names": ["Cosequin", "Dasuquin", "and many others"],
-  "aliases": ["joint supplements", "chondroprotectants"],
+  "brand_names": [
+    "Cosequin",
+    "Dasuquin",
+    "and many others"
+  ],
+  "aliases": [
+    "joint supplements",
+    "chondroprotectants"
+  ],
   "category": "supplement",
-  "conditions": ["osteoarthritis"],
+  "conditions": [
+    "osteoarthritis"
+  ],
   "tier": "D",
   "tier_rationale": "This is not an absence of evidence. It is evidence of absence. A 2022 systematic review and meta-analysis of nutraceuticals in canine and feline osteoarthritis reported a marked non-effect for chondroitin-glucosamine products and explicitly recommended they no longer be recommended for pain management. A randomized trial using objective gait analysis found no significant improvement over placebo while carprofen and meloxicam arms in the same study did improve. Tier D is reserved for interventions where adequately conducted trials found no clinically meaningful benefit.",
   "regulatory": {
@@ -39,18 +48,19 @@
     },
     {
       "type": "rct",
-      "citation": "Randomized controlled comparison of carprofen, meloxicam, a glucosamine-chondroitin product, and placebo using objective gait analysis in dogs with osteoarthritis.",
-      "year": 2007,
-      "design": "Randomized, controlled, objective-outcome trial",
+      "citation": "Moreau M, Dupuis J, Bonneau NH, Desnoyers M. Clinical evaluation of a nutraceutical, carprofen and meloxicam for the treatment of dogs with osteoarthritis. Veterinary Record, 2003;152(11):323-9.",
+      "year": 2003,
+      "n": 71,
+      "design": "Prospective, randomized, double-blind, placebo-controlled, four-arm",
       "blinding": "double-blind",
-      "control": "Placebo and active NSAID comparators",
-      "duration": "Multi-week",
-      "population": "Dogs with naturally occurring osteoarthritis",
-      "primary_outcome": "Objective kinetic gait variables",
-      "result": "No significant improvement with the glucosamine-chondroitin product or placebo, while carprofen and meloxicam both improved significantly.",
+      "control": "Placebo, plus carprofen and meloxicam as active arms",
+      "duration": "60 days",
+      "population": "71 client-owned dogs over 20 kg with chronic stable osteoarthritis of the elbow, stifle, or hip",
+      "primary_outcome": "Objective ground reaction forces on force-plate gait analysis, plus owner and orthopedic surgeon assessments",
+      "result": "Dogs on meloxicam or carprofen showed significant improvement in ground reaction forces, with meloxicam returning values to normal baseline. The nutraceutical and placebo arms did not improve.",
       "funding": "See publication",
-      "summary": "A within-study demonstration that the trial was capable of detecting a real effect. It found one in the NSAID arms and not in this one.",
-      "url": "https://avmajournals.avma.org/view/journals/javma/237/12/javma.237.12.1382.xml"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12665145/",
+      "summary": "A within-study demonstration that the trial was capable of detecting a real effect. It found one in the NSAID arms and not in the nutraceutical arm."
     },
     {
       "type": "systematic_review",
@@ -63,7 +73,13 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/28331832/"
     }
   ],
-  "see_also": ["omega-3-fatty-acids", "weight-optimization", "nsaids"],
+  "see_also": [
+    "omega-3-fatty-acids",
+    "weight-optimization",
+    "nsaids"
+  ],
   "last_reviewed": "2026-08-04",
-  "contributors": ["@lextechx"]
+  "contributors": [
+    "@lextechx"
+  ]
 }

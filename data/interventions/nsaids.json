@@ -1,10 +1,21 @@
 {
   "id": "nsaids",
   "name": "Veterinary NSAIDs (carprofen, meloxicam, firocoxib, robenacoxib)",
-  "brand_names": ["Rimadyl", "Metacam", "Previcox", "Onsior"],
-  "aliases": ["non-steroidal anti-inflammatory drugs", "coxibs"],
+  "brand_names": [
+    "Rimadyl",
+    "Metacam",
+    "Previcox",
+    "Onsior"
+  ],
+  "aliases": [
+    "non-steroidal anti-inflammatory drugs",
+    "coxibs"
+  ],
   "category": "nsaid",
-  "conditions": ["osteoarthritis", "mobility"],
+  "conditions": [
+    "osteoarthritis",
+    "mobility"
+  ],
   "tier": "A",
   "tier_rationale": "This is the most replicated finding in canine osteoarthritis medicine. Multiple independent randomized controlled trials, including trials using objective force-plate outcomes rather than owner impressions, show significant improvement with carprofen and meloxicam where placebo and glucosamine-chondroitin produced none. Systematic reviews consistently rank NSAIDs as the best-supported pharmacological option.",
   "regulatory": {
@@ -30,18 +41,19 @@
   "evidence": [
     {
       "type": "rct",
-      "citation": "Randomized controlled comparison of carprofen, meloxicam, a glucosamine-chondroitin product, and placebo using objective gait analysis in dogs with osteoarthritis.",
-      "year": 2007,
-      "design": "Randomized, controlled, objective-outcome trial",
+      "citation": "Moreau M, Dupuis J, Bonneau NH, Desnoyers M. Clinical evaluation of a nutraceutical, carprofen and meloxicam for the treatment of dogs with osteoarthritis. Veterinary Record, 2003;152(11):323-9.",
+      "year": 2003,
+      "n": 71,
+      "design": "Prospective, randomized, double-blind, placebo-controlled, four-arm",
       "blinding": "double-blind",
-      "control": "Placebo and active comparators",
-      "duration": "Multi-week",
-      "population": "Dogs with naturally occurring osteoarthritis",
-      "primary_outcome": "Objectively measured kinetic gait variables",
-      "result": "Objectively measured variables improved significantly with carprofen and meloxicam, but not with the glucosamine-chondroitin product and not with placebo.",
+      "control": "Placebo, plus carprofen and meloxicam as active arms",
+      "duration": "60 days",
+      "population": "71 client-owned dogs over 20 kg with chronic stable osteoarthritis of the elbow, stifle, or hip",
+      "primary_outcome": "Objective ground reaction forces on force-plate gait analysis, plus owner and orthopedic surgeon assessments",
+      "result": "Dogs on meloxicam or carprofen showed significant improvement in ground reaction forces, with meloxicam returning values to normal baseline. The nutraceutical and placebo arms did not improve.",
       "funding": "See publication",
-      "summary": "The trial most worth citing when someone argues that arthritis improvement in dogs is all placebo. The NSAID arms separated from placebo on a force plate, which cannot be swayed by owner expectation.",
-      "url": "https://avmajournals.avma.org/view/journals/javma/237/12/javma.237.12.1382.xml"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12665145/",
+      "summary": "The trial most worth citing when someone argues that arthritis improvement in dogs is all placebo. The NSAID arms separated from placebo on a force plate, which cannot be swayed by owner expectation."
     },
     {
       "type": "systematic_review",
@@ -69,7 +81,14 @@
       "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11974340/"
     }
   ],
-  "see_also": ["bedinvetmab", "grapiprant", "omega-3-fatty-acids", "weight-optimization"],
+  "see_also": [
+    "bedinvetmab",
+    "grapiprant",
+    "omega-3-fatty-acids",
+    "weight-optimization"
+  ],
   "last_reviewed": "2026-08-04",
-  "contributors": ["@lextechx"]
+  "contributors": [
+    "@lextechx"
+  ]
 }
