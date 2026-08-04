@@ -18,6 +18,7 @@ import {
   methodsPage,
   monitoringPage,
   storyPage,
+  dataPage,
   aboutPage,
   notFoundPage,
 } from "./render.mjs";
@@ -94,6 +95,16 @@ async function build() {
       title: "Why this exists",
       description: "The dog this project is named for, and the signals I did not know how to read.",
       page: storyPage(ctx, story),
+    }),
+  );
+
+  const dataPolicy = await readFile(join(root, "content", "data.md"), "utf8");
+  await writePage(
+    "data/index.html",
+    layout(ctx, {
+      title: "How we handle data",
+      description: "The evidence is open. Your dog's record is private. Why both, and what we commit to.",
+      page: dataPage(ctx, dataPolicy),
     }),
   );
 

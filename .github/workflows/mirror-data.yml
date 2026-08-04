@@ -1,0 +1,77 @@
+name: Mirror open data
+
+# The evidence is licensed CC BY-SA and promised to stay public. Once this
+# repo goes private, that promise needs its own mechanism: this pushes only
+# the open parts to a public mirror so corrections can still arrive as pull
+# requests. See docs/data-and-privacy.md.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "LICENSE-CONTENT.md"
+      - "CONTRIBUTING.md"
+      - "docs/methodology.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    # Set MIRROR_REPO (e.g. "lextechx/evidence-hound-data") as a repository
+    # variable to switch this on. Skips cleanly until then.
+    if: vars.MIRROR_REPO != ''
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assemble the public payload
+        run: |
+          mkdir -p mirror
+          cp -r data mirror/
+          cp LICENSE-CONTENT.md CONTRIBUTING.md mirror/
+          cp docs/methodology.md mirror/ 2>/dev/null || true
+          cat > mirror/README.md <<'EOF'
+          # Evidence Hound: open data
+
+          The evidence behind [Evidence Hound](https://github.com/lextechx/evidence-hound): every intervention, grade,
+          citation, and monitoring domain, as JSON.
+
+          Licensed CC BY-SA 4.0. See LICENSE-CONTENT.md.
+
+          ## Corrections
+
+          This is the right place to correct us. Open an issue or a pull request against the relevant file in
+          `data/interventions/`. Every factual claim needs a citation, including negative ones. CONTRIBUTING.md has the
+          detail, including how the A to D grades are assigned.
+
+          Changes here are pulled into the site.
+
+          ## Using it
+
+          `data/interventions/*.json` is one file per intervention. `data/conditions.json` and `data/monitoring.json`
+          hold the conditions and the monitoring framework. `data/schema/intervention.schema.json` validates them.
+
+          The same content is served as a single combined file at `/data.json` on the Evidence Hound site.
+
+          ## This is not veterinary advice
+
+          It summarizes published research about dogs in general and cannot know your dog.
+
+          _Mirrored automatically. Do not commit application code here._
+          EOF
+
+      - name: Push to the public mirror
+        env:
+          MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
+          MIRROR_REPO: ${{ vars.MIRROR_REPO }}
+        run: |
+          cd mirror
+          git init -q
+          git config user.name "evidence-hound-bot"
+          git config user.email "noreply@github.com"
+          git add -A
+          git commit -q -m "Sync open data from ${GITHUB_SHA::7}"
+          git push -q --force "https://x-access-token:${MIRROR_TOKEN}@github.com/${MIRROR_REPO}.git" HEAD:main

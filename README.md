@@ -54,7 +54,9 @@ node scripts/report.mjs examples/dog-profile.example.json --out report.md
 
 The report leads with red flags, then what changed since the last review, then the domains you *didn't* assess. That
 last section matters: it is listed explicitly so an unmeasured domain is never mistaken for a normal one. The report
-closes with a generated list of questions for the appointment. Profiles stay on your machine; nothing is uploaded.
+closes with a generated list of questions for the appointment. The command-line tool runs entirely on your own machine
+and sends nothing anywhere. A hosted version with saved profiles is planned and is a different arrangement; see
+[docs/data-and-privacy.md](docs/data-and-privacy.md).
 
 Each domain declares whether a rising number is good or bad, so trends read correctly whether the instrument is a pain
 score (up is worse) or weekly walk minutes (up is better).

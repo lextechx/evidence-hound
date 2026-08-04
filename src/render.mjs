@@ -64,8 +64,9 @@ export function layout(ctx, { title, description, page }) {
       <a href="${url(ctx, "/story/")}">Why this exists</a>
       <a href="${url(ctx, "/monitoring/")}">Monitoring</a>
       <a href="${url(ctx, "/methods/")}">How we grade</a>
+      <a href="${url(ctx, "/data/")}">Data</a>
       <a href="${url(ctx, "/about/")}">About</a>
-      <a href="https://github.com/lextechx/evidence-hound">Source &amp; data</a>
+      <a href="https://github.com/lextechx/evidence-hound">Source</a>
     </nav>
   </div>
 </header>
@@ -447,6 +448,15 @@ ${miniMarkdown(source)}
 </article>`;
 }
 
+export function dataPage(ctx, source) {
+  return `<article class="story">
+${miniMarkdown(source)}
+
+<p class="story-end"><a class="button" href="${url(ctx, "/data.json")}">Download the open dataset</a>
+<a class="button button-secondary" href="${url(ctx, "/methods/")}">How we grade</a></p>
+</article>`;
+}
+
 export function monitoringPage(ctx, monitoring) {
   const domainBlock = (domain) => {
     const links = (domain.links ?? [])
@@ -502,7 +512,11 @@ export function monitoringPage(ctx, monitoring) {
   <pre class="code-block"><code>node scripts/report.mjs my-dog.json --out report.md</code></pre>
   <p>Start from
   <a href="https://github.com/lextechx/evidence-hound/blob/main/examples/dog-profile.example.json">the example profile</a>.
-  Your profile stays on your machine. Nothing is uploaded anywhere.</p>
+  The command-line tool runs entirely on your own computer and sends nothing anywhere.</p>
+  <p class="aside">A hosted version with saved profiles is planned, so you do not have to keep a JSON file to use this.
+  When it arrives it will store your dog's health record on our servers, which is a different arrangement from the tool
+  above. What gets stored, who can see it, and how to export or delete it will be spelled out before you are asked to
+  enter anything. See <a href="${url(ctx, "/data/")}">how we handle data</a>.</p>
 </section>
 
 <section>
