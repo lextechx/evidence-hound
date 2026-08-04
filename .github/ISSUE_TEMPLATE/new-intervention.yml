@@ -1,0 +1,69 @@
+name: New intervention
+description: Propose a treatment, diet, supplement, or management strategy we haven't graded
+title: "[new] "
+labels: ["new-intervention", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Interventions you expect to grade badly are just as welcome as ones you expect to grade well — if owners are
+        spending money on it, it belongs here with an honest grade.
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Generic name first, brands after
+      placeholder: Polysulfated glycosaminoglycan (Adequan)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: condition
+    attributes:
+      label: Condition
+      multiple: true
+      options:
+        - Osteoarthritis and chronic joint pain
+        - Canine cognitive dysfunction syndrome
+        - Lifespan and healthspan
+        - Mobility and muscle loss
+        - A condition not yet on the site
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: The evidence you know of
+      description: |
+        List trials with citations. For each, note the design, how many dogs were analyzed, whether it was blinded,
+        what it was compared against, and who funded it. Incomplete lists are fine — say what you have.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: proposed_grade
+    attributes:
+      label: Grade you'd propose
+      options:
+        - "A — strong evidence"
+        - "B — moderate evidence"
+        - "C — limited evidence"
+        - "U — untested in dogs"
+        - "D — evidence of little or no benefit"
+        - Not sure
+
+  - type: textarea
+    id: harms
+    attributes:
+      label: Known harms
+      description: Including safety signals under discussion that regulators haven't acted on.
+
+  - type: checkboxes
+    id: disclosure
+    attributes:
+      label: Disclosure
+      options:
+        - label: I have a financial or professional relationship with this product or its manufacturer
+          required: false

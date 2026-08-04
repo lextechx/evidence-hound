@@ -1,0 +1,65 @@
+{
+  "id": "grapiprant",
+  "name": "Grapiprant (EP4 prostaglandin receptor antagonist)",
+  "brand_names": ["Galliprant"],
+  "aliases": ["piprant"],
+  "category": "analgesic",
+  "conditions": ["osteoarthritis"],
+  "tier": "B",
+  "tier_rationale": "One large, well-conducted, randomized, masked, placebo-controlled multisite trial (285 dogs enrolled, 262 evaluable) demonstrated significant improvement over placebo on owner-reported pain, and it has since been used as an active comparator in blinded trials. It sits at B rather than A because the independent replication base is thinner than for traditional NSAIDs and the pivotal evidence is manufacturer-funded.",
+  "regulatory": {
+    "us": "FDA-approved (2016) for control of pain and inflammation associated with canine osteoarthritis.",
+    "notes": "Approved on the strength of the Rausch-Derra pivotal field study."
+  },
+  "plain_summary": "A targeted pain drug that blocks one specific inflammatory receptor rather than shutting down prostaglandin production broadly. Often chosen for older dogs where the broader gastrointestinal and kidney effects of a classic NSAID are the main worry.",
+  "what_trials_show": "In the pivotal 16-site randomized masked placebo-controlled study, 285 client-owned dogs with osteoarthritis were enrolled and 262 were evaluable, split evenly between grapiprant at 2 mg/kg daily and placebo. Owners scored their dogs on the Canine Brief Pain Inventory at days 0, 7, 14, 21, and 28. Both pain interference and pain severity improved significantly relative to placebo. The trial was properly masked, which matters a great deal in a field where owner-reported placebo response routinely runs above 15%.",
+  "harms": "Generally well tolerated, with vomiting and soft stool the most common effects. Because it spares the prostaglandin pathways involved in gastric protection and kidney perfusion more than traditional NSAIDs do, it is often preferred where those risks dominate — but that is a mechanistic argument, and head-to-head long-term safety data in geriatric dogs with kidney disease remains limited. Do not combine with an NSAID or corticosteroid.",
+  "practical": {
+    "route": "Oral tablet",
+    "typical_course": "2 mg/kg once daily, on an empty stomach",
+    "monitoring": "Baseline bloodwork and periodic rechecks; watch appetite and stool quality",
+    "cost_signal": "moderate"
+  },
+  "ask_your_vet": [
+    "Is grapiprant preferable to a traditional NSAID given my dog's specific kidney and GI history, or is that mostly theoretical here?",
+    "What pain score are we tracking, and at what point do we call it ineffective and switch?",
+    "Would combining this with weight loss and omega-3s let us use a lower dose?"
+  ],
+  "evidence": [
+    {
+      "type": "rct",
+      "citation": "Rausch-Derra L, Huebner M, Wofford J, Rhodes L. A Prospective, Randomized, Masked, Placebo-Controlled Multisite Clinical Study of Grapiprant, an EP4 Prostaglandin Receptor Antagonist (PRA), in Dogs with Osteoarthritis. Journal of Veterinary Internal Medicine, 2016;30(3):756.",
+      "year": 2016,
+      "n": 262,
+      "design": "Prospective, randomized, masked, placebo-controlled, 16-site field study",
+      "blinding": "double-blind",
+      "control": "Placebo",
+      "duration": "28 days",
+      "population": "285 client-owned dogs with osteoarthritis enrolled; 262 evaluable, 131 per group",
+      "primary_outcome": "Owner-completed Canine Brief Pain Inventory success at day 28",
+      "result": "Statistically significant improvement in both pain interference and pain severity versus placebo.",
+      "funding": "Aratana Therapeutics (manufacturer)",
+      "summary": "The pivotal registration study and still the strongest single piece of evidence for this drug. Large, masked, placebo-controlled, and multisite — a genuinely good trial, with the standard caveat that the sponsor ran it.",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/jvim.13948"
+    },
+    {
+      "type": "rct",
+      "citation": "A noninferiority trial evaluating the efficacy of bedinvetmab compared to grapiprant for osteoarthritis-pain in dogs using force plate gait analysis. Scientific Reports, 2026.",
+      "year": 2026,
+      "n": 32,
+      "design": "Randomized, double-blind, non-inferiority",
+      "blinding": "double-blind",
+      "control": "Bedinvetmab (active comparator)",
+      "duration": "See publication",
+      "population": "Dogs with osteoarthritis",
+      "primary_outcome": "Force-plate gait analysis",
+      "result": "Grapiprant served as the active comparator against the anti-NGF biologic on an objective endpoint.",
+      "funding": "See publication",
+      "summary": "Being chosen as the comparator in an objective-endpoint trial reflects that grapiprant is now treated as an established standard rather than a novelty.",
+      "url": "https://www.nature.com/articles/s41598-026-37626-4"
+    }
+  ],
+  "see_also": ["nsaids", "bedinvetmab"],
+  "last_reviewed": "2026-08-04",
+  "contributors": ["@lextechx"]
+}

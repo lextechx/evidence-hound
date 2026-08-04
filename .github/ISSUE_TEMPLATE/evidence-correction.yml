@@ -1,0 +1,64 @@
+name: Evidence correction
+description: We've misread a trial, cited it wrong, or graded something incorrectly
+title: "[correction] "
+labels: ["correction", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you — this is the most valuable kind of contribution to this project. Be as blunt as you like.
+
+  - type: input
+    id: intervention
+    attributes:
+      label: Which intervention
+      description: The id or name, e.g. `bedinvetmab`
+      placeholder: bedinvetmab
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem
+      options:
+        - The grade is wrong
+        - A trial is described inaccurately
+        - A citation is wrong or broken
+        - A harm or safety signal is missing or understated
+        - The entry is out of date
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong
+      description: Quote the specific text on the site or in the JSON file if you can.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting citation
+      description: |
+        The reference that establishes the correction — DOI, PubMed ID, or URL. This applies to negative claims too:
+        "there's no evidence for X" needs a systematic review saying so.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed
+    attributes:
+      label: What it should say instead
+      description: Optional, but a concrete replacement moves much faster than a general objection.
+
+  - type: checkboxes
+    id: disclosure
+    attributes:
+      label: Disclosure
+      options:
+        - label: I have a financial or professional relationship with a product mentioned here
+          required: false

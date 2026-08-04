@@ -1,0 +1,64 @@
+{
+  "id": "loy-002",
+  "name": "LOY-002 (senior dog lifespan extension drug)",
+  "brand_names": [],
+  "aliases": ["Loyal senior dog drug"],
+  "category": "investigational",
+  "conditions": ["healthspan"],
+  "tier": "U",
+  "tier_rationale": "No peer-reviewed efficacy trial has been published. What exists is a regulatory milestone: the FDA accepted a Reasonable Expectation of Effectiveness in early 2025 and the Target Animal Safety section in January 2026, leaving manufacturing as the remaining section before possible conditional approval. Conditional approval is a specific regulatory pathway that permits marketing while full effectiveness data is still being gathered — which is exactly why this cannot be graded above U yet.",
+  "regulatory": {
+    "us": "Not approved. Two of three technical sections accepted by FDA CVM toward conditional approval. Conditional approval possible as early as late 2026 or 2027 if the manufacturing section proceeds without setbacks.",
+    "notes": "Understand what conditional approval means before treating it as a green light: it allows marketing while the sponsor continues to gather the full effectiveness data. It is a bet the regulator permits, not a conclusion the regulator has reached."
+  },
+  "plain_summary": "A daily pill in development that aims to extend healthy lifespan in senior dogs, targeting about one additional year. It is closer to market than anything comparable, but no published trial has yet shown it does this, and the approval pathway it is on does not require that proof up front.",
+  "what_trials_show": "There is no published peer-reviewed efficacy trial to summarize. The developer's stated target is roughly one additional year of healthy life. In February 2025 the FDA accepted the Reasonable Expectation of Effectiveness technical section, and in January 2026 accepted the Target Animal Safety section, leaving the manufacturing section outstanding. If approved, it would be the first drug approved for lifespan extension itself in any species. Everything currently public about its effectiveness comes from company communications and regulatory milestone announcements rather than from independent published trial data — a distinction worth holding onto given how this is likely to be marketed.",
+  "harms": "The FDA's acceptance of the Target Animal Safety section indicates the agency found the safety package adequate for this stage, which is meaningful. Independent long-term safety data in the general senior dog population does not yet exist, and by the nature of conditional approval will accumulate after marketing begins rather than before.",
+  "practical": {
+    "route": "Daily oral tablet (prescription, if approved)",
+    "typical_course": "Ongoing daily administration in senior dogs",
+    "monitoring": "To be established at approval",
+    "cost_signal": "varies"
+  },
+  "ask_your_vet": [
+    "If this becomes conditionally approved, what effectiveness data will actually exist at that point?",
+    "Would you wait for the full effectiveness data, and why or why not?",
+    "What proven interventions should we already be doing for my senior dog while this plays out?"
+  ],
+  "evidence": [
+    {
+      "type": "regulatory",
+      "citation": "Loyal Receives FDA Acceptance of Safety Package for Senior Dog Lifespan Extension Drug. Business Wire, January 2026.",
+      "year": 2026,
+      "design": "Regulatory milestone announcement",
+      "blinding": "not-applicable",
+      "result": "FDA CVM accepted the Target Animal Safety technical section for LOY-002, the second of three sections required for conditional approval.",
+      "funding": "Company announcement",
+      "summary": "A real regulatory step, and not the same thing as published evidence of effectiveness.",
+      "url": "https://www.businesswire.com/news/home/20260113476778/en/Loyal-Receives-FDA-Acceptance-of-Safety-Package-for-Senior-Dog-Lifespan-Extension-Drug"
+    },
+    {
+      "type": "regulatory",
+      "citation": "Loyal Receives FDA Acceptance of Reasonable Expectation of Effectiveness for Senior Dog Lifespan Extension. February 2025.",
+      "year": 2025,
+      "design": "Regulatory milestone announcement",
+      "blinding": "not-applicable",
+      "result": "FDA accepted the Reasonable Expectation of Effectiveness section — the standard for conditional approval, which is lower than the substantial-evidence standard for full approval.",
+      "summary": "The precise wording matters: a reasonable expectation of effectiveness is not a demonstration of effectiveness.",
+      "url": "https://markets.financialcontent.com/stocks/article/bizwire-2025-2-26-loyal-receives-fda-acceptance-of-reasonable-expectation-of-effectiveness-for-senior-dog-lifespan-extension"
+    },
+    {
+      "type": "regulatory",
+      "citation": "Lifespan extension drug in development for senior dogs reaches a new milestone. dvm360, 2026.",
+      "year": 2026,
+      "design": "Trade press report",
+      "blinding": "not-applicable",
+      "result": "Reports the milestone and the remaining manufacturing section, with conditional approval possible as early as late 2026 or 2027.",
+      "summary": "Useful for timeline expectations.",
+      "url": "https://www.dvm360.com/view/lifespan-extension-drug-in-development-for-senior-dogs-reaches-a-new-milestone"
+    }
+  ],
+  "see_also": ["rapamycin"],
+  "last_reviewed": "2026-08-04",
+  "contributors": ["@lextechx"]
+}

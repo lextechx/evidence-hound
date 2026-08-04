@@ -1,0 +1,69 @@
+{
+  "id": "glucosamine-chondroitin",
+  "name": "Glucosamine and chondroitin sulfate",
+  "brand_names": ["Cosequin", "Dasuquin", "and many others"],
+  "aliases": ["joint supplements", "chondroprotectants"],
+  "category": "supplement",
+  "conditions": ["osteoarthritis"],
+  "tier": "D",
+  "tier_rationale": "This is not an absence of evidence — it is evidence of absence. A 2022 systematic review and meta-analysis of nutraceuticals in canine and feline osteoarthritis reported a marked non-effect for chondroitin-glucosamine products and explicitly recommended they no longer be recommended for pain management. A randomized trial using objective gait analysis found no significant improvement over placebo while carprofen and meloxicam arms in the same study did improve. Tier D is reserved for interventions where adequately conducted trials found no clinically meaningful benefit.",
+  "regulatory": {
+    "us": "Sold as a supplement, not a drug. Not subject to pre-market efficacy review, and label content frequently fails to match actual content.",
+    "notes": "Because these are supplements, no regulator has ever required them to demonstrate that they work."
+  },
+  "plain_summary": "The most commonly recommended joint supplement for dogs, and the one with the clearest evidence that it does not meaningfully reduce arthritis pain. Money spent here is better spent on weight loss, omega-3s, or proven pain control.",
+  "what_trials_show": "In a randomized controlled trial using objective kinetic gait analysis, measured variables improved significantly with carprofen and meloxicam but not with a glucosamine-chondroitin product and not with placebo — the supplement performed like placebo in the same study where real drugs separated from it. The 2022 systematic review and meta-analysis of enriched therapeutic diets and nutraceuticals found a weak effect for collagen and what the authors described as a very marked non-effect for chondroitin-glucosamine, concluding these products should no longer be recommended for pain management in canine and feline osteoarthritis. Earlier reviews had already characterized the evidence as limited and conflicting despite widespread veterinary recommendation.",
+  "harms": "Very safe — that is genuinely the strongest thing that can be said for it. Occasional gastrointestinal upset. The meaningful harm is opportunity cost and false reassurance: an owner who believes the arthritis is being treated may delay effective pain control, and a dog in untreated chronic pain is the actual cost of this supplement.",
+  "practical": {
+    "route": "Oral",
+    "typical_course": "Commonly given indefinitely, often begun before any diagnosis is confirmed",
+    "monitoring": "If your dog is on this and still slow to rise, that is the signal to reassess rather than to increase the dose",
+    "cost_signal": "moderate"
+  },
+  "ask_your_vet": [
+    "Given the 2022 meta-analysis, is there a reason specific to my dog to continue this?",
+    "If we stopped it and redirected the cost to a therapeutic diet or pain control, what would you expect to change?",
+    "Is my dog's pain actually being treated, or only the appearance of doing something about it?"
+  ],
+  "evidence": [
+    {
+      "type": "meta_analysis",
+      "citation": "Barbeau-Grégoire M, et al. A 2022 Systematic Review and Meta-Analysis of Enriched Therapeutic Diets and Nutraceuticals in Canine and Feline Osteoarthritis. International Journal of Molecular Sciences, 2022.",
+      "year": 2022,
+      "design": "Systematic review and meta-analysis",
+      "blinding": "not-applicable",
+      "result": "Weak efficacy for collagen and a very marked non-effect for chondroitin-glucosamine nutraceuticals; authors recommended these products no longer be recommended for pain management in canine and feline osteoarthritis.",
+      "funding": "See publication",
+      "summary": "The decisive reference. This is a pooled analysis, not a single disappointing trial.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36142319/"
+    },
+    {
+      "type": "rct",
+      "citation": "Randomized controlled comparison of carprofen, meloxicam, a glucosamine-chondroitin product, and placebo using objective gait analysis in dogs with osteoarthritis.",
+      "year": 2007,
+      "design": "Randomized, controlled, objective-outcome trial",
+      "blinding": "double-blind",
+      "control": "Placebo and active NSAID comparators",
+      "duration": "Multi-week",
+      "population": "Dogs with naturally occurring osteoarthritis",
+      "primary_outcome": "Objective kinetic gait variables",
+      "result": "No significant improvement with the glucosamine-chondroitin product or placebo, while carprofen and meloxicam both improved significantly.",
+      "funding": "See publication",
+      "summary": "A within-study demonstration that the trial was capable of detecting a real effect — it found one in the NSAID arms and not in this one.",
+      "url": "https://avmajournals.avma.org/view/journals/javma/237/12/javma.237.12.1382.xml"
+    },
+    {
+      "type": "systematic_review",
+      "citation": "Bhathal A, et al. Glucosamine and chondroitin use in canines for osteoarthritis: A review. 2017.",
+      "year": 2017,
+      "design": "Narrative review",
+      "blinding": "not-applicable",
+      "result": "Concluded the evidence was limited and conflicting despite these being commonly recommended by veterinarians.",
+      "summary": "Documents the long-standing gap between how often these are recommended and what supports them.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28331832/"
+    }
+  ],
+  "see_also": ["omega-3-fatty-acids", "weight-optimization", "nsaids"],
+  "last_reviewed": "2026-08-04",
+  "contributors": ["@lextechx"]
+}

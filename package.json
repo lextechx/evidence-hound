@@ -1,0 +1,31 @@
+{
+  "name": "evidence-hound",
+  "version": "0.1.0",
+  "private": false,
+  "description": "An open, evidence-graded reference for treating aging dogs, built from randomized controlled trial data.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node src/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test \"scripts/*.test.mjs\"",
+    "serve": "node scripts/serve.mjs",
+    "report": "node scripts/report.mjs",
+    "staleness": "node scripts/staleness.mjs",
+    "check": "npm run validate && npm run build && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lextechx/evidence-hound.git"
+  },
+  "keywords": [
+    "veterinary",
+    "evidence-based-medicine",
+    "canine",
+    "geriatric",
+    "open-data"
+  ]
+}

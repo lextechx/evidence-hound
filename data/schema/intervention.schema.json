@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lextechx/evidence-hound/data/schema/intervention.schema.json",
+  "title": "Intervention",
+  "description": "One treatment, diet, supplement, or management strategy for an aging dog, with its supporting evidence.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "category",
+    "conditions",
+    "tier",
+    "tier_rationale",
+    "plain_summary",
+    "what_trials_show",
+    "harms",
+    "evidence",
+    "last_reviewed"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "URL slug. Lowercase, hyphenated, stable forever once merged."
+    },
+    "name": { "type": "string", "minLength": 2 },
+    "brand_names": { "type": "array", "items": { "type": "string" } },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "category": {
+      "type": "string",
+      "enum": [
+        "biologic",
+        "nsaid",
+        "analgesic",
+        "neuro",
+        "diet",
+        "supplement",
+        "lifestyle",
+        "procedure",
+        "investigational"
+      ]
+    },
+    "conditions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" },
+      "description": "Condition ids defined in data/conditions.json."
+    },
+    "tier": {
+      "type": "string",
+      "enum": ["A", "B", "C", "D", "U"],
+      "description": "See METHODS.md. A=strong, B=moderate, C=limited, D=evidence of little/no benefit, U=untested in dogs."
+    },
+    "tier_rationale": {
+      "type": "string",
+      "minLength": 20,
+      "description": "Why this tier and not the one above or below it. Must reference the evidence entries."
+    },
+    "regulatory": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "us": { "type": "string" },
+        "eu": { "type": "string" },
+        "uk": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "plain_summary": {
+      "type": "string",
+      "minLength": 20,
+      "description": "One or two sentences a non-clinician can act on."
+    },
+    "what_trials_show": {
+      "type": "string",
+      "minLength": 40,
+      "description": "The actual measured results, with numbers where they exist."
+    },
+    "harms": {
+      "type": "string",
+      "minLength": 20,
+      "description": "Known adverse effects and safety signals. Never leave this optimistic by omission."
+    },
+    "practical": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "route": { "type": "string" },
+        "typical_course": { "type": "string" },
+        "monitoring": { "type": "string" },
+        "cost_signal": { "type": "string", "enum": ["low", "moderate", "high", "varies"] }
+      }
+    },
+    "ask_your_vet": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Specific questions that help an owner have a better conversation."
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["type", "citation", "year", "summary"],
+        "additionalProperties": false,
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "rct",
+              "systematic_review",
+              "meta_analysis",
+              "observational",
+              "regulatory",
+              "ongoing_trial",
+              "safety_report"
+            ]
+          },
+          "citation": { "type": "string", "minLength": 10 },
+          "year": { "type": "integer", "minimum": 1950, "maximum": 2100 },
+          "n": { "type": "integer", "minimum": 1, "description": "Dogs analyzed, not merely enrolled." },
+          "design": { "type": "string" },
+          "blinding": {
+            "type": "string",
+            "enum": ["double-blind", "single-blind", "masked-assessor", "open-label", "not-applicable", "unclear"]
+          },
+          "control": { "type": "string" },
+          "duration": { "type": "string" },
+          "population": { "type": "string" },
+          "primary_outcome": { "type": "string" },
+          "result": { "type": "string", "minLength": 10 },
+          "funding": {
+            "type": "string",
+            "description": "Who paid. Industry funding is not disqualifying, but it is always disclosed."
+          },
+          "summary": { "type": "string", "minLength": 10 },
+          "url": { "type": "string" },
+          "doi": { "type": "string" }
+        }
+      }
+    },
+    "see_also": { "type": "array", "items": { "type": "string" } },
+    "last_reviewed": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "contributors": { "type": "array", "items": { "type": "string" } }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "nsaids",
+  "name": "Veterinary NSAIDs (carprofen, meloxicam, firocoxib, robenacoxib)",
+  "brand_names": ["Rimadyl", "Metacam", "Previcox", "Onsior"],
+  "aliases": ["non-steroidal anti-inflammatory drugs", "coxibs"],
+  "category": "nsaid",
+  "conditions": ["osteoarthritis", "mobility"],
+  "tier": "A",
+  "tier_rationale": "This is the most replicated finding in canine osteoarthritis medicine. Multiple independent randomized controlled trials, including trials using objective force-plate outcomes rather than owner impressions, show significant improvement with carprofen and meloxicam where placebo and glucosamine-chondroitin produced none. Systematic reviews consistently rank NSAIDs as the best-supported pharmacological option.",
+  "regulatory": {
+    "us": "Multiple FDA-approved products for canine osteoarthritis pain and inflammation.",
+    "eu": "Widely authorized.",
+    "notes": "Human NSAIDs — ibuprofen, naproxen, aspirin — are a different matter entirely and are dangerous to dogs. Never substitute them."
+  },
+  "plain_summary": "The best-evidenced treatment for arthritis pain in dogs, and the benchmark every newer drug is measured against. The real limit is not whether they work but whether a given older dog's kidneys, liver, and gut can tolerate them long-term.",
+  "what_trials_show": "Randomized trials using objective kinetic gait analysis found that measured variables improved significantly with carprofen and meloxicam, while a glucosamine-chondroitin product and placebo produced no significant improvement — a direct demonstration that the NSAID effect is not just regression to the mean or owner optimism. Effect sizes are clinically meaningful and appear within days rather than weeks. Comparative trials against newer agents such as bedinvetmab and grapiprant generally show similar pain control, with the differences showing up in the side-effect profile rather than in efficacy.",
+  "harms": "Gastrointestinal ulceration and bleeding, kidney injury, and liver enzyme elevation. Risk rises with age, dehydration, pre-existing kidney disease, and concurrent steroid use. In one randomized comparison, the meloxicam arm recorded 17 adverse events versus 4 in the bedinvetmab arm, 9 of them gastrointestinal. Never combine an NSAID with a corticosteroid or with a second NSAID, and observe a washout when switching between NSAIDs.",
+  "practical": {
+    "route": "Oral, usually daily",
+    "typical_course": "Ongoing, often with periodic attempts at the lowest effective dose",
+    "monitoring": "Baseline bloodwork including kidney and liver values, repeated within 2–4 weeks of starting and then every 3–6 months. Stop and call the vet for vomiting, black stool, appetite loss, or increased drinking.",
+    "cost_signal": "low"
+  },
+  "ask_your_vet": [
+    "What were my dog's baseline kidney and liver values, and when do we recheck?",
+    "Can we find the lowest effective dose rather than staying at the starting dose indefinitely?",
+    "Which specific signs should make me stop the drug and call you the same day?",
+    "Are any of my dog's other medications, especially steroids, incompatible with this?"
+  ],
+  "evidence": [
+    {
+      "type": "rct",
+      "citation": "Randomized controlled comparison of carprofen, meloxicam, a glucosamine-chondroitin product, and placebo using objective gait analysis in dogs with osteoarthritis.",
+      "year": 2007,
+      "design": "Randomized, controlled, objective-outcome trial",
+      "blinding": "double-blind",
+      "control": "Placebo and active comparators",
+      "duration": "Multi-week",
+      "population": "Dogs with naturally occurring osteoarthritis",
+      "primary_outcome": "Objectively measured kinetic gait variables",
+      "result": "Objectively measured variables improved significantly with carprofen and meloxicam, but not with the glucosamine-chondroitin product and not with placebo.",
+      "funding": "See publication",
+      "summary": "The trial most worth citing when someone argues that arthritis improvement in dogs is all placebo — the NSAID arms separated from placebo on a force plate, which cannot be swayed by owner expectation.",
+      "url": "https://avmajournals.avma.org/view/journals/javma/237/12/javma.237.12.1382.xml"
+    },
+    {
+      "type": "systematic_review",
+      "citation": "Pye C, et al. Current evidence for non-pharmaceutical, non-surgical treatments of canine osteoarthritis. Journal of Small Animal Practice, 2024.",
+      "year": 2024,
+      "design": "Systematic review",
+      "blinding": "not-applicable",
+      "result": "Positions NSAIDs as the reference standard against which non-pharmaceutical options are judged, and finds most alternatives substantially less well supported.",
+      "summary": "Useful for setting expectations about what non-drug approaches can and cannot replace.",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/jsap.13670"
+    },
+    {
+      "type": "rct",
+      "citation": "A randomised, parallel-group clinical trial comparing bedinvetmab to meloxicam for the management of canine osteoarthritis. 2025.",
+      "year": 2025,
+      "design": "Randomized, open-label, parallel-group",
+      "blinding": "open-label",
+      "control": "Bedinvetmab (active comparator)",
+      "duration": "Multi-week",
+      "population": "Client-owned dogs with osteoarthritis",
+      "primary_outcome": "Canine Orthopaedic Index",
+      "result": "Meloxicam produced a significant reduction in pain scores from baseline, statistically indistinguishable from bedinvetmab, but with more adverse events (17 versus 4).",
+      "funding": "See publication",
+      "summary": "Efficacy comparable to the newer biologic; the tradeoff is tolerability, not pain relief.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11974340/"
+    }
+  ],
+  "see_also": ["bedinvetmab", "grapiprant", "omega-3-fatty-acids", "weight-optimization"],
+  "last_reviewed": "2026-08-04",
+  "contributors": ["@lextechx"]
+}

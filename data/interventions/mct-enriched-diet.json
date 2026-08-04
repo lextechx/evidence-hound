@@ -1,0 +1,70 @@
+{
+  "id": "mct-enriched-diet",
+  "name": "Medium-chain triglyceride (MCT) enriched diet",
+  "brand_names": ["Purina Pro Plan Bright Mind", "Hill's b/d"],
+  "aliases": ["MCT oil diet", "brain protection blend"],
+  "category": "diet",
+  "conditions": ["cognitive-dysfunction"],
+  "tier": "B",
+  "tier_rationale": "A randomized, double-blind, placebo-controlled, multi-site trial across 24 veterinary clinics with 87 dogs in three arms found significant improvement in all six categories of cognitive dysfunction signs on the 6.5% MCT diet. That is a genuinely good trial design for this field. It is held at B because independent replication outside manufacturer-supported work is limited and the outcome is an owner-completed questionnaire rather than an objective measure.",
+  "regulatory": {
+    "us": "Marketed as therapeutic or wellness diets rather than drugs.",
+    "notes": "Dietary claims are not held to the evidentiary standard applied to pharmaceuticals, which makes the existence of a real randomized trial here notable rather than expected."
+  },
+  "plain_summary": "The best-evidenced intervention for canine dementia, and one of the few places where a diet change has randomized trial support. Medium-chain triglycerides give the aging brain an alternative fuel source when its glucose metabolism falters.",
+  "what_trials_show": "The key trial was a randomized, double-blind, placebo-controlled, multi-site study run across 24 veterinary clinics in Ontario. Eighty-seven dogs were randomized into three arms of 29: a control diet, a 6.5% MCT oil diet with a brain protection blend, and a 9% MCT diet. Diets were fed for 90 days with reassessment of cognitive dysfunction signs at days 30 and 90. All six categories of cognitive dysfunction signs improved significantly in the 6.5% MCT group by the end of the study. Notably, the higher 9% dose did not simply do more — a reminder that more is not better here. A broader systematic review of enriched diets and nutraceuticals for cognitive enhancement in aged dogs and cats supports the direction of this finding, and a scoping review found that combining supplemented diets with environmental enrichment improved signs more than either alone.",
+  "harms": "Well tolerated. MCT diets are calorie-dense, so watch weight — which matters because excess weight worsens the arthritis many of these same dogs have. Transition gradually to avoid loose stool. Not a substitute for investigating other causes of behavior change: pain, hearing and vision loss, endocrine disease, and hypertension all mimic cognitive dysfunction and are treatable.",
+  "practical": {
+    "route": "Complete therapeutic diet, or MCT oil added to food",
+    "typical_course": "Judge at 90 days — the trial saw effects by day 30 and clearer separation by day 90",
+    "monitoring": "Use a validated owner questionnaire such as CADES or DISHAA at baseline and at 30 and 90 days, so you are measuring rather than guessing",
+    "cost_signal": "moderate"
+  },
+  "ask_your_vet": [
+    "Before we call this dementia, have we ruled out pain, hearing and vision loss, and endocrine disease?",
+    "Can we score my dog on CADES or DISHAA now so we have a real baseline to compare against at 90 days?",
+    "Would adding structured enrichment and exercise alongside the diet be worthwhile, given the scoping review found the combination better?",
+    "How do we fit these calories into my dog's weight target?"
+  ],
+  "evidence": [
+    {
+      "type": "rct",
+      "citation": "Pan Y, et al. Efficacy of a Therapeutic Diet on Dogs With Signs of Cognitive Dysfunction Syndrome (CDS): A Prospective Double Blinded Placebo Controlled Clinical Study. Frontiers in Nutrition, 2018;5:127.",
+      "year": 2018,
+      "n": 87,
+      "design": "Randomized, double-blind, placebo-controlled, multi-site (24 clinics), three parallel arms",
+      "blinding": "double-blind",
+      "control": "Control diet",
+      "duration": "90 days, with assessment at days 30 and 90",
+      "population": "Dogs with signs of cognitive dysfunction syndrome",
+      "primary_outcome": "Owner-assessed cognitive dysfunction signs across six categories",
+      "result": "All six categories of cognitive dysfunction signs improved significantly in the 6.5% MCT diet group at 90 days. The 9% MCT arm did not outperform it.",
+      "funding": "Nestlé Purina",
+      "summary": "The strongest single trial in canine cognitive dysfunction. Properly blinded and placebo-controlled across 24 sites; manufacturer-funded, and the endpoint is owner-reported.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6299068/"
+    },
+    {
+      "type": "systematic_review",
+      "citation": "Enhancing cognitive functions in aged dogs and cats: a systematic review of enriched diets and nutraceuticals. GeroScience, 2025.",
+      "year": 2025,
+      "design": "Systematic review",
+      "blinding": "not-applicable",
+      "result": "Reviews the dietary and nutraceutical evidence base for cognitive support in aged dogs and cats.",
+      "summary": "Places the MCT finding in the context of the wider, and largely weaker, nutraceutical literature.",
+      "url": "https://link.springer.com/article/10.1007/s11357-025-01521-z"
+    },
+    {
+      "type": "systematic_review",
+      "citation": "Non-pharmacological interventions for the treatment of canine cognitive dysfunction: A scoping review. Applied Animal Behaviour Science, 2023.",
+      "year": 2023,
+      "design": "PRISMA-ScR scoping review",
+      "blinding": "not-applicable",
+      "result": "Found that combining supplemented diets with environmental enrichment improves signs of canine cognitive dysfunction.",
+      "summary": "Supports pairing the diet with enrichment rather than relying on food alone.",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0168159123002691"
+    }
+  ],
+  "see_also": ["selegiline"],
+  "last_reviewed": "2026-08-04",
+  "contributors": ["@lextechx"]
+}

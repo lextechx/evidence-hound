@@ -1,0 +1,91 @@
+{
+  "id": "bedinvetmab",
+  "name": "Bedinvetmab (anti-NGF monoclonal antibody)",
+  "brand_names": ["Librela", "Beransa"],
+  "aliases": ["anti-nerve growth factor antibody", "NGF mAb"],
+  "category": "biologic",
+  "conditions": ["osteoarthritis"],
+  "tier": "B",
+  "tier_rationale": "Multiple randomized, placebo- and active-controlled trials show a real analgesic effect, and the pivotal trial was properly blinded and placebo-controlled. It is held at B rather than A because the placebo-adjusted response rate is moderate (43.5% vs 16.9% at day 28), the head-to-head comparison against meloxicam did not reach statistical significance for superiority, and an unresolved post-marketing safety signal around rapidly progressive osteoarthritis is under active discussion in the peer-reviewed literature.",
+  "regulatory": {
+    "us": "FDA-approved (2023) for control of osteoarthritis pain in dogs.",
+    "eu": "EMA-authorized since 2020 as Librela.",
+    "notes": "Approval means the regulator accepted the efficacy and safety package. It is not a claim that the drug is the best option for a given dog."
+  },
+  "plain_summary": "A monthly injection that blocks a pain-signaling protein. It genuinely relieves arthritis pain in a substantial minority of dogs and avoids the gut and kidney risks of NSAIDs, but it is not reversible once injected and its long-term joint safety is actively debated.",
+  "what_trials_show": "In the pivotal double-blind, placebo-controlled multisite trial, 43.5% of bedinvetmab-treated dogs met the predefined treatment-success threshold at day 28 versus 16.9% on placebo — a placebo-adjusted benefit of roughly 27 percentage points, meaning about one in four treated dogs improves because of the drug rather than because of time, attention, and owner expectation. In a randomized open-label comparison against meloxicam, both groups improved significantly from baseline on the Canine Orthopaedic Index; bedinvetmab's larger mean reduction was not statistically significant, so the honest reading is comparable efficacy with a different side-effect profile — 4 adverse events on bedinvetmab versus 17 on meloxicam, 9 of them gastrointestinal. A separate randomized non-inferiority trial using force-plate gait analysis compared it against grapiprant in a small cohort of 32 dogs.",
+  "harms": "Injection-site reactions, and reports of neurological and mobility-related adverse events in post-marketing surveillance. The most serious open question is rapidly progressive osteoarthritis — accelerated joint destruction seen with anti-NGF drugs in human trials, which halted their human development. A 2026 JAVMA paper argues this signal warrants vigilant adverse event reporting in dogs. Because the antibody persists for weeks, an adverse reaction cannot be stopped by discontinuing a daily pill. Discuss this openly rather than treating approval as settled reassurance.",
+  "practical": {
+    "route": "Subcutaneous injection given in-clinic",
+    "typical_course": "Once monthly; effect is assessed over 2–3 cycles",
+    "monitoring": "Baseline orthopedic exam, owner-completed pain score before starting and at each visit, and prompt reporting of any new limb weakness or sudden worsening",
+    "cost_signal": "high"
+  },
+  "ask_your_vet": [
+    "Has my dog been screened for the joint instability or neurological signs that would make me more cautious about anti-NGF treatment?",
+    "What specific pain score are we measuring, and what change would count as this having failed?",
+    "If we see accelerated joint damage, what is the plan given the drug cannot be withdrawn quickly?",
+    "Would an NSAID trial be reasonable first for my dog, given their kidney and GI history?"
+  ],
+  "evidence": [
+    {
+      "type": "rct",
+      "citation": "Corral MJ, et al. A prospective, randomized, blinded, placebo-controlled multisite clinical study of bedinvetmab, a canine monoclonal antibody targeting nerve growth factor, in dogs with osteoarthritis. Veterinary Anaesthesia and Analgesia, 2021.",
+      "year": 2021,
+      "design": "Prospective, randomized, blinded, placebo-controlled, multisite",
+      "blinding": "double-blind",
+      "control": "Placebo",
+      "duration": "28 days to primary endpoint",
+      "population": "Client-owned dogs with osteoarthritis",
+      "primary_outcome": "Owner-assessed treatment success on the Canine Brief Pain Inventory",
+      "result": "43.5% treatment success with bedinvetmab versus 16.9% with placebo at day 28.",
+      "funding": "Zoetis (manufacturer)",
+      "summary": "The pivotal registration trial. Well-designed and placebo-controlled; the effect is real but moderate in size.",
+      "url": "https://www.vaajournal.org/article/S1467-2987(21)00201-4/fulltext"
+    },
+    {
+      "type": "rct",
+      "citation": "A randomised, parallel-group clinical trial comparing bedinvetmab to meloxicam for the management of canine osteoarthritis. 2025.",
+      "year": 2025,
+      "design": "Randomized, open-label, multicentre, parallel-group active comparator",
+      "blinding": "open-label",
+      "control": "Meloxicam (active comparator)",
+      "duration": "Multi-week",
+      "population": "Client-owned dogs with osteoarthritis-related pain",
+      "primary_outcome": "Change in Canine Orthopaedic Index score",
+      "result": "Both groups improved significantly from baseline; bedinvetmab's larger mean reduction was not statistically significant. Adverse events: 4 (bedinvetmab) versus 17 (meloxicam), including 9 gastrointestinal events on meloxicam.",
+      "funding": "Disclosed in source publication; open-label design is a meaningful limitation",
+      "summary": "Suggests comparable pain control to a standard NSAID with fewer gastrointestinal events, but the lack of blinding inflates confidence in owner-reported outcomes.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11974340/"
+    },
+    {
+      "type": "rct",
+      "citation": "A noninferiority trial evaluating the efficacy of bedinvetmab compared to grapiprant for osteoarthritis-pain in dogs using force plate gait analysis. Scientific Reports, 2026.",
+      "year": 2026,
+      "n": 32,
+      "design": "Randomized, double-blind, non-inferiority",
+      "blinding": "double-blind",
+      "control": "Grapiprant (active comparator)",
+      "duration": "Reported in source",
+      "population": "Dogs with osteoarthritis",
+      "primary_outcome": "Objective force-plate gait analysis",
+      "result": "Compared bedinvetmab against grapiprant using an objective rather than owner-reported endpoint.",
+      "funding": "See publication",
+      "summary": "Valuable because force-plate analysis sidesteps the large placebo effect that contaminates owner-reported canine pain outcomes. Small sample limits precision.",
+      "url": "https://www.nature.com/articles/s41598-026-37626-4"
+    },
+    {
+      "type": "safety_report",
+      "citation": "Bedinvetmab (Librela/Beransa) in dogs raises safety concerns, including rapidly progressive osteoarthritis, and warrants vigilant adverse event reporting. Journal of the American Veterinary Medical Association, 2026.",
+      "year": 2026,
+      "design": "Commentary and pharmacovigilance analysis",
+      "blinding": "not-applicable",
+      "result": "Argues that post-marketing reports, including rapidly progressive osteoarthritis, justify heightened surveillance and franker owner consent discussions.",
+      "summary": "The most important counterweight to the registration trials. Read this before assuming approval settles the safety question.",
+      "url": "https://avmajournals.avma.org/view/journals/javma/aop/javma.26.03.0170/javma.26.03.0170.xml"
+    }
+  ],
+  "see_also": ["nsaids", "grapiprant"],
+  "last_reviewed": "2026-08-04",
+  "contributors": ["@lextechx"]
+}

@@ -1,0 +1,237 @@
+{
+  "framework": {
+    "name": "Senior Dog Longevity Monitoring Framework",
+    "version": "0.1.0",
+    "premise": "Most decline in aging dogs is caught late because nobody was measuring. A twice-yearly structured review across a fixed set of domains catches trends while they are still reversible, and turns a vague 'she's slowing down' into a dated number a veterinarian can act on.",
+    "cadence_default": "Every 6 months from age 7 (or from age 5 for giant breeds), and every 3 months from age 11 or after any new diagnosis.",
+    "how_to_use": "Score every domain at each review, even the ones that seem fine — the value is in the trend, not the snapshot. A domain that moves two levels between reviews matters more than a domain that has been mildly abnormal for years."
+  },
+  "domains": [
+    {
+      "id": "body-condition",
+      "name": "Body weight, body condition, and muscle mass",
+      "priority": "core",
+      "direction": "higher_is_worse",
+      "why": "Excess weight measurably worsens arthritis pain, and losing 6-9% of body weight reduces lameness on its own. Muscle loss is a separate problem that tracks with frailty and is routinely missed because a fat dog and a sarcopenic dog can weigh the same.",
+      "measure": "Body weight in kg on the same scale; Body Condition Score (1-9); Muscle Condition Score (normal / mild / moderate / severe loss) assessed over the skull, scapulae, spine, and pelvis.",
+      "instrument": "WSAVA Body Condition Score and Muscle Condition Score charts",
+      "cadence": "Monthly weight at home; BCS and MCS at every review",
+      "target": "BCS 4-5 of 9, with normal muscle condition",
+      "red_flags": [
+        "Unexplained weight loss of more than 5% between reviews",
+        "Muscle loss progressing while body weight stays flat",
+        "Weight gain despite unchanged feeding"
+      ],
+      "links": [
+        "weight-optimization",
+        "omega-3-fatty-acids"
+      ]
+    },
+    {
+      "id": "mobility-pain",
+      "name": "Mobility and chronic pain",
+      "priority": "core",
+      "direction": "higher_is_worse",
+      "why": "Osteoarthritis is the most common source of chronic pain in older dogs and the best-studied condition in canine geriatric medicine. Owners consistently under-report it because they read it as ordinary aging rather than pain.",
+      "measure": "A validated owner questionnaire scored the same way each time, plus three concrete observations: time to rise from lying, willingness to use stairs, and longest comfortable walk.",
+      "instrument": "Canine Brief Pain Inventory (CBPI), LOAD, or Canine Orthopaedic Index — pick one and stay with it",
+      "cadence": "Every review; every 4 weeks when starting or changing a pain medication",
+      "target": "Stable or improving score; any pain treatment should produce a measurable change or be reconsidered",
+      "red_flags": [
+        "Reluctance to rise, or taking more than a few seconds to stand",
+        "New avoidance of stairs, jumping, or slippery floors",
+        "Night restlessness or panting at rest, both of which can be pain rather than anxiety",
+        "Sudden worsening in a dog on an anti-NGF antibody, which cannot be withdrawn quickly"
+      ],
+      "links": [
+        "nsaids",
+        "bedinvetmab",
+        "grapiprant",
+        "weight-optimization",
+        "omega-3-fatty-acids"
+      ]
+    },
+    {
+      "id": "cognition",
+      "name": "Cognition and behavior",
+      "priority": "core",
+      "direction": "higher_is_worse",
+      "why": "Cognitive dysfunction is under-diagnosed because early signs read as ordinary aging. It is also the domain where a baseline score matters most, since gradual change is invisible without one.",
+      "measure": "A validated cognitive questionnaire covering disorientation, social interaction, sleep-wake cycle, house-training, activity, and anxiety.",
+      "instrument": "CADES, CCDR, or DISHAA",
+      "cadence": "Every review; at 30 and 90 days after starting a dietary or drug intervention",
+      "target": "Stable score. The 2018 MCT diet trial measured change at 30 and 90 days, so judge interventions on that timescale rather than in weeks.",
+      "red_flags": [
+        "Staring at walls, getting stuck in corners, or standing on the hinge side of doors",
+        "Reversed day-night sleep pattern",
+        "House-soiling in a previously reliable dog",
+        "Failing to greet familiar people"
+      ],
+      "links": [
+        "mct-enriched-diet",
+        "selegiline"
+      ]
+    },
+    {
+      "id": "thirst-urination",
+      "name": "Thirst, urination, and appetite",
+      "priority": "core",
+      "direction": "higher_is_worse",
+      "why": "Increased drinking and urination is the earliest owner-detectable sign of kidney disease, diabetes, and Cushing's — three conditions where early detection changes the outcome substantially.",
+      "measure": "Measured water intake in ml over 24 hours (not estimated), overnight accidents, and appetite change.",
+      "instrument": "Household measuring jug; normal intake is roughly under 100 ml/kg/day and most healthy dogs drink well below that",
+      "cadence": "A measured 24-hour water intake before each review, and any time you suspect a change",
+      "target": "Stable intake appropriate to diet and weather",
+      "red_flags": [
+        "Water intake above 100 ml/kg/day",
+        "New overnight urination in a house-trained dog",
+        "Appetite increase with weight loss, or appetite loss of more than a couple of days"
+      ],
+      "links": []
+    },
+    {
+      "id": "bloodwork",
+      "name": "Bloodwork, urinalysis, and organ function",
+      "priority": "core",
+      "direction": "neutral",
+      "why": "Every drug on this site that works long-term is limited by organ tolerance rather than by efficacy. NSAID use in particular requires a baseline and repeat monitoring, and kidney disease is usually well advanced before it is visible from the outside.",
+      "measure": "Complete blood count, serum chemistry, urinalysis with urine specific gravity, and SDMA. Thyroid testing where signs suggest it.",
+      "instrument": "Veterinary laboratory panel — keep copies of every result so trends are visible across years",
+      "cadence": "Annually as a baseline from age 7; every 6 months from age 11; within 2-4 weeks of starting an NSAID and every 3-6 months while on one",
+      "target": "Values stable within reference range; a value drifting within the normal range still matters",
+      "red_flags": [
+        "Rising creatinine or SDMA, even inside the reference interval",
+        "Urine specific gravity falling toward 1.012",
+        "New or rising liver enzymes in a dog on long-term medication"
+      ],
+      "links": [
+        "nsaids",
+        "grapiprant"
+      ]
+    },
+    {
+      "id": "cardiorespiratory",
+      "name": "Heart and breathing",
+      "priority": "core",
+      "direction": "higher_is_worse",
+      "why": "Resting respiratory rate is the single most useful number an owner can collect at home, and a rise above 30 breaths per minute while sleeping is an early, actionable sign of congestive heart failure.",
+      "measure": "Sleeping respiratory rate — count chest rises for 30 seconds while the dog is asleep and double it. Note any cough, exercise intolerance, or fainting.",
+      "instrument": "A phone timer, recorded weekly in a log",
+      "cadence": "Weekly at home for any dog with a known murmur; monthly otherwise",
+      "target": "Under 30 breaths per minute while sleeping",
+      "red_flags": [
+        "Sleeping respiratory rate consistently above 30",
+        "Any collapse or fainting episode — same-day veterinary attention",
+        "Cough that worsens at night, or reduced exercise tolerance"
+      ],
+      "links": []
+    },
+    {
+      "id": "oral-health",
+      "name": "Dental and oral health",
+      "priority": "supporting",
+      "direction": "higher_is_worse",
+      "why": "Periodontal disease is painful, extremely common in older dogs, and frequently rationalized as 'old dog breath'. It is also one of the few sources of chronic pain that can be genuinely resolved rather than managed.",
+      "measure": "Visual check of gums and teeth for tartar, recession, mobility, and masses; note breath odor, dropped food, and one-sided chewing.",
+      "instrument": "Veterinary oral exam; conscious inspection at home between visits",
+      "cadence": "Every review, with professional assessment annually",
+      "red_flags": [
+        "Dropping food, chewing on one side, or reluctance to take hard treats",
+        "Any oral mass",
+        "Facial swelling below the eye, which suggests a tooth root abscess"
+      ],
+      "links": []
+    },
+    {
+      "id": "masses",
+      "name": "Lumps, masses, and skin",
+      "priority": "supporting",
+      "direction": "higher_is_worse",
+      "why": "Cancer risk climbs steeply with age. A dated body map turns 'has this always been there?' into an answerable question, which is the difference between early and late detection.",
+      "measure": "A full-body check with each mass logged by location and measured in mm, ideally photographed against a ruler.",
+      "instrument": "Body map diagram with dated measurements",
+      "cadence": "Monthly at home; every review with a veterinarian",
+      "red_flags": [
+        "Any new mass, or an existing one that changes size, shape, or texture",
+        "Masses that are fixed to underlying tissue, ulcerated, or growing quickly",
+        "Any mass in a dog that is also losing weight"
+      ],
+      "links": []
+    },
+    {
+      "id": "senses",
+      "name": "Vision and hearing",
+      "priority": "supporting",
+      "direction": "higher_is_worse",
+      "why": "Sensory loss mimics cognitive dysfunction almost exactly — a dog that ignores you may be deaf rather than demented, and the management is completely different. This must be excluded before a dementia diagnosis is accepted.",
+      "measure": "Response to hand signals versus voice, navigation in dim light, startle response when approached from behind, bumping into furniture in unfamiliar places.",
+      "instrument": "Structured observation; veterinary ophthalmic exam where change is suspected",
+      "cadence": "Every review",
+      "red_flags": [
+        "Bumping into things, especially in low light",
+        "Cloudiness of the lens, or a visibly enlarged or reddened eye — the latter is urgent",
+        "Not responding to a name that used to work reliably"
+      ],
+      "links": [
+        "mct-enriched-diet",
+        "selegiline"
+      ]
+    },
+    {
+      "id": "medication-review",
+      "name": "Medication and supplement review",
+      "priority": "core",
+      "direction": "neutral",
+      "why": "Geriatric dogs accumulate medications, and the interaction risks are real — selegiline with serotonergic drugs, NSAIDs with steroids or with a second NSAID. Reviews are also the moment to drop supplements that trials show do not work.",
+      "measure": "A complete list of everything given, including supplements, chews, and over-the-counter products, with dose and reason.",
+      "instrument": "Written medication list brought to every visit",
+      "cadence": "Every review, and any time something is added",
+      "red_flags": [
+        "Two NSAIDs, or an NSAID plus a corticosteroid",
+        "An MAO inhibitor such as selegiline alongside tramadol or a serotonergic antidepressant",
+        "Any supplement continued for over a year with no measured benefit"
+      ],
+      "links": [
+        "nsaids",
+        "selegiline",
+        "glucosamine-chondroitin"
+      ]
+    },
+    {
+      "id": "quality-of-life",
+      "name": "Quality of life",
+      "priority": "core",
+      "direction": "higher_is_better",
+      "why": "The hardest decisions get made in crisis, at night, without a reference point. Scoring quality of life while the dog is doing well creates a baseline and forces the conversation to happen before it is urgent.",
+      "measure": "Score hurt, hunger, hydration, hygiene, happiness, mobility, and whether good days outnumber bad — each 0 to 10.",
+      "instrument": "HHHHHMM quality of life scale (Villalobos)",
+      "cadence": "Every review; weekly in advanced disease or on hospice care",
+      "target": "A total consistently above 35 of 70 is generally considered acceptable quality of life, but the trend and the owner's own read matter more than the threshold",
+      "red_flags": [
+        "Bad days beginning to outnumber good days",
+        "Any single category persistently at or below 3",
+        "Loss of interest in the two or three things the dog has always loved most"
+      ],
+      "links": []
+    },
+    {
+      "id": "activity",
+      "name": "Activity and sleep",
+      "priority": "supporting",
+      "direction": "higher_is_better",
+      "why": "Activity decline is often the first objective signal of pain or systemic illness, and it can be measured continuously rather than recalled. Sleep disruption cuts across pain, cognition, and cardiac disease.",
+      "measure": "Daily activity from a collar accelerometer if available, otherwise total walk minutes per week; night waking episodes per week.",
+      "instrument": "Activity monitor or a simple weekly log",
+      "cadence": "Continuous where a device is used; otherwise a one-week log before each review",
+      "red_flags": [
+        "A sustained drop in activity not explained by weather or routine",
+        "Increased night waking or pacing",
+        "Sleeping through activities that used to prompt engagement"
+      ],
+      "links": [
+        "nsaids",
+        "weight-optimization"
+      ]
+    }
+  ]
+}

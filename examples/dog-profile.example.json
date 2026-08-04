@@ -1,0 +1,96 @@
+{
+  "$comment": "Example profile for scripts/report.mjs. Copy this, replace with your own dog, and keep it out of the repo if you'd rather not publish it. Scores are whatever your chosen instrument produces — keep the instrument consistent across reviews so the trend means something.",
+  "dog": {
+    "name": "Juno",
+    "breed": "Labrador Retriever",
+    "sex": "female, spayed",
+    "birth_date": "2015-04-12",
+    "age_years": 11
+  },
+  "next_review": "2026-11-15",
+  "medications": [
+    {
+      "name": "Carprofen",
+      "dose": "2.2 mg/kg twice daily",
+      "started": "2025-09-02",
+      "reason": "Osteoarthritis pain, both hips"
+    },
+    {
+      "name": "Omega-3 (EPA/DHA)",
+      "dose": "Per therapeutic diet",
+      "started": "2025-09-02",
+      "reason": "Adjunct for osteoarthritis; aiming to reduce carprofen dose"
+    },
+    {
+      "name": "Glucosamine/chondroitin chew",
+      "dose": "1 chew daily",
+      "started": "2022-06-01",
+      "reason": "Started before diagnosis — discuss whether to stop"
+    }
+  ],
+  "questions": [
+    "Can we attempt a carprofen dose reduction now that she has been on the omega-3 diet for six months?",
+    "Is the glucosamine chew worth continuing given the 2022 meta-analysis?"
+  ],
+  "reviews": [
+    {
+      "date": "2026-02-10",
+      "weight_kg": 32.4,
+      "domains": {
+        "body-condition": { "score": 7, "instrument": "WSAVA BCS 1-9", "notes": "Overweight; ideal estimated at 28 kg." },
+        "mobility-pain": { "score": 22, "instrument": "CBPI pain interference", "notes": "Slow to rise in the mornings." },
+        "cognition": { "score": 2, "instrument": "CADES", "notes": "Occasional night waking." },
+        "thirst-urination": { "value": "1900 ml/24h", "score": 59, "measured": "58.6 ml/kg/day", "notes": "Within normal range." },
+        "bloodwork": { "value": "Creatinine 1.1, SDMA 12, USG 1.030", "notes": "Baseline before starting carprofen." },
+        "cardiorespiratory": { "score": 24, "instrument": "Sleeping respiratory rate", "notes": "No murmur." },
+        "oral-health": { "score": 2, "notes": "Mild tartar, dental scheduled." },
+        "masses": { "score": 1, "notes": "One 4 mm lipoma, left flank." },
+        "senses": { "score": 1, "notes": "Hearing intact, early lens cloudiness." },
+        "medication-review": { "score": 3, "notes": "Three items; glucosamine predates diagnosis." },
+        "quality-of-life": { "score": 58, "instrument": "HHHHHMM 0-70", "notes": "Good days strongly outnumber bad." },
+        "activity": { "score": 140, "instrument": "Walk minutes per week" }
+      }
+    },
+    {
+      "date": "2026-08-04",
+      "weight_kg": 29.8,
+      "domains": {
+        "body-condition": {
+          "score": 6,
+          "instrument": "WSAVA BCS 1-9",
+          "measured": "29.8 kg, down 8.0% from February",
+          "notes": "Deliberate weight loss on a measured diet. Muscle condition normal. Past the 6% threshold where the trials showed lameness improvement."
+        },
+        "mobility-pain": {
+          "score": 14,
+          "instrument": "CBPI pain interference",
+          "notes": "Rising faster, using stairs again, walk length up. Consistent with the weight loss and the omega-3 diet."
+        },
+        "cognition": {
+          "score": 4,
+          "instrument": "CADES",
+          "notes": "More night waking than February; twice found standing in the hallway at night.",
+          "flags": ["Increased night waking and reversed sleep pattern — rule out pain and sensory loss before attributing to cognition"]
+        },
+        "thirst-urination": {
+          "value": "2600 ml/24h",
+          "score": 87,
+          "measured": "87.2 ml/kg/day",
+          "notes": "Up substantially since February. Weather was warm during the measurement week.",
+          "flags": ["Water intake rising toward the 100 ml/kg/day threshold — repeat measurement and check urine specific gravity"]
+        },
+        "bloodwork": {
+          "value": "Creatinine 1.4, SDMA 15, USG 1.019",
+          "notes": "All still within reference range but all three have moved in the same direction since February, while on an NSAID.",
+          "flags": ["Creatinine and SDMA rising and USG falling on long-term carprofen — discuss recheck interval and dose"]
+        },
+        "cardiorespiratory": { "score": 22, "instrument": "Sleeping respiratory rate", "notes": "Stable, no cough." },
+        "oral-health": { "score": 1, "notes": "Dental performed in April; much improved." },
+        "masses": { "score": 1, "notes": "Lipoma unchanged at 4 mm." },
+        "medication-review": { "score": 3, "notes": "Unchanged. Glucosamine still being given." },
+        "quality-of-life": { "score": 61, "instrument": "HHHHHMM 0-70", "notes": "Better than February." },
+        "activity": { "score": 190, "instrument": "Walk minutes per week", "notes": "Up from 140." }
+      }
+    }
+  ]
+}
