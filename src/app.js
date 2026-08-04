@@ -68,7 +68,7 @@ function renderDog() {
   const fields = [
     ["name", "Name", "text", "Koda"],
     ["breed", "Breed", "text", "Siberian Husky"],
-    ["sex", "Sex", "text", "female, spayed"],
+    ["sex", "Sex", "text", "male, neutered"],
     ["birth_date", "Date of birth", "date", ""],
   ];
   for (const [key, label, type, placeholder] of fields) {

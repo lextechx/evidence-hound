@@ -2,7 +2,7 @@
 
 Koda lived to fourteen.
 
-Getting there took multiple TPLO surgeries, more vet visits than I can count, and a long stretch near the end where she was drinking noticeably more water than she used to. Each visit, I learned about treatment options the way most owners do, in a fifteen-minute appointment, under stress, while trying to remember what the last vet had said.
+Getting there took multiple TPLO surgeries, more vet visits than I can count, and a long stretch near the end where he was drinking noticeably more water than he used to. Each visit, I learned about treatment options the way most owners do, in a fifteen-minute appointment, under stress, while trying to remember what the last vet had said.
 
 I did the research. I read everything I could find. And I still spent years feeling like I was making decisions in the dark, hearing about an option only after the window to consider it had closed.
 
@@ -24,7 +24,7 @@ Two halves.
 
 **What works.** Every treatment I could find good evidence about, graded honestly by the strength of the randomized trials behind it. Including grade D, the treatments that were properly tested and did not work. I paid for one of those for years.
 
-**What to watch.** A monitoring framework with the specific numbers I did not know to collect. Water intake in ml per kg. Sleeping respiratory rate. Body condition score. Weight, tracked over time, on the same scale. The kinds of measurements that turn "she seems a bit off lately" into a dated trend a veterinarian can actually work with.
+**What to watch.** A monitoring framework with the specific numbers I did not know to collect. Water intake in ml per kg. Sleeping respiratory rate. Body condition score. Weight, tracked over time, on the same scale. The kinds of measurements that turn "he seems a bit off lately" into a dated trend a veterinarian can actually work with.
 
 ## What I am not claiming
 
