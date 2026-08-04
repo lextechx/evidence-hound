@@ -53,13 +53,13 @@ export function layout(ctx, { title, description, page }) {
     description ?? "An open, evidence-graded reference for treating aging dogs, built from randomized controlled trial data.",
   )}">
 <link rel="stylesheet" href="${url(ctx, "/site.css")}">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐕</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐺</text></svg>">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="${url(ctx, "/")}"><span aria-hidden="true">🐕</span> Evidence&nbsp;Hound</a>
+    <a class="brand" href="${url(ctx, "/")}"><span aria-hidden="true">🐺</span> Evidence&nbsp;Hound</a>
     <nav aria-label="Main">
       <a href="${url(ctx, "/story/")}">Why this exists</a>
       <a href="${url(ctx, "/monitoring/")}">Monitoring</a>

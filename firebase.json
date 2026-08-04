@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "evidence-hound",
     "public": "dist",
     "cleanUrls": true,
     "trailingSlash": true,
