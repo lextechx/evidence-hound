@@ -11,6 +11,9 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # Skips until the project is configured, so CI is not red for a deploy
+    # that was never set up. See docs/hosting.md.
+    if: vars.GCP_PROJECT_ID != ''
     steps:
       - uses: actions/checkout@v4
 
