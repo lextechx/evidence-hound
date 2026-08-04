@@ -72,7 +72,8 @@ export function layout(ctx, { title, description, page }) {
     <a class="brand" href="${url(ctx, "/")}">${MARK} Evidence&nbsp;Hound</a>
     <nav aria-label="Main">
       <a href="${url(ctx, "/story/")}">Why this exists</a>
-      <a href="${url(ctx, "/monitoring/")}">Monitoring</a>
+      <a href="${url(ctx, "/track/")}">Track your dog</a>
+      <a href="${url(ctx, "/monitoring/")}">Framework</a>
       <a href="${url(ctx, "/methods/")}">How we grade</a>
       <a href="${url(ctx, "/data/")}">Data</a>
       <a href="${url(ctx, "/about/")}">About</a>
@@ -170,7 +171,7 @@ export function homePage(ctx) {
   treatments by the quality of the randomized trial evidence behind them, including the popular ones that trials
   show do not work.</p>
   <p><a class="button" href="${url(ctx, "/methods/")}">How the grading works</a>
-  <a class="button button-secondary" href="${url(ctx, "/monitoring/")}">Track your own dog</a></p>
+  <a class="button button-secondary" href="${url(ctx, "/track/")}">Track your own dog</a></p>
 </section>
 
 <dl class="figures">
@@ -482,6 +483,65 @@ ${miniMarkdown(source)}
 </article>`;
 }
 
+
+export function trackPage(ctx) {
+  return `<header class="hero">
+  <p class="eyebrow">No account, no spreadsheet</p>
+  <h1>Track your dog</h1>
+  <p class="lede">Fill this in before each vet visit and it turns what you have noticed at home into a dated report your
+  veterinarian can act on. It works in this browser, saves on this device, and needs nothing installed.</p>
+</header>
+
+<div id="flash" class="flash" role="status" aria-live="polite"></div>
+
+<div id="tracker">
+  <section class="panel">
+    <h2>Your dog</h2>
+    <div id="dog-form" class="field-grid"></div>
+  </section>
+
+  <section class="panel">
+    <h2>This review</h2>
+    <p>Score what you can. A domain you skip is left out of the report rather than counted as normal, so partial is fine
+    and far better than nothing. Use the same instrument every time so the trend means something.</p>
+    <div class="field-row">
+      <div class="field">
+        <label for="review-date">Date of this review</label>
+        <input type="date" id="review-date">
+      </div>
+      <div class="field">
+        <label for="review-weight">Weight (kg)</label>
+        <input type="number" step="0.1" id="review-weight" placeholder="29.8">
+      </div>
+    </div>
+    <div id="domains-form"></div>
+    <p class="actions"><button type="button" id="save-review" class="button">Save this review</button></p>
+  </section>
+
+  <section class="panel report-panel">
+    <div id="report"></div>
+    <p class="actions">
+      <button type="button" id="print-report" class="button">Print or save as PDF</button>
+      <button type="button" id="export" class="button button-secondary">Export my data</button>
+      <label class="button button-secondary" for="import">Import a file</label>
+      <input type="file" id="import" accept="application/json" hidden>
+      <button type="button" id="clear" class="button button-secondary danger">Delete this record</button>
+    </p>
+  </section>
+</div>
+
+<section class="cta no-print">
+  <h2>Where this data lives</h2>
+  <p>In this browser on this device, and nowhere else. There is no account and nothing is sent to a server, which also
+  means it will not follow you to your phone and clearing your browser data will erase it. Export a copy to keep it
+  safe. The exported file is the same format the
+  <a href="${url(ctx, "/monitoring/")}">command-line tool</a> reads, so neither tool traps your data.</p>
+  <p>See <a href="${url(ctx, "/data/")}">how we handle data</a> for what changes if saved accounts ever arrive.</p>
+</section>
+
+<script src="${url(ctx, "/app.js")}" defer></script>`;
+}
+
 export function monitoringPage(ctx, monitoring) {
   const domainBlock = (domain) => {
     const links = (domain.links ?? [])
@@ -531,6 +591,9 @@ export function monitoringPage(ctx, monitoring) {
 
 <section>
   <h2>Generate a report for your vet</h2>
+  <p><strong>Most people want <a href="${url(ctx, "/track/")}">the browser tracker</a></strong>, which does all of this
+  as a form with nothing to install. The command-line route below is for people who would rather keep the record as a
+  file they control.</p>
   <p>Record each review in a JSON profile and the repository will produce a dated report. Red flags first, then what
   changed since last time, then the domains you did not assess, listed explicitly so an unmeasured domain is never
   mistaken for a normal one.</p>

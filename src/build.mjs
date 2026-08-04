@@ -19,6 +19,7 @@ import {
   monitoringPage,
   storyPage,
   dataPage,
+  trackPage,
   aboutPage,
   notFoundPage,
 } from "./render.mjs";
@@ -108,6 +109,15 @@ async function build() {
     }),
   );
 
+  await writePage(
+    "track/index.html",
+    layout(ctx, {
+      title: "Track your dog",
+      description: "A no-install browser tool that turns what you notice at home into a dated report for your vet.",
+      page: trackPage(ctx),
+    }),
+  );
+
   await writePage("about/index.html", layout(ctx, { title: "About", page: aboutPage(ctx) }));
   await writePage("404.html", layout(ctx, { title: "Not found", page: notFoundPage(ctx) }));
 
@@ -128,6 +138,7 @@ async function build() {
   );
 
   await copyFile(join(root, "src", "site.css"), join(dist, "site.css"));
+  await copyFile(join(root, "src", "app.js"), join(dist, "app.js"));
   await writeFile(join(dist, ".nojekyll"), "", "utf8");
 
   console.log(
