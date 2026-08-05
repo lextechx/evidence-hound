@@ -1,4 +1,4 @@
-## How we handle data
+# How we handle data
 
 There are two completely different kinds of data in this project, and keeping them separate is the whole design.
 

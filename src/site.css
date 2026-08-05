@@ -861,10 +861,10 @@ dd {
   margin-top: 3rem;
 }
 
-.story h2:first-child {
+.story h1 {
   margin-top: 0;
-  font-size: clamp(1.9rem, 1.4rem + 2vw, 2.7rem);
-  letter-spacing: -0.028em;
+  font-size: clamp(2.1rem, 1.5rem + 2.4vw, 3rem);
+  letter-spacing: -0.03em;
 }
 
 .story p {
@@ -873,7 +873,7 @@ dd {
   max-width: none;
 }
 
-.story h2:first-child + p {
+.story h1 + p {
   font-size: 1.3rem;
   line-height: 1.55;
   color: var(--ink-soft);
@@ -1223,4 +1223,32 @@ td.better {
   font-family: var(--sans);
   font-size: 0.88rem;
   color: var(--muted);
+}
+
+/* On narrow screens seven nav items wrap to three rows and, because the header
+   is sticky, that stolen height follows you down every page. Keep one row and
+   let it scroll sideways instead. */
+@media (max-width: 52rem) {
+  .site-header .wrap {
+    gap: 0.25rem 1rem;
+  }
+
+  .site-header nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    max-width: 100%;
+    margin-inline: -0.7rem;
+    padding-inline: 0.7rem;
+    scroll-snap-type: x proximity;
+  }
+
+  .site-header nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-header nav a {
+    white-space: nowrap;
+    scroll-snap-align: start;
+  }
 }

@@ -51,17 +51,30 @@ const tierBadge = (tier) =>
     tier,
   )}"></b>${esc(TIERS[tier].label)}</span>`;
 
-export function layout(ctx, { title, description, page }) {
+export const SITE_URL = "https://evidence-hound.web.app";
+
+export function layout(ctx, { title, description, page, path = "/" }) {
   const fullTitle = title ? `${esc(title)} · Evidence Hound` : "Evidence Hound · What actually works for aging dogs";
+  const blurb =
+    description ??
+    "An open, evidence-graded reference for treating aging dogs, built from randomized controlled trial data.";
+  const canonical = `${SITE_URL}${path}`;
   return `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${fullTitle}</title>
-<meta name="description" content="${esc(
-    description ?? "An open, evidence-graded reference for treating aging dogs, built from randomized controlled trial data.",
-  )}">
+<meta name="description" content="${esc(blurb)}">
+<link rel="canonical" href="${esc(canonical)}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Evidence Hound">
+<meta property="og:title" content="${fullTitle}">
+<meta property="og:description" content="${esc(blurb)}">
+<meta property="og:url" content="${esc(canonical)}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="${fullTitle}">
+<meta name="twitter:description" content="${esc(blurb)}">
 <link rel="stylesheet" href="${url(ctx, "/site.css")}">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐺</text></svg>">
 </head>

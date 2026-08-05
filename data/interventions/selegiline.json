@@ -1,14 +1,21 @@
 {
   "id": "selegiline",
   "name": "Selegiline (L-deprenyl)",
-  "brand_names": ["Anipryl"],
-  "aliases": ["MAO-B inhibitor", "deprenyl"],
+  "brand_names": [
+    "Anipryl"
+  ],
+  "aliases": [
+    "MAO-B inhibitor",
+    "deprenyl"
+  ],
   "category": "neuro",
-  "conditions": ["cognitive-dysfunction"],
+  "conditions": [
+    "cognitive-dysfunction"
+  ],
   "tier": "C",
   "tier_rationale": "Selegiline is the only FDA-approved drug for canine cognitive dysfunction and is the pharmaceutical most often reached for in practice, but the controlled trial base is older, smaller, and less rigorously reported than the modern MCT diet trial. The reported benefits of improved sleep, house-training, and activity come from trials that predate current validated cognitive scoring instruments. C reflects limited rather than absent evidence, not a judgment that it fails.",
   "regulatory": {
-    "us": "FDA-approved for canine cognitive dysfunction syndrome, the only drug with that indication.",
+    "us": "FDA-approved 10 December 1998 for canine cognitive dysfunction syndrome, the only drug with that indication. Also approved for pituitary-dependent hyperadrenocorticism.",
     "notes": "Regulatory approval here reflects an older evidentiary era. Approval status and evidence strength are not the same thing, in either direction."
   },
   "plain_summary": "The only approved drug for canine dementia. Worth trying, particularly for disrupted sleep and lost house-training, but set expectations modestly and pair it with a diet change and enrichment rather than relying on it alone.",
@@ -29,7 +36,7 @@
   "evidence": [
     {
       "type": "regulatory",
-      "citation": "FDA approval of selegiline hydrochloride (Anipryl) for canine cognitive dysfunction syndrome, supported by manufacturer clinical trials.",
+      "citation": "FDA approval of selegiline hydrochloride (Anipryl), NADA 141-096, approved 10 December 1998 for control of clinical signs associated with canine cognitive dysfunction syndrome.",
       "year": 1998,
       "design": "Registration clinical trials",
       "blinding": "unclear",
@@ -37,7 +44,7 @@
       "result": "Improvement reported in sleeping, house-training, and activity.",
       "funding": "Manufacturer",
       "summary": "The basis for the only drug approval in this indication. Older trials with outcome measures that predate today's validated cognitive scales.",
-      "url": "https://www.cliniciansbrief.com/article/which-drugs-are-used-treat-cognitive-dysfunction-syndrome"
+      "url": "https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/614"
     },
     {
       "type": "observational",
@@ -50,7 +57,11 @@
       "url": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2025.1685430/full"
     }
   ],
-  "see_also": ["mct-enriched-diet"],
+  "see_also": [
+    "mct-enriched-diet"
+  ],
   "last_reviewed": "2026-08-04",
-  "contributors": ["@lextechx"]
+  "contributors": [
+    "@lextechx"
+  ]
 }

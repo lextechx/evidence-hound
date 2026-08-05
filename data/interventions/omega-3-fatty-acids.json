@@ -2,9 +2,17 @@
   "id": "omega-3-fatty-acids",
   "name": "Omega-3 fatty acids (EPA/DHA-enriched diets and fish oil)",
   "brand_names": [],
-  "aliases": ["fish oil", "EPA", "DHA", "marine omega-3"],
+  "aliases": [
+    "fish oil",
+    "EPA",
+    "DHA",
+    "marine omega-3"
+  ],
   "category": "diet",
-  "conditions": ["osteoarthritis", "mobility"],
+  "conditions": [
+    "osteoarthritis",
+    "mobility"
+  ],
   "tier": "B",
   "tier_rationale": "Several independent randomized, double-blinded, controlled trials, including multicentre studies with over 100 dogs and one using objective force-plate weight-bearing as the endpoint, show consistent, modest benefit. It falls short of A because effect sizes are small relative to NSAIDs, several trials were manufacturer-funded, and the 2022 meta-analysis of nutraceuticals found the overall nutraceutical literature uneven even while treating omega-3s more favorably than most.",
   "regulatory": {
@@ -28,19 +36,19 @@
   "evidence": [
     {
       "type": "rct",
-      "citation": "Evaluation of the effects of dietary supplementation with fish oil omega-3 fatty acids on weight bearing in dogs with osteoarthritis. JAVMA, 2010;236(1):67.",
+      "citation": "Roush JK, Cross AR, Renberg WC, Dodd CE, Sixby KA, Fritsch DA, Allen TA, Jewell DE, Richardson DC, Leventhal PS, Hahn KA. Evaluation of the effects of dietary supplementation with fish oil omega-3 fatty acids on weight bearing in dogs with osteoarthritis. JAVMA, 2010;236(1):67-73.",
       "year": 2010,
       "n": 38,
       "design": "Randomized, double-blinded, controlled clinical trial",
       "blinding": "double-blind",
       "control": "Control food",
       "duration": "90 days",
-      "population": "Client-owned dogs with osteoarthritis",
+      "population": "38 client-owned dogs with osteoarthritis at two university veterinary clinics",
       "primary_outcome": "Peak vertical force on force-plate gait analysis",
-      "result": "Mean peak vertical force improved 5.6% in the test-food group versus 0.4% in controls between days 0 and 90; significant for the test group only.",
+      "result": "Mean peak vertical force improved 5.6% in the test-food group versus 0.4% in controls between days 0 and 90, significant for the test group only. 82% of test-food dogs showed improved weight bearing against 38% of controls.",
       "funding": "Hill's Pet Nutrition",
       "summary": "The most persuasive entry because the endpoint is objective. Manufacturer-funded, and the effect is modest. But it is measured, not reported by hopeful owners.",
-      "url": "https://avmajournals.avma.org/view/journals/javma/236/1/javma.236.1.67.xml"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20043801/"
     },
     {
       "type": "rct",
@@ -85,7 +93,13 @@
       "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9499673/"
     }
   ],
-  "see_also": ["nsaids", "glucosamine-chondroitin", "weight-optimization"],
+  "see_also": [
+    "nsaids",
+    "glucosamine-chondroitin",
+    "weight-optimization"
+  ],
   "last_reviewed": "2026-08-04",
-  "contributors": ["@lextechx"]
+  "contributors": [
+    "@lextechx"
+  ]
 }

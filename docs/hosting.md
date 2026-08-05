@@ -89,11 +89,12 @@ Firebase Hosting's free Spark tier includes 10 GB stored and 360 MB/day transfer
 megabyte, so this is free until it is genuinely popular. The alternative GCP approach, a Cloud Storage bucket behind an
 HTTPS load balancer, costs roughly $18/month for the load balancer alone whether or not anyone visits.
 
-## The GitHub Pages workflow
+## GitHub Pages was removed
 
-`.github/workflows/deploy.yml` still publishes to GitHub Pages. Two things to know:
+`.github/workflows/deploy.yml` used to publish a second copy to GitHub Pages. It was deleted once Firebase started
+serving, because two public URLs for the same content splits search ranking and makes links ambiguous. Every page now
+carries a canonical tag pointing at the Firebase URL.
 
-- Pages does not serve from private repositories on the free GitHub plan. Making the repo private takes that site down.
-- Running both hosts means two public URLs for the same content, which is bad for search ranking and confusing to link.
-
-Once Firebase is serving, delete `deploy.yml` so Firebase is the only host.
+The old Pages site at `lextechx.github.io/evidence-hound` will serve its last build until you disable Pages in the
+repository settings. It also stops working entirely if the repo goes private on the free GitHub plan, which is fine
+because Firebase is the host now.

@@ -12,6 +12,7 @@ import { dirname, join } from "node:path";
 import { loadData, collectErrors } from "../scripts/validate.mjs";
 import {
   layout,
+  SITE_URL,
   homePage,
   interventionPage,
   conditionPage,
@@ -55,7 +56,7 @@ async function build() {
   await rm(dist, { recursive: true, force: true });
   await mkdir(dist, { recursive: true });
 
-  await writePage("index.html", layout(ctx, { title: null, page: homePage(ctx) }));
+  await writePage("index.html", layout(ctx, { title: null, page: homePage(ctx), path: "/" }));
 
   for (const intervention of interventions) {
     await writePage(
@@ -64,6 +65,7 @@ async function build() {
         title: intervention.name,
         description: intervention.plain_summary,
         page: interventionPage(ctx, intervention),
+        path: `/interventions/${intervention.id}/`,
       }),
     );
   }
@@ -76,17 +78,19 @@ async function build() {
         title: condition.name,
         description: condition.short,
         page: conditionPage(ctx, id, condition, related),
+        path: `/conditions/${id}/`,
       }),
     );
   }
 
-  await writePage("methods/index.html", layout(ctx, { title: "How we grade evidence", page: methodsPage(ctx) }));
+  await writePage("methods/index.html", layout(ctx, { title: "How we grade evidence", page: methodsPage(ctx), path: "/methods/" }));
   await writePage(
     "monitoring/index.html",
     layout(ctx, {
       title: data.monitoring.framework.name,
       description: data.monitoring.framework.premise,
       page: monitoringPage(ctx, data.monitoring),
+      path: "/monitoring/",
     }),
   );
   // Photos are optional. A missing or empty manifest simply renders no gallery.
@@ -115,6 +119,7 @@ async function build() {
       title: "Why this exists",
       description: "The dog this project is named for, and the signals I did not know how to read.",
       page: storyPage(ctx, story, photos),
+      path: "/story/",
     }),
   );
 
@@ -125,6 +130,7 @@ async function build() {
       title: "How we handle data",
       description: "The evidence is open. Your dog's record is private. Why both, and what we commit to.",
       page: dataPage(ctx, dataPolicy),
+      path: "/data/",
     }),
   );
 
@@ -134,10 +140,11 @@ async function build() {
       title: "Track your dog",
       description: "A no-install browser tool that turns what you notice at home into a dated report for your vet.",
       page: trackPage(ctx),
+      path: "/track/",
     }),
   );
 
-  await writePage("about/index.html", layout(ctx, { title: "About", page: aboutPage(ctx) }));
+  await writePage("about/index.html", layout(ctx, { title: "About", page: aboutPage(ctx), path: "/about/" }));
   await writePage("404.html", layout(ctx, { title: "Not found", page: notFoundPage(ctx) }));
 
   // The dataset itself is the product. Publish it as a plain file anyone can consume.
@@ -153,6 +160,31 @@ async function build() {
       null,
       2,
     ),
+    "utf8",
+  );
+
+  const paths = [
+    "/",
+    "/methods/",
+    "/monitoring/",
+    "/track/",
+    "/story/",
+    "/data/",
+    "/about/",
+    ...Object.keys(data.conditions).map((id) => `/conditions/${id}/`),
+    ...interventions.map((i) => `/interventions/${i.id}/`),
+  ];
+  const today = new Date().toISOString().slice(0, 10);
+  await writeFile(
+    join(dist, "sitemap.xml"),
+    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${paths
+      .map((p) => `  <url><loc>${SITE_URL}${p}</loc><lastmod>${today}</lastmod></url>`)
+      .join("\n")}\n</urlset>\n`,
+    "utf8",
+  );
+  await writeFile(
+    join(dist, "robots.txt"),
+    `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`,
     "utf8",
   );
 
