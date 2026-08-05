@@ -28,13 +28,18 @@ export const TIERS = {
 };
 
 const MARK = `<svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-  <path d="M9 5 L18 19 L9.5 21 Z" fill="var(--ink)"/>
-  <path d="M39 5 L30 19 L38.5 21 Z" fill="var(--ink)"/>
-  <path d="M24 9 C33 9 37.5 16.5 37.5 25 C37.5 35 31.5 42 24 42 C16.5 42 10.5 35 10.5 25 C10.5 16.5 15 9 24 9 Z" fill="var(--ink)"/>
-  <path d="M24 12 C26.6 19 26.6 31 24 41 C21.4 31 21.4 19 24 12 Z" fill="var(--paper)"/>
-  <circle cx="17.4" cy="24" r="2.6" fill="#4aa8dd"/>
-  <circle cx="30.6" cy="24" r="2.6" fill="#e0a63f"/>
-  <path d="M24 32.5 L27 35.6 L24 38.6 L21 35.6 Z" fill="var(--paper)"/>
+  <defs><clipPath id="eh-head"><path d="M24 6.5 C33 6.5 39 13.5 39 22.5 C39 31 33.5 38.5 28.5 41.3 C26.8 42.3 25.3 43 24 43 C22.7 43 21.2 42.3 19.5 41.3 C14.5 38.5 9 31 9 22.5 C9 13.5 15 6.5 24 6.5 Z"/></clipPath></defs>
+  <path d="M9 2 L18.5 13 L9.5 17.5 Z" fill="var(--ink)"/>
+  <path d="M39 2 L29.5 13 L38.5 17.5 Z" fill="var(--ink)"/>
+  <path d="M11.2 6.6 L16.3 12.7 L11.6 15.2 Z" fill="var(--paper)" opacity="0.75"/>
+  <path d="M36.8 6.6 L31.7 12.7 L36.4 15.2 Z" fill="var(--paper)" opacity="0.75"/>
+  <path d="M24 6.5 C33 6.5 39 13.5 39 22.5 C39 31 33.5 38.5 28.5 41.3 C26.8 42.3 25.3 43 24 43 C22.7 43 21.2 42.3 19.5 41.3 C14.5 38.5 9 31 9 22.5 C9 13.5 15 6.5 24 6.5 Z" fill="var(--ink)"/>
+  <g clip-path="url(#eh-head)">
+    <path d="M24 9.5 C25.5 13.5 26.4 19 26.5 25 C29 26.2 32 28.2 33.2 31 C34.4 34.8 30.5 40 26.5 42.6 C25.6 43.1 24.7 43.4 24 43.4 C23.3 43.4 22.4 43.1 21.5 42.6 C17.5 40 13.6 34.8 14.8 31 C16 28.2 19 26.2 21.5 25 C21.6 19 22.5 13.5 24 9.5 Z" fill="var(--paper)"/>
+    <path d="M13.8 21 C15.3 18.6 18.2 18.3 19.7 20.1 C18.6 22.5 15.5 23 13.8 21 Z" fill="#4aa8dd"/>
+    <path d="M34.2 21 C32.7 18.6 29.8 18.3 28.3 20.1 C29.4 22.5 32.5 23 34.2 21 Z" fill="#e0a63f"/>
+    <path d="M24 31.8 C25.8 31.8 27 32.9 27 34.2 C27 35.7 25.4 36.9 24 37.7 C22.6 36.9 21 35.7 21 34.2 C21 32.9 22.2 31.8 24 31.8 Z" fill="var(--ink)"/>
+  </g>
 </svg>`;
 
 const esc = (value) =>
@@ -76,7 +81,7 @@ export function layout(ctx, { title, description, page, path = "/" }) {
 <meta name="twitter:title" content="${fullTitle}">
 <meta name="twitter:description" content="${esc(blurb)}">
 <link rel="stylesheet" href="${url(ctx, "/site.css")}">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐺</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 48 48%22><defs><clipPath id=%22h%22><path d=%22M24 6.5 C33 6.5 39 13.5 39 22.5 C39 31 33.5 38.5 28.5 41.3 C26.8 42.3 25.3 43 24 43 C22.7 43 21.2 42.3 19.5 41.3 C14.5 38.5 9 31 9 22.5 C9 13.5 15 6.5 24 6.5 Z%22/></clipPath></defs><path d=%22M9 2 L18.5 13 L9.5 17.5 Z%22 fill=%22%23232830%22/><path d=%22M39 2 L29.5 13 L38.5 17.5 Z%22 fill=%22%23232830%22/><path d=%22M24 6.5 C33 6.5 39 13.5 39 22.5 C39 31 33.5 38.5 28.5 41.3 C26.8 42.3 25.3 43 24 43 C22.7 43 21.2 42.3 19.5 41.3 C14.5 38.5 9 31 9 22.5 C9 13.5 15 6.5 24 6.5 Z%22 fill=%22%23232830%22/><g clip-path=%22url(%23h)%22><path d=%22M24 9.5 C25.5 13.5 26.4 19 26.5 25 C29 26.2 32 28.2 33.2 31 C34.4 34.8 30.5 40 26.5 42.6 C25.6 43.1 24.7 43.4 24 43.4 C23.3 43.4 22.4 43.1 21.5 42.6 C17.5 40 13.6 34.8 14.8 31 C16 28.2 19 26.2 21.5 25 C21.6 19 22.5 13.5 24 9.5 Z%22 fill=%22%23f7f5f0%22/><path d=%22M13.8 21 C15.3 18.6 18.2 18.3 19.7 20.1 C18.6 22.5 15.5 23 13.8 21 Z%22 fill=%22%234aa8dd%22/><path d=%22M34.2 21 C32.7 18.6 29.8 18.3 28.3 20.1 C29.4 22.5 32.5 23 34.2 21 Z%22 fill=%22%23e0a63f%22/><path d=%22M24 31.8 C25.8 31.8 27 32.9 27 34.2 C27 35.7 25.4 36.9 24 37.7 C22.6 36.9 21 35.7 21 34.2 C21 32.9 22.2 31.8 24 31.8 Z%22 fill=%22%23232830%22/></g></svg>">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
