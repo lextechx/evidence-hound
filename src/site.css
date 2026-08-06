@@ -320,20 +320,35 @@ code {
 
 /* ---------- Credibility strip ---------- */
 
+/* Fixed column counts rather than auto-fit. auto-fit wrapped four cells into
+   three plus one, and the leftover track showed the container colour as a dead
+   grey block. Separators are drawn per cell so a short row never leaves one. */
 .figures {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
-  gap: 1px;
-  background: var(--line);
+  grid-template-columns: 1fr;
+  background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   overflow: hidden;
   margin-bottom: 3.5rem;
 }
 
+@media (min-width: 34rem) {
+  .figures {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 62rem) {
+  .figures {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .figures div {
   background: var(--surface);
   padding: 1.35rem 1.5rem;
+  box-shadow: inset -1px -1px 0 var(--line);
 }
 
 .figures dt {
