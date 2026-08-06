@@ -26,6 +26,26 @@ Two halves.
 
 **What to watch.** A monitoring framework with the specific numbers I did not know to collect. Water intake in ml per kg. Sleeping respiratory rate. Body condition score. Weight, tracked over time, on the same scale. The kinds of measurements that turn "he seems a bit off lately" into a dated trend a veterinarian can actually work with.
 
+## Who I am
+
+I am an engineer, not a veterinarian, and that distinction matters enough that it sits on every page of this site.
+
+I grew up around rescue. My mom volunteered pulling animals out of bad situations, and at one point we were fostering
+twenty-five at once. You learn things in a house like that. You see which animals come back from neglect and which
+ones do not, which problems resolve with time and which ones were never going to, how differently two dogs of the same
+age can be aging. As a kid I could see the patterns. I had no vocabulary for them and no way to tell what was real from
+what I only wanted to be true.
+
+Since then I have had my own animals, and I have watched several of them get old, Koda most recently. What changed
+between the fostering years and now is not that I learned veterinary medicine. It is that I learned how to work with
+data, how to read a trial, and how to tell a result that means something from a result that is noise dressed up in
+statistics.
+
+That is the whole contribution here. I am not producing new medical knowledge. I am taking evidence that already exists
+in journals most owners will never open, and putting it somewhere they can find it, with the strength of each finding
+stated honestly and every citation attached so anyone who knows more than I do can check my work and tell me where I
+have it wrong.
+
 ## What I am not claiming
 
 I am not a veterinarian. Nothing here is advice about your dog, and this site will never tell you what to do. It has never met your animal, and the person who can examine the dog in front of them is the one whose judgment matters.
