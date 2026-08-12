@@ -13,7 +13,7 @@ This project puts that evidence in one place, states plainly how strong it is, a
 - Every intervention gets a grade from **A** (strong) to **D** (evidence of little or no benefit)
 - Interventions that *failed* their trials stay visible, because grade D exists on purpose
 - Industry funding is disclosed on every study, and sponsor-funded results without independent replication cap at B
-- Code is MIT, content is CC BY-SA 4.0, and the full dataset publishes as a single `data.json`
+- Code is AGPL-3.0, content is CC BY-SA 4.0, and the full dataset publishes as a single `data.json`
 
 > [!IMPORTANT]
 > This is not veterinary advice. It summarizes published research about dogs in general and cannot know your dog. Every
@@ -116,7 +116,8 @@ researchers. If we have misread a trial, that's the most valuable contribution y
 
 ## Licenses
 
-- **Code.** [MIT](LICENSE)
+- **Code.** [AGPL-3.0](LICENSE). Open source, but anyone who runs a modified version as a hosted
+  service has to publish their changes. This does not restrict use of the site itself.
 - **Content and data.** [CC BY-SA 4.0](LICENSE-CONTENT.md), so it can be reused and translated as long as it stays open
 
 ## What this project will not do

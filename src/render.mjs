@@ -1,3 +1,17 @@
+/*
+ * Evidence Hound: what actually works for aging dogs.
+ * Copyright (C) 2026 Alexandria Towne and Evidence Hound contributors.
+ *
+ * This program is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or (at your
+ * option) any later version. It is distributed WITHOUT ANY WARRANTY; without
+ * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ * PURPOSE. See <https://www.gnu.org/licenses/> for the full license.
+ *
+ * Source: https://github.com/lextechx/evidence-hound
+ */
+
 /** HTML templates. Plain template literals, no framework, no runtime. */
 
 export const TIERS = {
@@ -105,7 +119,7 @@ ${page}
     <p class="disclaimer"><strong>This is not veterinary advice.</strong> Evidence Hound summarizes published research about
     dogs in general. It cannot know your dog. Every decision here belongs to you and your veterinarian, who can
     examine the animal in front of them. No website can do that.</p>
-    <p>Code is MIT licensed. Content and data are CC BY-SA 4.0. Corrections are welcome and expected:
+    <p>Code is AGPL-3.0 licensed. Content and data are CC BY-SA 4.0. Corrections are welcome and expected:
     <a href="https://github.com/lextechx/evidence-hound/issues">open an issue</a> or send a pull request.</p>
   </div>
 </footer>

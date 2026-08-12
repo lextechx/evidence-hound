@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "description": "An open, evidence-graded reference for treating aging dogs, built from randomized controlled trial data.",
-  "license": "MIT",
+  "license": "AGPL-3.0-or-later",
   "type": "module",
   "engines": {
     "node": ">=20"

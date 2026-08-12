@@ -18,8 +18,9 @@ The point of this project is that the evidence stays checkable and stays open. A
 supplement retailer to fold these grades into a closed product, quietly drop grade D, and sell against the result.
 ShareAlike means any derivative stays open to the same scrutiny as the original.
 
-Code in this repository is separately licensed under [MIT](LICENSE), so tooling can be reused freely without the
-ShareAlike obligation.
+Code in this repository is separately licensed under [AGPL-3.0](LICENSE). The two licenses carry the same bargain:
+reuse it freely, but improvements stay open. AGPL extends that to running a modified version as a network service,
+which is how a closed competitor would otherwise be built on this work.
 
 ## Citations and sources
 

@@ -1,4 +1,18 @@
 /*
+ * Evidence Hound: what actually works for aging dogs.
+ * Copyright (C) 2026 Alexandria Towne and Evidence Hound contributors.
+ *
+ * This program is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or (at your
+ * option) any later version. It is distributed WITHOUT ANY WARRANTY; without
+ * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ * PURPOSE. See <https://www.gnu.org/licenses/> for the full license.
+ *
+ * Source: https://github.com/lextechx/evidence-hound
+ */
+
+/*
  * Browser tracker for the monitoring framework.
  *
  * Deliberately dependency-free and offline: everything is kept in
