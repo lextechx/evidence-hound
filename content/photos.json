@@ -1,4 +1,36 @@
 {
-  "$comment": "Photos for the story page. Drop image files into assets/photos/ and add an entry here. Alt text is required: it is what a blind reader gets, and what everyone gets when the image fails to load. Caption is optional and shown under the image.",
-  "photos": []
+  "$comment": "Photos for the story page. Files live in assets/photos/. Alt text is required: it is what a blind reader gets and what everyone gets when an image fails to load. width and height let the browser reserve space so the page does not jump while images load.",
+  "photos": [
+    {
+      "file": "koda-heterochromia.jpg",
+      "alt": "Close-up of Koda, a black and white Siberian Husky, mouth open in a grin. One eye is ice blue, the other amber. A red longboard leans against a fence behind him.",
+      "width": 1244,
+      "height": 1215,
+      "caption": "One blue eye, one amber. The site's colours come from here."
+    },
+    {
+      "file": "koda-beach-sunset.jpg",
+      "alt": "Koda lying in the sand at the water's edge, looking back over his shoulder, with the sun setting over the ocean behind him.",
+      "width": 1306,
+      "height": 1600
+    },
+    {
+      "file": "koda-recovery-car.jpg",
+      "alt": "Koda in the back of a car after TPLO surgery, wearing an inflatable grey recovery collar, with a green cast on his hind leg and a purple bandage on his front paw. He is panting and looks cheerful.",
+      "width": 1256,
+      "height": 1600
+    },
+    {
+      "file": "koda-recovery-sleeping.jpg",
+      "alt": "Koda asleep on an orthopaedic bed on his side, still in the inflatable collar, the green cast stretched out behind him.",
+      "width": 1256,
+      "height": 1600
+    },
+    {
+      "file": "koda-blanket.jpg",
+      "alt": "Koda peering out from underneath a draped blanket indoors, only his face visible.",
+      "width": 1126,
+      "height": 1600
+    }
+  ]
 }

@@ -84,13 +84,14 @@
     },
     {
       "type": "meta_analysis",
-      "citation": "Barbeau-Grégoire M, et al. A 2022 Systematic Review and Meta-Analysis of Enriched Therapeutic Diets and Nutraceuticals in Canine and Feline Osteoarthritis. International Journal of Molecular Sciences, 2022.",
+      "citation": "Barbeau-Grégoire M, Otis C, Cournoyer A, Moreau M, Lussier B, Troncy E. A 2022 Systematic Review and Meta-Analysis of Enriched Therapeutic Diets and Nutraceuticals in Canine and Feline Osteoarthritis. International Journal of Molecular Sciences, 2022;23(18):10384.",
       "year": 2022,
-      "design": "Systematic review and meta-analysis",
+      "design": "Systematic review and meta-analysis. 1578 publications screened, 57 articles included, comprising 72 trials across nine categories of natural health compound.",
       "blinding": "not-applicable",
       "result": "Found omega-3-enriched diets among the better-supported nutritional interventions, in sharp contrast to chondroitin-glucosamine, which showed a marked non-effect.",
       "summary": "The single most useful reference for separating nutraceuticals that work from those that do not.",
-      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9499673/"
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9499673/",
+      "funding": "Université de Montréal research groups (GREPAQ and CHUM arthrosis unit); see publication"
     }
   ],
   "see_also": [

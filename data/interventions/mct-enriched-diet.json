@@ -1,18 +1,26 @@
 {
   "id": "mct-enriched-diet",
   "name": "Medium-chain triglyceride (MCT) enriched diet",
-  "brand_names": ["Purina Pro Plan Bright Mind", "Hill's b/d"],
-  "aliases": ["MCT oil diet", "brain protection blend"],
+  "brand_names": [
+    "Purina Pro Plan Bright Mind",
+    "Hill's b/d"
+  ],
+  "aliases": [
+    "MCT oil diet",
+    "brain protection blend"
+  ],
   "category": "diet",
-  "conditions": ["cognitive-dysfunction"],
+  "conditions": [
+    "cognitive-dysfunction"
+  ],
   "tier": "B",
-  "tier_rationale": "A randomized, double-blind, placebo-controlled, multi-site trial across 24 veterinary clinics with 87 dogs in three arms found significant improvement in all six categories of cognitive dysfunction signs on the 6.5% MCT diet. That is a genuinely good trial design for this field. It is held at B because independent replication outside manufacturer-supported work is limited and the outcome is an owner-completed questionnaire rather than an objective measure.",
+  "tier_rationale": "A randomized, double-blind, placebo-controlled, multi-site trial with 87 dogs in three arms of 29 found significant improvement in all six categories of cognitive dysfunction signs on the 6.5% MCT diet. That is a genuinely good trial design for this field. It is held at B because independent replication outside manufacturer-supported work is limited and the outcome is an owner-completed questionnaire rather than an objective measure.",
   "regulatory": {
     "us": "Marketed as therapeutic or wellness diets rather than drugs.",
     "notes": "Dietary claims are not held to the evidentiary standard applied to pharmaceuticals, which makes the existence of a real randomized trial here notable rather than expected."
   },
   "plain_summary": "The best-evidenced intervention for canine dementia, and one of the few places where a diet change has randomized trial support. Medium-chain triglycerides give the aging brain an alternative fuel source when its glucose metabolism falters.",
-  "what_trials_show": "The key trial was a randomized, double-blind, placebo-controlled, multi-site study run across 24 veterinary clinics in Ontario. Eighty-seven dogs were randomized into three arms of 29: a control diet, a 6.5% MCT oil diet with a brain protection blend, and a 9% MCT diet. Diets were fed for 90 days with reassessment of cognitive dysfunction signs at days 30 and 90. All six categories of cognitive dysfunction signs improved significantly in the 6.5% MCT group by the end of the study. Notably, the higher 9% dose did not simply do more, a reminder that more is not better here. A broader systematic review of enriched diets and nutraceuticals for cognitive enhancement in aged dogs and cats supports the direction of this finding, and a scoping review found that combining supplemented diets with environmental enrichment improved signs more than either alone.",
+  "what_trials_show": "The key trial was a randomized, double-blind, placebo-controlled, multi-site study run through participating veterinary clinics. Eighty-seven dogs were randomized into three arms of 29: a control diet, a 6.5% MCT oil diet with a brain protection blend, and a 9% MCT diet. Diets were fed for 90 days with reassessment of cognitive dysfunction signs at days 30 and 90. All six categories of cognitive dysfunction signs improved significantly in the 6.5% MCT group by the end of the study. Notably, the higher 9% dose did not simply do more, a reminder that more is not better here. A broader systematic review of enriched diets and nutraceuticals for cognitive enhancement in aged dogs and cats supports the direction of this finding, and a scoping review found that combining supplemented diets with environmental enrichment improved signs more than either alone.",
   "harms": "Well tolerated. MCT diets are calorie-dense, so watch weight. That matters because excess weight worsens the arthritis many of these same dogs have. Transition gradually to avoid loose stool. Not a substitute for investigating other causes of behavior change: pain, hearing and vision loss, endocrine disease, and hypertension all mimic cognitive dysfunction and are treatable.",
   "practical": {
     "route": "Complete therapeutic diet, or MCT oil added to food",
@@ -29,10 +37,10 @@
   "evidence": [
     {
       "type": "rct",
-      "citation": "Pan Y, et al. Efficacy of a Therapeutic Diet on Dogs With Signs of Cognitive Dysfunction Syndrome (CDS): A Prospective Double Blinded Placebo Controlled Clinical Study. Frontiers in Nutrition, 2018;5:127.",
+      "citation": "Pan Y, Landsberg G, Mougeot I, Kelly S, Xu H, Bhatnagar S, Gardner CL, Milgram NW. Efficacy of a Therapeutic Diet on Dogs With Signs of Cognitive Dysfunction Syndrome (CDS): A Prospective Double Blinded Placebo Controlled Clinical Study. Frontiers in Nutrition, 2018;5:127.",
       "year": 2018,
       "n": 87,
-      "design": "Randomized, double-blind, placebo-controlled, multi-site (24 clinics), three parallel arms",
+      "design": "Randomized, double-blind, placebo-controlled, multi-site, three parallel arms of 29 dogs",
       "blinding": "double-blind",
       "control": "Control diet",
       "duration": "90 days, with assessment at days 30 and 90",
@@ -64,7 +72,11 @@
       "url": "https://www.sciencedirect.com/science/article/pii/S0168159123002691"
     }
   ],
-  "see_also": ["selegiline"],
+  "see_also": [
+    "selegiline"
+  ],
   "last_reviewed": "2026-08-04",
-  "contributors": ["@lextechx"]
+  "contributors": [
+    "@lextechx"
+  ]
 }

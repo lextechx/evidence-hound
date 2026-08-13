@@ -37,12 +37,12 @@
   "evidence": [
     {
       "type": "meta_analysis",
-      "citation": "Barbeau-Grégoire M, et al. A 2022 Systematic Review and Meta-Analysis of Enriched Therapeutic Diets and Nutraceuticals in Canine and Feline Osteoarthritis. International Journal of Molecular Sciences, 2022.",
+      "citation": "Barbeau-Grégoire M, Otis C, Cournoyer A, Moreau M, Lussier B, Troncy E. A 2022 Systematic Review and Meta-Analysis of Enriched Therapeutic Diets and Nutraceuticals in Canine and Feline Osteoarthritis. International Journal of Molecular Sciences, 2022;23(18):10384.",
       "year": 2022,
-      "design": "Systematic review and meta-analysis",
+      "design": "Systematic review and meta-analysis. 1578 publications screened, 57 articles included, comprising 72 trials across nine categories of natural health compound.",
       "blinding": "not-applicable",
       "result": "Weak efficacy for collagen and a very marked non-effect for chondroitin-glucosamine nutraceuticals; authors recommended these products no longer be recommended for pain management in canine and feline osteoarthritis.",
-      "funding": "See publication",
+      "funding": "Université de Montréal research groups (GREPAQ and CHUM arthrosis unit); see publication",
       "summary": "The decisive reference. This is a pooled analysis, not a single disappointing trial.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/36142319/"
     },

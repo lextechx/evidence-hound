@@ -1,10 +1,16 @@
 {
   "id": "grapiprant",
   "name": "Grapiprant (EP4 prostaglandin receptor antagonist)",
-  "brand_names": ["Galliprant"],
-  "aliases": ["piprant"],
+  "brand_names": [
+    "Galliprant"
+  ],
+  "aliases": [
+    "piprant"
+  ],
   "category": "analgesic",
-  "conditions": ["osteoarthritis"],
+  "conditions": [
+    "osteoarthritis"
+  ],
   "tier": "B",
   "tier_rationale": "One large, well-conducted, randomized, masked, placebo-controlled multisite trial (285 dogs enrolled, 262 evaluable) demonstrated significant improvement over placebo on owner-reported pain, and it has since been used as an active comparator in blinded trials. It sits at B rather than A because the independent replication base is thinner than for traditional NSAIDs and the pivotal evidence is manufacturer-funded.",
   "regulatory": {
@@ -28,7 +34,7 @@
   "evidence": [
     {
       "type": "rct",
-      "citation": "Rausch-Derra L, Huebner M, Wofford J, Rhodes L. A Prospective, Randomized, Masked, Placebo-Controlled Multisite Clinical Study of Grapiprant, an EP4 Prostaglandin Receptor Antagonist (PRA), in Dogs with Osteoarthritis. Journal of Veterinary Internal Medicine, 2016;30(3):756.",
+      "citation": "Rausch-Derra L, Huebner M, Wofford J, Rhodes L. A Prospective, Randomized, Masked, Placebo-Controlled Multisite Clinical Study of Grapiprant, an EP4 Prostaglandin Receptor Antagonist (PRA), in Dogs with Osteoarthritis. Journal of Veterinary Internal Medicine, 2016;30(3):756-763.",
       "year": 2016,
       "n": 262,
       "design": "Prospective, randomized, masked, placebo-controlled, 16-site field study",
@@ -40,7 +46,7 @@
       "result": "Statistically significant improvement in both pain interference and pain severity versus placebo.",
       "funding": "Aratana Therapeutics (manufacturer)",
       "summary": "The pivotal registration study and still the strongest single piece of evidence for this drug. Large, masked, placebo-controlled, and multisite. A genuinely good trial, with the standard caveat that the sponsor ran it.",
-      "url": "https://onlinelibrary.wiley.com/doi/10.1111/jvim.13948"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27075237/"
     },
     {
       "type": "rct",
@@ -59,7 +65,12 @@
       "url": "https://www.nature.com/articles/s41598-026-37626-4"
     }
   ],
-  "see_also": ["nsaids", "bedinvetmab"],
+  "see_also": [
+    "nsaids",
+    "bedinvetmab"
+  ],
   "last_reviewed": "2026-08-04",
-  "contributors": ["@lextechx"]
+  "contributors": [
+    "@lextechx"
+  ]
 }

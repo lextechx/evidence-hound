@@ -542,7 +542,9 @@ export function storyPage(ctx, source, photos = []) {
     ${photos
       .map(
         (photo) =>
-          `<img src="${url(ctx, `/photos/${esc(photo.file)}`)}" alt="${esc(photo.alt)}" loading="lazy" decoding="async">`,
+          `<img src="${url(ctx, `/photos/${esc(photo.file)}`)}" alt="${esc(photo.alt)}"${
+            photo.width ? ` width="${photo.width}" height="${photo.height}"` : ""
+          } loading="lazy" decoding="async">`,
       )
       .join("\n    ")}
   </div>
