@@ -28,18 +28,15 @@ A hosted version with saved profiles is planned, because keeping a JSON file by 
 who need this are not going to do it. That version will store your dog's record on our servers. When it ships, these
 commitments come with it:
 
-**You can take it with you.** Full export of everything about your dog, in the same open JSON format the offline tool
-uses, on demand and without asking anyone.
+When it ships, you will be able to export everything about your dog as JSON in the same format the offline tool uses,
+on demand and without asking anyone. Deletion will mean deleted, including from backups within a defined window, rather
+than hidden from your view while we keep a copy.
 
-**You can delete it.** Deletion means deleted, including from backups within a defined window, not hidden from your view
-while we keep a copy.
+The record will not be sold. Not to advertisers, not to pet insurers, not to pet food or pharmaceutical companies. There
+is no advertising here and no affiliate revenue, which is the same reason you can trust the grades. There is no
+third-party tracking, no advertising pixels, and no session recording.
 
-**It is not sold, ever.** Not to advertisers, not to pet insurers, not to pet food or pharmaceutical companies. There is
-no advertising on this site and no affiliate revenue, which is also why you can trust the grades.
-
-**No third-party tracking.** No advertising pixels, no session recording, no data brokers.
-
-**Nothing is used for research without you specifically agreeing.** See below, because this part matters.
+Nothing will be used for research unless you specifically agree to it, which is worth explaining properly.
 
 ## The research question, stated honestly
 

@@ -421,7 +421,7 @@ export function methodsPage(ctx) {
   grade tells you how strong the general evidence is. Your veterinarian applies it to a specific animal.</p>
   <p>Regulatory approval and evidence grade are also different things. Approval reflects what a regulator accepted at a
   point in time under a particular standard, and standards differ across decades and across approval pathways. Some
-  approved products here sit at grade C. That is not an error.</p>
+  approved products here sit at grade C for that reason.</p>
 </section>
 
 <section>
@@ -471,8 +471,8 @@ export function aboutPage(ctx) {
 
 <section id="colophon">
   <h2>Colophon, for the curious</h2>
-  <p>This site has <strong>zero dependencies</strong>. Not few. None. <code>npm install</code> downloads nothing, there
-  is no lock file to audit, and no transitive package can change what a grade says. For a project whose entire value is
+  <p>This site has <strong>zero dependencies</strong>. <code>npm install</code> downloads nothing, there is no lock file
+  to audit, and no transitive package can change what a grade says. For a project whose entire value is
   being checkable, that felt like the right trade against convenience.</p>
 
   <p>The stack, such as it is:</p>
