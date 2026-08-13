@@ -87,7 +87,9 @@
         "New overnight urination in a house-trained dog",
         "Appetite increase with weight loss, or appetite loss of more than a couple of days"
       ],
-      "links": []
+      "links": [
+        "renal-therapeutic-diet"
+      ]
     },
     {
       "id": "bloodwork",
@@ -105,8 +107,9 @@
         "New or rising liver enzymes in a dog on long-term medication"
       ],
       "links": [
+        "grapiprant",
         "nsaids",
-        "grapiprant"
+        "renal-therapeutic-diet"
       ]
     },
     {

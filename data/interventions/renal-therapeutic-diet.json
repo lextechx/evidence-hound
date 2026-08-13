@@ -1,0 +1,81 @@
+{
+  "id": "renal-therapeutic-diet",
+  "name": "Therapeutic renal diet",
+  "brand_names": [
+    "Hill's k/d",
+    "Royal Canin Renal",
+    "Purina NF"
+  ],
+  "aliases": [
+    "kidney diet",
+    "renal food",
+    "protein and phosphorus restricted diet"
+  ],
+  "category": "diet",
+  "conditions": [
+    "kidney-disease"
+  ],
+  "tier": "B",
+  "tier_rationale": "One double-masked, randomized, controlled trial in dogs with a survival endpoint, which is close to the strongest study design this field produces. Dogs fed the renal food lived at least 13 months longer than dogs fed maintenance food, and uremic crises were delayed by roughly 5 months. It is held at B rather than A because that is a single trial of 38 dogs. The equivalent trial in cats found the same direction of effect, which is reassuring but is not evidence in dogs.",
+  "regulatory": {
+    "us": "Sold as veterinary therapeutic diets, available through veterinarians rather than as regulated drugs.",
+    "notes": "Dietary claims are not held to the evidentiary standard applied to pharmaceuticals, which makes a randomized survival trial in this category genuinely unusual."
+  },
+  "plain_summary": "The best-evidenced treatment for canine kidney disease, and one of the very few interventions anywhere in geriatric veterinary medicine shown in a randomized trial to extend life rather than just relieve symptoms. The hard part is not whether it works, it is getting a dog with a poor appetite to eat it.",
+  "what_trials_show": "In a double-masked, randomized, controlled trial, 38 dogs with spontaneous chronic renal failure were assigned to either a standard adult maintenance food or a therapeutic renal food, and followed for up to 24 months. Dogs fed the renal food lived at least 13 months longer than those fed maintenance food. In dogs with a lesser degree of azotemia, the renal food delayed the onset of uremic crises by roughly 5 months. Those are survival and hard-event endpoints rather than owner-reported comfort scores, which is what makes this trial unusual. A separately conducted double-masked randomized trial of 45 cats with stage 2 or 3 chronic kidney disease found the same direction of effect, but cats are not dogs and that trial is context rather than evidence here.",
+  "harms": "The real risk is not toxicity, it is that the dog will not eat. Renal diets restrict protein, phosphorus, and sodium, and dogs with kidney disease often have poor appetite and nausea to begin with. A dog that refuses the diet and eats less overall can lose weight and muscle, which is worse than the diet not being restricted at all. Protein restriction in a dog that does not yet need it is also not benign. This is a treatment to start on veterinary advice at the right IRIS stage, not something to move to early on suspicion.",
+  "practical": {
+    "route": "Complete therapeutic diet, replacing the normal food",
+    "typical_course": "Ongoing, typically introduced from IRIS stage 2 or 3 onward",
+    "monitoring": "Body weight and muscle condition at every visit, since appetite loss is the main failure mode, plus creatinine, SDMA, urine specific gravity, and phosphorus on the schedule your vet sets",
+    "cost_signal": "moderate"
+  },
+  "ask_your_vet": [
+    "What IRIS stage is my dog, and is that the stage where a renal diet is indicated?",
+    "If they will not eat it, what are the alternatives, and is a partial switch worth anything?",
+    "How will we tell the diet is helping rather than just assuming it is?",
+    "Should we be treating phosphorus or blood pressure alongside the diet?"
+  ],
+  "evidence": [
+    {
+      "type": "rct",
+      "citation": "Jacob F, Polzin DJ, Osborne CA, et al. Clinical evaluation of dietary modification for treatment of spontaneous chronic renal failure in dogs. JAVMA, 2002;220(8):1163-1170.",
+      "year": 2002,
+      "n": 38,
+      "design": "Double-masked, randomized, controlled clinical trial",
+      "blinding": "double-blind",
+      "control": "Standard adult maintenance food",
+      "duration": "Up to 24 months",
+      "population": "38 dogs with spontaneous chronic renal failure",
+      "primary_outcome": "Uremic crises and mortality",
+      "result": "Dogs fed the renal food lived at least 13 months longer than those fed maintenance food. In dogs with less severe azotemia, uremic crises were delayed by approximately 5 months.",
+      "funding": "Hill's Pet Nutrition supported the work; see publication for the full disclosure",
+      "summary": "The load-bearing trial for this entry, and one of the few randomized trials in canine geriatric medicine with a survival endpoint. Manufacturer-supported and small at 38 dogs, but properly double-masked and randomized.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11990962/"
+    },
+    {
+      "type": "rct",
+      "citation": "Ross SJ, Osborne CA, Kirk CA, et al. Clinical evaluation of dietary modification for treatment of spontaneous chronic kidney disease in cats. JAVMA, 2006;229(6):949-957.",
+      "year": 2006,
+      "n": 45,
+      "design": "Double-masked, randomized, controlled clinical trial",
+      "blinding": "double-blind",
+      "control": "Adult maintenance diet",
+      "duration": "Up to 24 months, evaluated trimonthly",
+      "population": "45 client-owned cats with spontaneous stage 2 or 3 chronic kidney disease",
+      "primary_outcome": "Uremic episodes and mortality",
+      "result": "A renal diet modified in protein, phosphorus, sodium, and lipid content reduced uremic episodes and mortality relative to maintenance diet.",
+      "funding": "Hill's Pet Nutrition supported the work; see publication",
+      "summary": "Included as context, not as evidence in dogs. It is listed because it is frequently cited in discussions of canine kidney diets, and readers should be able to see plainly that it was done in cats.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16978113/"
+    }
+  ],
+  "see_also": [
+    "weight-optimization",
+    "nsaids"
+  ],
+  "last_reviewed": "2026-08-13",
+  "contributors": [
+    "@lextechx"
+  ]
+}

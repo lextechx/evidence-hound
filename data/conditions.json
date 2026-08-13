@@ -22,5 +22,11 @@
     "short": "Weakness, sarcopenia, and reduced activity independent of joint pain.",
     "description": "Aging dogs lose muscle mass and proprioceptive control even without significant arthritis. This overlaps heavily with osteoarthritis but responds to different interventions, and is frequently missed as a separate problem.",
     "measured_by": "Body condition and muscle condition scoring, accelerometry, sit-to-stand testing."
+  },
+  "kidney-disease": {
+    "name": "Chronic kidney disease",
+    "short": "Progressive loss of kidney function, one of the most common serious diseases of older dogs.",
+    "description": "Chronic kidney disease is usually well advanced before an owner notices anything, because the early signs are easy to read as ordinary aging: drinking more, urinating more, a little weight coming off. It is the condition the thirst measurement in the monitoring framework exists to catch, and it is one of the few places in geriatric medicine where a dietary change has a randomized trial showing a survival benefit.",
+    "measured_by": "Serum creatinine and SDMA, urine specific gravity, urine protein to creatinine ratio, and blood pressure. IRIS staging combines these into a stage from 1 to 4, which is what treatment decisions hang on."
   }
 }
