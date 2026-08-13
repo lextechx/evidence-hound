@@ -68,7 +68,10 @@ const tierBadge = (tier) =>
     tier,
   )}"></b>${esc(TIERS[tier].label)}</span>`;
 
-export const SITE_URL = "https://evidence-hound.web.app";
+// The .web.app address keeps working permanently, so links already shared
+// never break. Canonical tags point at the custom domain so search engines
+// treat that as the real one.
+export const SITE_URL = "https://evidencehound.org";
 
 export function layout(ctx, { title, description, page, path = "/" }) {
   const fullTitle = title ? `${esc(title)} · Evidence Hound` : "Evidence Hound · What actually works for aging dogs";
