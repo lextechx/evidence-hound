@@ -1,0 +1,87 @@
+<!doctype html>
+<meta charset="utf-8">
+<!--
+  Source for the 1200x630 social preview card. Rendered to assets/og.png with:
+    npm run og
+  Committed as a PNG because social crawlers do not run JavaScript and most
+  of them refuse SVG.
+-->
+<style>
+  @page { size: 1200px 630px; margin: 0 }
+  * { box-sizing: border-box; margin: 0 }
+  body {
+    width: 1200px; height: 630px; overflow: hidden;
+    background: #fbfaf7; color: #14171c;
+    font: 400 17px/1.6 ui-sans-serif, -apple-system, "Helvetica Neue", sans-serif;
+    padding: 64px 72px; display: flex; flex-direction: column; justify-content: space-between;
+    position: relative;
+  }
+  body::after {
+    content: ""; position: absolute; inset: 0 0 auto 0; height: 8px;
+    background: linear-gradient(90deg, #1c6ea4 0%, #1c6ea4 40%, #b3730d 40%, #b3730d 100%);
+  }
+  .top { display: flex; align-items: center; gap: 16px }
+  .top svg { width: 52px; height: 52px }
+  .brand { font-size: 27px; font-weight: 660; letter-spacing: -.02em }
+  .eyebrow {
+    font-size: 15px; font-weight: 620; text-transform: uppercase; letter-spacing: .14em;
+    color: #b3730d; margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 66px; line-height: 1.04; font-weight: 680; letter-spacing: -.035em;
+    max-width: 15ch;
+  }
+  .sub { font-size: 23px; color: #3d4653; margin-top: 22px; max-width: 46ch; line-height: 1.45 }
+  .grades { display: flex; gap: 11px; align-items: center; flex-wrap: nowrap }
+  .g {
+    display: flex; align-items: center; gap: 9px;
+    font-size: 15px; font-weight: 640; letter-spacing: .05em; text-transform: uppercase;
+    padding: 9px 17px 9px 9px; border-radius: 999px; border: 1.5px solid currentColor;
+  }
+  .g { white-space: nowrap }
+  .g b {
+    width: 28px; height: 28px; border-radius: 999px;
+    display: grid; place-items: center; color: #fff; font-size: 15px; font-weight: 750;
+  }
+  .a { color: #1a6b45 } .a b { background: #1a6b45 }
+  .b { color: #1c6ea4 } .b b { background: #1c6ea4 }
+  .c { color: #8a6212 } .c b { background: #8a6212 }
+  .u { color: #59607a } .u b { background: #59607a }
+  .d { color: #a03232 } .d b { background: #a03232 }
+  .foot { display: flex; justify-content: space-between; align-items: flex-end; gap: 30px }
+  .note { font-size: 16px; color: #6b7280; text-align: right; line-height: 1.5; flex: none; white-space: nowrap }
+</style>
+<body>
+  <div class="top">
+    <svg viewBox="0 0 48 48">
+      <defs><clipPath id="h"><path d="M24 9.5 C27.5 9.5 30.6 10.4 33 12 L38.5 3.5 L39.5 15.5 C40.6 17.6 41.2 20 41.2 22.6 C41.2 30.5 35 39 28.6 42.4 C27 43.3 25.3 43.8 24 43.8 C22.7 43.8 21 43.3 19.4 42.4 C13 39 6.8 30.5 6.8 22.6 C6.8 20 7.4 17.6 8.5 15.5 L9.5 3.5 L15 12 C17.4 10.4 20.5 9.5 24 9.5 Z"/></clipPath></defs>
+      <path d="M24 9.5 C27.5 9.5 30.6 10.4 33 12 L38.5 3.5 L39.5 15.5 C40.6 17.6 41.2 20 41.2 22.6 C41.2 30.5 35 39 28.6 42.4 C27 43.3 25.3 43.8 24 43.8 C22.7 43.8 21 43.3 19.4 42.4 C13 39 6.8 30.5 6.8 22.6 C6.8 20 7.4 17.6 8.5 15.5 L9.5 3.5 L15 12 C17.4 10.4 20.5 9.5 24 9.5 Z" fill="#14171c"/>
+      <g clip-path="url(#h)">
+        <path d="M10.9 7.6 L14.2 11.7 L10.7 13.9 Z" fill="#fbfaf7" opacity=".62"/>
+        <path d="M37.1 7.6 L33.8 11.7 L37.3 13.9 Z" fill="#fbfaf7" opacity=".62"/>
+        <path d="M24 13 C25.3 16.5 26 21 26.1 25.6 C29.2 27 32.6 29.2 33.9 32.2 C35.2 36.2 31 41.4 26.8 43.4 C25.8 43.9 24.8 44.2 24 44.2 C23.2 44.2 22.2 43.9 21.2 43.4 C17 41.4 12.8 36.2 14.1 32.2 C15.4 29.2 18.8 27 21.9 25.6 C22 21 22.7 16.5 24 13 Z" fill="#fbfaf7"/>
+        <path d="M13.2 22.8 C14.9 20.2 18.2 19.9 19.8 21.9 C18.6 24.5 15.1 25.1 13.2 22.8 Z" fill="#4aa8dd"/>
+        <path d="M34.8 22.8 C33.1 20.2 29.8 19.9 28.2 21.9 C29.4 24.5 32.9 25.1 34.8 22.8 Z" fill="#e0a63f"/>
+        <path d="M24 32.6 C25.9 32.6 27.2 33.8 27.2 35.2 C27.2 36.8 25.5 38.1 24 38.9 C22.5 38.1 20.8 36.8 20.8 35.2 C20.8 33.8 22.1 32.6 24 32.6 Z" fill="#14171c"/>
+      </g>
+    </svg>
+    <span class="brand">Evidence&nbsp;Hound</span>
+  </div>
+
+  <div>
+    <div class="eyebrow">Evidence-graded veterinary reference</div>
+    <h1>What actually works for aging dogs</h1>
+    <p class="sub">Treatments ranked by the strength of the randomized trials behind them, including the popular ones that trials show do not work.</p>
+  </div>
+
+  <div class="foot">
+    <div class="grades">
+      <span class="g a"><b>A</b>Strong</span>
+      <span class="g b"><b>B</b>Moderate</span>
+      <span class="g c"><b>C</b>Limited</span>
+      <span class="g u"><b>U</b>Untested</span>
+      <span class="g d"><b>D</b>No benefit</span>
+    </div>
+    <div class="note">Open data · Every citation linked<br>No ads, no affiliates, no sponsorship</div>
+  </div>
+</body>

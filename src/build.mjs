@@ -204,6 +204,9 @@ async function build() {
 
   await copyFile(join(root, "src", "site.css"), join(dist, "site.css"));
   await copyFile(join(root, "src", "app.js"), join(dist, "app.js"));
+  // Social crawlers do not run JS and mostly refuse SVG, so the preview
+  // card ships as a pre-rendered PNG. Regenerate with `npm run og`.
+  await copyFile(join(root, "assets", "og.png"), join(dist, "og.png"));
   await writeFile(join(dist, ".nojekyll"), "", "utf8");
 
   console.log(

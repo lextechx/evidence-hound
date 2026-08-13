@@ -15,7 +15,8 @@
     "serve": "node scripts/serve.mjs",
     "report": "node scripts/report.mjs",
     "staleness": "node scripts/staleness.mjs",
-    "check": "npm run validate && npm run build && npm test"
+    "check": "npm run validate && npm run build && npm test",
+    "og": "\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --screenshot=assets/og.png --window-size=1200,630 assets/og-card.html"
   },
   "repository": {
     "type": "git",

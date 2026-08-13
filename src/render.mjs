@@ -89,7 +89,12 @@ export function layout(ctx, { title, description, page, path = "/" }) {
 <meta property="og:title" content="${fullTitle}">
 <meta property="og:description" content="${esc(blurb)}">
 <meta property="og:url" content="${esc(canonical)}">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="${SITE_URL}/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Evidence Hound. What actually works for aging dogs, with the A to D grading scale.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="${SITE_URL}/og.png">
 <meta name="twitter:title" content="${fullTitle}">
 <meta name="twitter:description" content="${esc(blurb)}">
 <link rel="stylesheet" href="${url(ctx, "/site.css")}">
