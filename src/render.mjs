@@ -469,6 +469,41 @@ export function aboutPage(ctx) {
   </ul>
 </section>
 
+<section id="colophon">
+  <h2>Colophon, for the curious</h2>
+  <p>This site has <strong>zero dependencies</strong>. Not few. None. <code>npm install</code> downloads nothing, there
+  is no lock file to audit, and no transitive package can change what a grade says. For a project whose entire value is
+  being checkable, that felt like the right trade against convenience.</p>
+
+  <p>The stack, such as it is:</p>
+
+  <dl class="practical">
+    <div><dt>Content</dt><dd>One JSON file per intervention, validated against a JSON Schema by a hand-written
+      ~90-line checker. The data is the CMS.</dd></div>
+    <div><dt>Generator</dt><dd>A single Node script using template literals. No React, no bundler, no framework.</dd></div>
+    <div><dt>Front end</dt><dd>One stylesheet and one vanilla JS file. The tracker is ~370 lines and stores to
+      localStorage.</dd></div>
+    <div><dt>Hosting</dt><dd>Firebase Hosting on Google Cloud, deployed by GitHub Actions in about 35 seconds.</dd></div>
+    <div><dt>Licence</dt><dd>AGPL-3.0 for code, CC BY-SA 4.0 for the evidence.</dd></div>
+  </dl>
+
+  <p>The part worth stealing: <strong>some tests assert editorial policy rather than code correctness.</strong> An entry
+  graded U for "untested" that cites a completed randomized trial fails CI, because it should have been regraded. An
+  entry graded A or B that cites no trial fails too. The build refuses to publish data that contradicts the grading
+  rules, which means the rules cannot quietly rot as the content grows.</p>
+
+  <p>That idea generalises well beyond dogs. Any project making graded claims from evidence can encode its own standards
+  as tests and let CI enforce them.</p>
+</section>
+
+<section>
+  <h2>The data is an API</h2>
+  <p>Everything on this site is one JSON file, served with permissive CORS so you can build against it:</p>
+  <pre class="code-block"><code>curl -s ${esc(SITE_URL)}/data.json | jq '.interventions[] | {name, tier}'</code></pre>
+  <p>It carries every intervention, grade, citation, funding disclosure, and the full monitoring framework.
+  CC BY-SA 4.0, so build what you like as long as it stays open. If you make something, tell us.</p>
+</section>
+
 <section>
   <h2>Contributing</h2>
   <p>Corrections, new interventions, and challenges to existing grades are all welcome, particularly from veterinarians
