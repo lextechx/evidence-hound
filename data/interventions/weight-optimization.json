@@ -2,9 +2,15 @@
   "id": "weight-optimization",
   "name": "Weight optimization (calorie-restricted weight loss)",
   "brand_names": [],
-  "aliases": ["weight loss", "body condition management"],
+  "aliases": [
+    "weight loss",
+    "body condition management"
+  ],
   "category": "lifestyle",
-  "conditions": ["osteoarthritis", "mobility"],
+  "conditions": [
+    "osteoarthritis",
+    "mobility"
+  ],
   "tier": "B",
   "tier_rationale": "Prospective controlled trials consistently show that weight loss alone reduces lameness, with a dose-response relationship: improvement appears from about 6% body weight reduction and confirmed on objective gait analysis from about 8.85%. It is held at B rather than A because the landmark studies are small (9 and 14 dogs) and open-label by necessity, since you cannot blind an owner to their dog getting thinner. The consistency and the objective kinetic confirmation are what keep it well above the supplement tier.",
   "regulatory": {
@@ -28,7 +34,7 @@
   "evidence": [
     {
       "type": "rct",
-      "citation": "Marshall WG, et al. The effect of weight loss on lameness in obese dogs with osteoarthritis. Veterinary Research Communications, 2010.",
+      "citation": "Marshall WG, Hazewinkel HAW, Mullen D, De Meyer G, Baert K, Carmichael S. The effect of weight loss on lameness in obese dogs with osteoarthritis. Veterinary Research Communications, 2010;34(3):241-253.",
       "year": 2010,
       "n": 14,
       "design": "Open prospective clinical trial with serial within-subject objective measurement",
@@ -40,11 +46,11 @@
       "result": "Significant decrease in lameness from 6.10% body weight reduction onward; kinetic gait analysis confirmed improvement from 8.85% onward.",
       "funding": "See publication",
       "summary": "The first study to assess weight loss alone, both subjectively and objectively. Small and unblinded, but the objective dose-response is hard to explain away as expectation.",
-      "url": "https://link.springer.com/article/10.1007/s11259-010-9348-7"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20237844/"
     },
     {
       "type": "rct",
-      "citation": "Impellizeri JA, Tetrick MA, Muir P. Effect of weight reduction on clinical signs of lameness in dogs with hip osteoarthritis.",
+      "citation": "Impellizeri JA, Tetrick MA, Muir P. Effect of weight reduction on clinical signs of lameness in dogs with hip osteoarthritis. JAVMA, 2000;216(7):1089-1091.",
       "year": 2000,
       "n": 9,
       "design": "Prospective clinical trial",
@@ -56,7 +62,7 @@
       "result": "Significant improvement in lameness after 19 weeks; dogs lost 11-18% of body weight.",
       "funding": "See publication",
       "summary": "Very small and subjective, but directionally consistent with the later objective work.",
-      "url": "https://www.researchgate.net/publication/12561078_Effect_of_weight_reduction_on_clinical_signs_of_lameness_in_dogs_with_hip_osteoarthritis"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10754668/"
     },
     {
       "type": "systematic_review",
@@ -66,10 +72,15 @@
       "blinding": "not-applicable",
       "result": "Identifies weight management as among the best-supported non-pharmaceutical interventions for canine osteoarthritis.",
       "summary": "Independent confirmation that this belongs at the top of the non-drug list.",
-      "url": "https://onlinelibrary.wiley.com/doi/10.1111/jsap.13670"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37776028/"
     }
   ],
-  "see_also": ["nsaids", "omega-3-fatty-acids"],
+  "see_also": [
+    "nsaids",
+    "omega-3-fatty-acids"
+  ],
   "last_reviewed": "2026-08-04",
-  "contributors": ["@lextechx"]
+  "contributors": [
+    "@lextechx"
+  ]
 }
